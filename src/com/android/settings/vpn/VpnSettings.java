@@ -30,6 +30,7 @@ import android.net.vpn.IVpnService;
 import android.net.vpn.L2tpIpsecProfile;
 import android.net.vpn.L2tpIpsecPskProfile;
 import android.net.vpn.L2tpProfile;
+import android.net.vpn.OpenconnectProfile;
 import android.net.vpn.VpnManager;
 import android.net.vpn.VpnProfile;
 import android.net.vpn.VpnState;
@@ -624,6 +625,9 @@ public class VpnSettings extends PreferenceActivity implements
                 }
                 // pass through
 
+            case OPENCONNECT:
+                return true;
+
             default:
                 return false;
         }
@@ -638,6 +642,9 @@ public class VpnSettings extends PreferenceActivity implements
 
             case L2TP:
                 return ((L2tpProfile) p).isSecretEnabled();
+
+            case OPENCONNECT:
+                return true;
 
             default:
                 return false;
@@ -915,6 +922,22 @@ public class VpnSettings extends PreferenceActivity implements
                     l2tpProfile.setSecretString(null);
                     secretMissing = true;
                 }
+            }
+        }
+
+        if (p instanceof OpenconnectProfile) {
+            OpenconnectProfile ocProfile = (OpenconnectProfile) p;
+
+            String cert = ocProfile.getCaCertificate();
+            if (TextUtils.isEmpty(cert) ||
+                    !mKeyStore.contains(Credentials.CA_CERTIFICATE + cert)) {
+                ocProfile.setCaCertificate(null);
+            }
+
+            cert = ocProfile.getUserCertificate();
+            if (TextUtils.isEmpty(cert) ||
+                    !mKeyStore.contains(Credentials.USER_CERTIFICATE + cert)) {
+                ocProfile.setUserCertificate(null);
             }
         }
 
