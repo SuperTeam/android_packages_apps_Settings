@@ -383,4 +383,22 @@
         <item>silent</item>
         <item>notsilent</item>
     </string-array>
+    
+  <string-array name="discoverableduration">
+    <item>Visible always</item>
+    <item>60 seconds</item>
+    <item>90 seconds</item>
+    <item>120 seconds</item>
+    <item>180 seconds</item>
+    <item>240 seconds</item>
+  </string-array>    
+  <string-array name="discoverableduration_values">
+    <item>0</item>
+    <item>60</item>
+    <item>90</item>
+    <item>120</item>
+    <item>180</item>
+    <item>240</item>  
+  </string-array>
+    
 </resources>

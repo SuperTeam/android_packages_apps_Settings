@@ -31,13 +31,14 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 import android.os.ParcelUuid;
 import android.preference.CheckBoxPreference;
+import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceScreen;
 import android.view.ContextMenu;
+import android.view.ContextMenu.ContextMenuInfo;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ContextMenu.ContextMenuInfo;
 import android.widget.AdapterView.AdapterContextMenuInfo;
 
 import java.util.List;
@@ -73,6 +74,7 @@ public class BluetoothSettings extends PreferenceActivity
 
     private BluetoothEnabler mEnabler;
     private BluetoothDiscoverableEnabler mDiscoverableEnabler;
+    private BluetoothDiscoverableDuration mDiscoverableDuration;
 
     private BluetoothNamePreference mNamePreference;
 
@@ -141,9 +143,13 @@ public class BluetoothSettings extends PreferenceActivity
                     this,
                     (CheckBoxPreference) findPreference(KEY_BT_CHECKBOX));
 
+            mDiscoverableDuration = new BluetoothDiscoverableDuration(
+                    this, 
+                    (ListPreference) findPreference("bt_discoverable_duration"));
             mDiscoverableEnabler = new BluetoothDiscoverableEnabler(
                     this,
-                    (CheckBoxPreference) findPreference(KEY_BT_DISCOVERABLE));
+                    (CheckBoxPreference) findPreference(KEY_BT_DISCOVERABLE), 
+                    (ListPreference) findPreference("bt_discoverable_duration"));
 
             mNamePreference = (BluetoothNamePreference) findPreference(KEY_BT_NAME);
 
@@ -169,6 +175,7 @@ public class BluetoothSettings extends PreferenceActivity
             mEnabler.resume();
             mDiscoverableEnabler.resume();
             mNamePreference.resume();
+            mDiscoverableDuration.resume();
         }
 
         mLocalManager.registerCallback(this);
@@ -195,6 +202,7 @@ public class BluetoothSettings extends PreferenceActivity
         if (mScreenType == SCREEN_TYPE_SETTINGS) {
             mNamePreference.pause();
             mDiscoverableEnabler.pause();
+            mDiscoverableDuration.pause();
             mEnabler.pause();
         }
     }
