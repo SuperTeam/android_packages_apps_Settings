@@ -26,10 +26,8 @@ import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.os.Handler;
 import android.os.SystemProperties;
-import android.preference.CheckBoxPreference;
-import android.preference.ListPreference;
 import android.preference.Preference;
-import android.util.Log;
+import android.preference.CheckBoxPreference;
 
 /**
  * BluetoothDiscoverableEnabler is a helper to manage the "Discoverable"
@@ -49,7 +47,6 @@ public class BluetoothDiscoverableEnabler implements Preference.OnPreferenceChan
     private final Context mContext;
     private final Handler mUiHandler;
     private final CheckBoxPreference mCheckBoxPreference;
-    private final ListPreference mDurationPreference;
 
     private final LocalBluetoothManager mLocalManager;
 
@@ -59,11 +56,7 @@ public class BluetoothDiscoverableEnabler implements Preference.OnPreferenceChan
             if (BluetoothAdapter.ACTION_SCAN_MODE_CHANGED.equals(intent.getAction())) {
                 int mode = intent.getIntExtra(BluetoothAdapter.EXTRA_SCAN_MODE,
                         BluetoothAdapter.ERROR);
-
-                log(mLocalManager.getBluetoothAdapter().getScanMode() ==
-                    BluetoothAdapter.SCAN_MODE_CONNECTABLE_DISCOVERABLE ? "INICIO VISIBLE":"FIN VISIBLE");
-                
-                if (mode != BluetoothAdapter.ERROR) {                    
+                if (mode != BluetoothAdapter.ERROR) {
                     handleModeChanged(mode);
                 }
             }
@@ -71,16 +64,15 @@ public class BluetoothDiscoverableEnabler implements Preference.OnPreferenceChan
     };
 
     private final Runnable mUpdateCountdownSummaryRunnable = new Runnable() {
-        public void run() {            
-            updateCountdownSummary();            
+        public void run() {
+            updateCountdownSummary();
         }
     };
 
-    public BluetoothDiscoverableEnabler(Context context, CheckBoxPreference checkBoxPreference, ListPreference durationPreference) {
+    public BluetoothDiscoverableEnabler(Context context, CheckBoxPreference checkBoxPreference) {
         mContext = context;
         mUiHandler = new Handler();
         mCheckBoxPreference = checkBoxPreference;
-        mDurationPreference = durationPreference;
 
         checkBoxPreference.setPersistent(false);
 
@@ -99,7 +91,6 @@ public class BluetoothDiscoverableEnabler implements Preference.OnPreferenceChan
         IntentFilter filter = new IntentFilter(BluetoothAdapter.ACTION_SCAN_MODE_CHANGED);
         mContext.registerReceiver(mReceiver, filter);
         mCheckBoxPreference.setOnPreferenceChangeListener(this);
-        mCheckBoxPreference.setSummaryOn(null);
 
         handleModeChanged(mLocalManager.getBluetoothAdapter().getScanMode());
     }
@@ -125,36 +116,25 @@ public class BluetoothDiscoverableEnabler implements Preference.OnPreferenceChan
         BluetoothAdapter manager = mLocalManager.getBluetoothAdapter();
 
         if (enable) {
-            log("Pulsa en activar");
 
             int timeout = getDiscoverableTimeout();
-            manager.setDiscoverableTimeout(timeout);            
+            manager.setDiscoverableTimeout(timeout);
 
-            mCheckBoxPreference.setSummaryOn(null);
-            /*if (timeout != 0)                
-                mCheckBoxPreference.setSummaryOn(
-                        mContext.getResources().getString(R.string.bluetooth_is_discoverable, timeout));*/
+            mCheckBoxPreference.setSummaryOn(
+                    mContext.getResources().getString(R.string.bluetooth_is_discoverable, timeout));
 
             long endTimestamp = System.currentTimeMillis() + timeout * 1000;
             persistDiscoverableEndTimestamp(endTimestamp);
 
             manager.setScanMode(BluetoothAdapter.SCAN_MODE_CONNECTABLE_DISCOVERABLE);
-                        
-            // Retardo para que llegue la señal.
-            try { Thread.sleep(50); } catch (InterruptedException e) {e.printStackTrace();}
-            handleModeChanged(mLocalManager.getBluetoothAdapter().getScanMode());            
         } else {
-            log("Pulsa desactivar");
-            mCheckBoxPreference.setSummaryOn(null);
             manager.setScanMode(BluetoothAdapter.SCAN_MODE_CONNECTABLE);
         }
     }
 
     private int getDiscoverableTimeout() {
         int timeout = SystemProperties.getInt(SYSTEM_PROPERTY_DISCOVERABLE_TIMEOUT, -1);
-        
-        try { timeout = Integer.parseInt(mDurationPreference.getValue()); } catch (Exception ex) {}        
-        if (timeout < 0) {
+        if (timeout <= 0) {
             timeout = DEFAULT_DISCOVERABLE_TIMEOUT;
         }
 
@@ -168,13 +148,11 @@ public class BluetoothDiscoverableEnabler implements Preference.OnPreferenceChan
     }
 
     private void handleModeChanged(int mode) {
-        if (mode == BluetoothAdapter.SCAN_MODE_CONNECTABLE_DISCOVERABLE || 
-                mLocalManager.getBluetoothAdapter().isDiscovering()) {
-            log("Llega senyal del BT - Empieza");
-            mCheckBoxPreference.setChecked(true);            
+        if (mode == BluetoothAdapter.SCAN_MODE_CONNECTABLE_DISCOVERABLE) {
+            mCheckBoxPreference.setChecked(true);
             updateCountdownSummary();
+
         } else {
-            log("Llega senyal del BT - Finaliza");
             mCheckBoxPreference.setChecked(false);
         }
     }
@@ -189,13 +167,12 @@ public class BluetoothDiscoverableEnabler implements Preference.OnPreferenceChan
         long endTimestamp = mLocalManager.getSharedPreferences().getLong(
                 SHARED_PREFERENCES_KEY_DISCOVERABLE_END_TIMESTAMP, 0);
 
-        if (currentTimestamp >= endTimestamp) {
+        if (currentTimestamp > endTimestamp) {
             // We're still in discoverable mode, but maybe there isn't a timeout.
             mCheckBoxPreference.setSummaryOn(null);
             return;
         }
 
-        log("En contdown => " + String.valueOf((endTimestamp - currentTimestamp) / 1000));        
         String formattedTimeLeft = String.valueOf((endTimestamp - currentTimestamp) / 1000);
 
         mCheckBoxPreference.setSummaryOn(
@@ -208,9 +185,5 @@ public class BluetoothDiscoverableEnabler implements Preference.OnPreferenceChan
         }
     }
 
-    private void log(String msg)
-    {
-        Log.i(TAG, msg);
-    }
 
 }

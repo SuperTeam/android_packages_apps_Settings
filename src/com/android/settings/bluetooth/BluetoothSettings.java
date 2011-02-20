@@ -148,8 +148,7 @@ public class BluetoothSettings extends PreferenceActivity
                     (ListPreference) findPreference("bt_discoverable_duration"));
             mDiscoverableEnabler = new BluetoothDiscoverableEnabler(
                     this,
-                    (CheckBoxPreference) findPreference(KEY_BT_DISCOVERABLE), 
-                    (ListPreference) findPreference("bt_discoverable_duration"));
+                    (CheckBoxPreference) findPreference(KEY_BT_DISCOVERABLE));
 
             mNamePreference = (BluetoothNamePreference) findPreference(KEY_BT_NAME);
 
