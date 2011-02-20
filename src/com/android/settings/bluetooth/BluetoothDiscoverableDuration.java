@@ -55,7 +55,7 @@ public class BluetoothDiscoverableDuration implements Preference.OnPreferenceCha
         log("Discoverable timeout: " + duration + " preference " + duration);
         
         if (duration < 0)
-            duration = 95; // Por poner algo raro, nunca se debe dar.
+            duration = 120; // Por poner algo raro, nunca se debe dar.
         if (duration == 0)
             mPreference.setSummary(
                     mContext.getResources().getString(R.string.bluetooth_visibility_duration_summary_always));            
