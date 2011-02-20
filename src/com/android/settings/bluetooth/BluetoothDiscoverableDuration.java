@@ -9,14 +9,15 @@ import android.os.Handler;
 import android.os.SystemProperties;
 import android.preference.ListPreference;
 import android.preference.Preference;
+import android.provider.Settings;
+import android.provider.Settings.SettingNotFoundException;
 import android.util.Log;
 
 public class BluetoothDiscoverableDuration implements Preference.OnPreferenceChangeListener 
 {
+    private static final int DEFAULT_DISCOVERABLE_TIMEOUT = 120;
+ 
     private static final String LOG_TAG = "BluetoothDiscoverableDuration";
-    
-    private static final String SYSTEM_PROPERTY_DISCOVERABLE_TIMEOUT =
-        "debug.bt.discoverable_time";
     
     private Context mContext;
     private ListPreference mPreference;
@@ -28,6 +29,7 @@ public class BluetoothDiscoverableDuration implements Preference.OnPreferenceCha
         mContext = context;
         mPreference = listPreference;
         
+        listPreference.setPersistent(false);
         mPreference.setOnPreferenceChangeListener(this);
         mHandler = new Handler();
     }
@@ -35,8 +37,9 @@ public class BluetoothDiscoverableDuration implements Preference.OnPreferenceCha
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        // SystemProperties.set(SYSTEM_PROPERTY_DISCOVERABLE_TIMEOUT, newValue.toString());
+        
         log("Valor seleccionado: " + newValue);
+        setValue(Integer.parseInt(newValue.toString()));
         mHandler.post(new Runnable() {            
             @Override
             public void run() {
@@ -47,15 +50,9 @@ public class BluetoothDiscoverableDuration implements Preference.OnPreferenceCha
     }
     
     public void updateSummary()
-    {
-        int duration = SystemProperties.getInt(SYSTEM_PROPERTY_DISCOVERABLE_TIMEOUT, -1);        
-        
-        try { duration = Integer.parseInt(mPreference.getValue()); } catch (Exception ex) {}
+    {        
+        int duration = getValue();        
                 
-        log("Discoverable timeout: " + duration + " preference " + duration);
-        
-        if (duration < 0)
-            duration = 120; // Por poner algo raro, nunca se debe dar excepto la primera vez.
         if (duration == 0)
             mPreference.setSummary(
                     mContext.getResources().getString(R.string.bluetooth_visibility_duration_summary_always));            
@@ -65,8 +62,38 @@ public class BluetoothDiscoverableDuration implements Preference.OnPreferenceCha
                             String.valueOf(duration)));
     }
     
+    private void setValue(int duration)
+    {
+        log("Estableciendo el timeout: " + duration);
+        if (!Settings.System.putInt(mContext.getContentResolver(), 
+                Settings.System.BLUETOOTH_DISCOVERABILITY_TIMEOUT, 
+                duration))
+            log("No se pudo establecer el tiempo: " + duration);
+    }
+    
+    public int getValue()
+    {
+        int duration = DEFAULT_DISCOVERABLE_TIMEOUT;
+        try
+        {
+            duration = Settings.System.getInt(mContext.getContentResolver(), 
+                    Settings.System.BLUETOOTH_DISCOVERABILITY_TIMEOUT);
+        }
+        catch (SettingNotFoundException ex)
+        {
+            log("Setting BLUETOOTH_DISCOVERABILITY_TIMEOUT no encontrada o tiene valor no válido.");
+            if (!Settings.System.putInt(mContext.getContentResolver(), 
+                    Settings.System.BLUETOOTH_DISCOVERABILITY_TIMEOUT, 
+                    duration))
+                log("No se pudo establecer el tiempo por defecto.");
+
+        }
+        return duration;
+    }
+    
     public void resume()
     {
+        mPreference.setValue(String.valueOf(getValue()));        
         updateSummary();
     }
     

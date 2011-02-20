@@ -29,6 +29,8 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.provider.Settings;
+import android.provider.Settings.SettingNotFoundException;
 import android.util.Log;
 
 /**
@@ -90,6 +92,22 @@ public class RequestPermissionActivity extends Activity implements
         }
     };
 
+    public int getBtDiscoTimeout()
+    {
+        int duration = BluetoothDiscoverableEnabler.DEFAULT_DISCOVERABLE_TIMEOUT;
+        try
+        {
+            duration = Settings.System.getInt(getContentResolver(), 
+                    Settings.System.BLUETOOTH_DISCOVERABILITY_TIMEOUT);
+        }
+        catch (SettingNotFoundException ex)
+        {
+            ex.printStackTrace();
+        }
+        return duration;
+    }
+
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -98,6 +116,8 @@ public class RequestPermissionActivity extends Activity implements
             finish();
             return;
         }
+        
+        mTimeout = getBtDiscoTimeout();
 
         int btState = mLocalManager.getBluetoothState();
 
@@ -243,10 +263,10 @@ public class RequestPermissionActivity extends Activity implements
 
             Log.e(TAG, "Timeout = " + mTimeout);
 
-            if (mTimeout > MAX_DISCOVERABLE_TIMEOUT) {
+            if (mTimeout > MAX_DISCOVERABLE_TIMEOUT || mTimeout == 0) {
                 mTimeout = MAX_DISCOVERABLE_TIMEOUT;
             } else if (mTimeout <= 0) {
-                mTimeout = BluetoothDiscoverableEnabler.DEFAULT_DISCOVERABLE_TIMEOUT;
+                mTimeout = getBtDiscoTimeout();
             }
         } else {
             Log.e(TAG, "Error: this activity may be started only with intent "

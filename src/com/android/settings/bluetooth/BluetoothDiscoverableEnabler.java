@@ -44,6 +44,7 @@ public class BluetoothDiscoverableEnabler implements Preference.OnPreferenceChan
     /* package */ static final String SHARED_PREFERENCES_KEY_DISCOVERABLE_END_TIMESTAMP =
             "discoverable_end_timestamp";
 
+    private BluetoothDiscoverableDuration mDiscoverableDuration;
     private final Context mContext;
     private final Handler mUiHandler;
     private final CheckBoxPreference mCheckBoxPreference;
@@ -69,10 +70,12 @@ public class BluetoothDiscoverableEnabler implements Preference.OnPreferenceChan
         }
     };
 
-    public BluetoothDiscoverableEnabler(Context context, CheckBoxPreference checkBoxPreference) {
+    public BluetoothDiscoverableEnabler(Context context, CheckBoxPreference checkBoxPreference,
+            BluetoothDiscoverableDuration discoverableDuration) {
         mContext = context;
         mUiHandler = new Handler();
         mCheckBoxPreference = checkBoxPreference;
+        mDiscoverableDuration = discoverableDuration;
 
         checkBoxPreference.setPersistent(false);
 
@@ -126,15 +129,16 @@ public class BluetoothDiscoverableEnabler implements Preference.OnPreferenceChan
             long endTimestamp = System.currentTimeMillis() + timeout * 1000;
             persistDiscoverableEndTimestamp(endTimestamp);
 
-            manager.setScanMode(BluetoothAdapter.SCAN_MODE_CONNECTABLE_DISCOVERABLE);
+            manager.setScanMode(BluetoothAdapter.SCAN_MODE_CONNECTABLE_DISCOVERABLE, timeout);
         } else {
             manager.setScanMode(BluetoothAdapter.SCAN_MODE_CONNECTABLE);
         }
     }
 
     private int getDiscoverableTimeout() {
-        int timeout = SystemProperties.getInt(SYSTEM_PROPERTY_DISCOVERABLE_TIMEOUT, -1);
-        if (timeout <= 0) {
+        //int timeout = SystemProperties.getInt(SYSTEM_PROPERTY_DISCOVERABLE_TIMEOUT, -1);
+        int timeout = mDiscoverableDuration.getValue();
+        if (timeout < 0) {
             timeout = DEFAULT_DISCOVERABLE_TIMEOUT;
         }
 
