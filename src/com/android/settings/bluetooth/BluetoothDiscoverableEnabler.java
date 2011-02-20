@@ -99,6 +99,7 @@ public class BluetoothDiscoverableEnabler implements Preference.OnPreferenceChan
         IntentFilter filter = new IntentFilter(BluetoothAdapter.ACTION_SCAN_MODE_CHANGED);
         mContext.registerReceiver(mReceiver, filter);
         mCheckBoxPreference.setOnPreferenceChangeListener(this);
+        mCheckBoxPreference.setSummaryOn(null);
 
         handleModeChanged(mLocalManager.getBluetoothAdapter().getScanMode());
     }
@@ -129,6 +130,7 @@ public class BluetoothDiscoverableEnabler implements Preference.OnPreferenceChan
             int timeout = getDiscoverableTimeout();
             manager.setDiscoverableTimeout(timeout);            
 
+            mCheckBoxPreference.setSummaryOn(null);
             /*if (timeout != 0)                
                 mCheckBoxPreference.setSummaryOn(
                         mContext.getResources().getString(R.string.bluetooth_is_discoverable, timeout));*/
