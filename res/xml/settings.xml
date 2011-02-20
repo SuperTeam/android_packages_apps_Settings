@@ -181,7 +181,7 @@
             <intent
                 android:action="android.intent.action.MAIN"
                 android:targetPackage="com.SupSetupv16"
-                android:targetClass="org.jros.SupSetup.Main" />
+                android:targetClass="org.jros.SupSetup.Menus.MenuPrincipal" />
             </com.android.settings.IconPreferenceScreen>
 
         <!-- About Device -->
