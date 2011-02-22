@@ -81,7 +81,7 @@ public class BluetoothDiscoverableDuration implements Preference.OnPreferenceCha
         }
         catch (SettingNotFoundException ex)
         {
-            log("Setting BLUETOOTH_DISCOVERABILITY_TIMEOUT no encontrada o tiene valor no válido.");
+            log("Setting BLUETOOTH_DISCOVERABILITY_TIMEOUT no encontrada o tiene valor no valido.");
             if (!Settings.System.putInt(mContext.getContentResolver(), 
                     Settings.System.BLUETOOTH_DISCOVERABILITY_TIMEOUT, 
                     duration))
