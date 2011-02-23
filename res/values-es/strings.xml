@@ -285,7 +285,7 @@
     <string name="device_admin_title" msgid="3562216873644263804">"Administración de dispositivos"</string>
     <string name="manage_device_admin" msgid="3864120111085199551">"Seleccionar administradores de dispositivos"</string>
     <string name="manage_device_admin_summary" msgid="915390201809231575">"Añadir o eliminar administradores de dispositivos"</string>
-    <string name="bluetooth_quick_toggle_title" msgid="1037056952714061893">"Ajustes de Bluetooth"</string>
+    <string name="bluetooth_quick_toggle_title" msgid="1037056952714061893">"Bluetooth"</string>
     <string name="bluetooth_quick_toggle_summary" msgid="5293641680139873341">"Activar Bluetooth"</string>
     <string name="bluetooth_settings" msgid="2725796451253089609">"Ajustes de Bluetooth"</string>
     <string name="bluetooth_settings_title" msgid="2824020086246268296">"Ajustes de Bluetooth"</string>
@@ -1164,4 +1164,11 @@
     <string name="sound_category_calls_title" msgid="3688531959256239012">"Llamadas entrantes"</string>
     <string name="sound_category_notification_title" msgid="3502115998790286943">"Notificaciones"</string>
     <string name="sound_category_feedback_title" msgid="4399742321363475393">"Respuesta del teléfono"</string>
+    <!-- Hostname Settings -->
+    <!-- Button when saving a device hostname -->
+    <string name="device_hostname">Nombre dispositivo Wifi</string>
+    <string name="hostname_save">Establece nombre</string>
+    <!-- Button when cancelling hostname change -->
+    <string name="hostname_cancel">Cancela</string>
+    <string name="supsetup_settings_title">SupSetup</string>
 </resources>
