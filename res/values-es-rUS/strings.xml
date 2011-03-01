@@ -1099,7 +1099,7 @@
     <string name="credentials_access_summary" msgid="319662078718574168">"Permitir a las aplic. acceder a certificados seguros y otras cred."</string>
     <string name="credentials_unlock" msgid="1463040326264133844">"Ingresar contraseña"</string>
     <string name="credentials_unlock_hint" msgid="594679530407918031">"Ingresar la contraseña de almacenamiento de la credencial"</string>
-    <string name="credentials_install_certificates" product="nosdcard" msgid="619171634797689906">"Instalar desde almacenamiento USB"</string>
+    <string name="credentials_install_certificates" product="nosdcard" msgid="619171634797689906">"Instalar desde USB"</string>
     <string name="credentials_install_certificates" product="default" msgid="177337517568022236">"Instalar de la tarjeta SD"</string>
     <string name="credentials_install_certificates_summary" product="nosdcard" msgid="8920330112631198575">"Instalar certificados encriptados del almacenamiento USB"</string>
     <string name="credentials_install_certificates_summary" product="default" msgid="7737001268684193093">"Instalar certificados encriptados de la tarjeta SD"</string>
