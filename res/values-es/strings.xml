@@ -1169,4 +1169,74 @@
     <!-- Button when cancelling hostname change -->
     <string name="hostname_cancel">Cancela</string>
     <string name="supsetup_settings_title">SupSetup</string>
+
+    <!-- Main Settings screen setting option name to go into the profile settings screen -->
+    <string name="profile_settings_title">Perfiles</string>
+    <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
+    <string name="soundtone_title">Tono de notificación</string>
+    <!-- Sound settings screen, setting option summary text -->
+    <string name="soundtone_summary">""</string>
+    <!-- Profile Settings screen --><skip/>
+    <!-- Profile Settings profile config screen title -->
+    <string name="profile_title">Configura perfil</string>
+    <!-- Profile Settings apgroup config screen title -->
+    <string name="profile_appgroup_list_title">Configura grupos de aplicaciones</string>
+    <!-- Profile Settings sound mode label -->
+    <string name="sound_mode">Modo de notificación</string>
+    <!-- Profile Settings ringer mode label -->
+    <string name="ringer_mode">Modo de timbre</string>
+    <!-- Profile Settings lights mode label -->
+    <string name="lights_mode">Modo de luces</string>
+    <!-- Profile Settings vibrate mode label -->
+    <string name="vibrate_mode">Modo de vibración</string>
+    <!-- Profile notification tone -->
+    <string name="choose_soundtone">Escoje tono de notificación</string>
+    <!-- Profile ringtone -->
+    <string name="choose_ringtone">Escoje tono de llamada</string>
+    <!-- Profile settings screen, section header for settings related to notification profiles -->
+    <string name="profile_settings">Ajuestes de perfiles</string>
+    <!-- Name of the profile, setting caption -->
+    <string name="profile_name">Nonbre de perfil</string>
+    <!-- Profile summary - hint that touching configures profile -->
+    <string name="profile_summary">Toca para configurar el perfil</string>
+    <!-- Title for application group setting screen -->
+    <string name="profile_appgroup_title">Grupo de aplicaciones: %s</string>
+    <!-- Title for application group list screen -->
+    <string name="profile_appgroups_title">Grupos de aplicaciones</string>
+    <!-- Title for application group list section, hint at delete action -->
+    <string name="profile_applist_title">Aplicaciones - click para borrar del grupo</string>
+    <!-- Prompt for name when adding a new app group -->
+    <string name="profile_appgroup_name_prompt">Teclea un nombre para la aplicación del grupo</string>
+    <!-- Delete profile setting item -->
+    <string name="profile_delete">Borra perfil</string>
+    <!-- Delete profile confimation message -->
+    <string name="profile_delete_confirm">Estás seguro de que quieres borrar este perfil?</string>
+    <!-- Delete application from group confirm message -->
+    <string name="profile_app_delete_confirm">Estas seguro de que quieres borrar esta aplicación?</string>
+    <!-- Add application dialog box title -->
+    <string name="profile_choose_app">Escoje aplicación</string>
+    <!-- Title for profile settings screen -->
+    <string name="profile_settings_header">Ajustes de perfil: %s</string>
+    <!-- Profile category settings heading -->
+    <string name="profile_group_header">Perfil: %1$s categoria: %2$s</string>
+    <!-- Menu item for managing app groups -->
+    <string name="menu_appgroups">Edita grupos de aplicaciones</string>
+    <!-- Menu item for adding a new profile -->
+    <string name="menu_new_profile">Nuevo perfil</string>
+    <!-- Menu item for adding a new profile - summary -->
+    <string name="menu_new_profile_summary">Añade y configura un nuevo perfil</string>
+    <!-- Delete an item context menu item -->
+    <string name="profile_menu_delete">Borra</string>
+    <!-- Menu item for adding a new app group -->
+    <string name="profile_new_appgroup">Nueva aplicación de grupo</string>
+    <!-- Menu item for deleting an app group -->
+    <string name="profile_delete_appgroup">Borra esta aplicación del grupo</string>
+    <!-- Menu item for adding an app -->
+    <string name="profile_add_app">Añade aplicación</string>
+    <!-- Menu item for managing profiles -->
+    <string name="profile_manage">Edita perfiles</string>
+    <!-- Menu item for managing app groups -->
+    <string name="profile_appgroups_manage">Edita aplicaciones de grupo</string>
+    <!-- Menu item for managing app list -->
+    <string name="profile_applist_manage">Edita lista de aplicaciones</string>
 </resources>
