@@ -1227,6 +1227,8 @@
     <string name="menu_new_profile_summary">Añade y configura un nuevo perfil</string>
     <!-- Delete an item context menu item -->
     <string name="profile_menu_delete">Borra</string>
+    <!-- Message when trying to delete the active profile -->
+    <string name="profile_cannot_delete">No puedes borrar el perfil activo.</string>
     <!-- Menu item for adding a new app group -->
     <string name="profile_new_appgroup">Nueva aplicación de grupo</string>
     <!-- Menu item for deleting an app group -->
