@@ -1196,7 +1196,7 @@
     <!-- Profile settings screen, section header for settings related to notification profiles -->
     <string name="profile_settings">Ajuestes de perfiles</string>
     <!-- Name of the profile, setting caption -->
-    <string name="profile_name">Nonbre de perfil</string>
+    <string name="profile_name">Nombre de perfil</string>
     <!-- Profile summary - hint that touching configures profile -->
     <string name="profile_summary">Toca para configurar el perfil</string>
     <!-- Title for application group setting screen -->
