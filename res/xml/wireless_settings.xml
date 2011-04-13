@@ -44,7 +44,7 @@
         android:key="toggle_wimax"
         android:title="@string/wimax_quick_toggle_title"
         android:summary="@string/wimax_quick_toggle_summary"
-  android:persistent="false" />
+	android:persistent="false" />
 
     <PreferenceScreen
         android:key="wimax_settings"

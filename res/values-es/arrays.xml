@@ -162,7 +162,26 @@
     <item>120 segundos</item>
     <item>180 segundos</item>
     <item>240 segundos</item>
-  </string-array>    
+  </string-array>  
+
+    <string-array name="networkModesWidget" translatable="false">
+        <item>2G/3G+2G</item>
+        <item>2G/3G Solo</item>
+        <item>2G/3G Solo/3G+2G</item>
+    </string-array>
+
+    <string-array name="ringModeWidget" translatable="false">
+        <item>Sonido+Vibración/Vibración</item>
+        <item>Sonido/Vibración</item>
+        <item>Sonido/Silencio</item>
+        <item>Sonido+Vib/Vib/Silencio</item>
+        <item>Sonido/Vibración/Silencio</item>
+    </string-array>
+    
+    <string-array name="backgroundWidget">
+        <item>Negro</item>
+        <item>Transparente</item>
+    </string-array>  
   
   
 </resources>

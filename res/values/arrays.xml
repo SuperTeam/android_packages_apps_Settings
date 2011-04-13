@@ -63,7 +63,7 @@
     </string-array>
 
     <!-- Do not translate. -->
-    <string-array name="animations_values">
+    <string-array name="animations_values" translatable="false">
         <!-- Do not translate. -->
         <item>00</item>
         <!-- Do not translate. -->
@@ -78,6 +78,7 @@
         <item>30 seconds</item>
         <item>1 minute</item>
         <item>2 minutes</item>
+        <item>5 minutes</item>
         <item>10 minutes</item>
         <item>30 minutes</item>
     </string-array>
@@ -92,6 +93,8 @@
         <item>60000</item>
         <!-- Do not translate. -->
         <item>120000</item>
+        <!-- Do not translate. -->
+        <item>300000</item>
         <!-- Do not translate. -->
         <item>600000</item>
         <!-- Do not translate. -->
@@ -109,7 +112,7 @@
         <item>Very fast</item>
     </string-array>
     <!-- Do not translate. -->
-    <string-array name="tts_rate_values">
+    <string-array name="tts_rate_values" translatable="false">
         <item>60</item>
         <item>80</item>
         <item>100</item>
@@ -126,7 +129,7 @@
         <item>Very high</item>
     </string-array>
     <!-- Do not translate. -->
-    <string-array name="tts_pitch_values">
+    <string-array name="tts_pitch_values" translatable="false">
         <item>50</item>
         <item>80</item>
         <item>100</item>
@@ -144,7 +147,7 @@
         <item>Spanish</item>
     </string-array>
     <!-- Do not translate. -->
-    <string-array name="tts_lang_values">
+    <string-array name="tts_lang_values" translatable="false">
         <item>eng-USA</item>
         <item>eng-GBR</item>
         <item>fra-FRA</item>
@@ -153,7 +156,7 @@
         <item>spa-ESP</item>
     </string-array>
     <!-- Do not translate. -->
-    <string-array name="tts_demo_strings">
+    <string-array name="tts_demo_strings" translatable="false">
         <item>This is an example of speech synthesis in English.</item>
         <item>This is an example of speech synthesis in English.</item>
         <item>Voici un échantillon de synthèse vocale en français.</item>
@@ -162,11 +165,11 @@
         <item>Este es un ejemplo de síntesis de voz en español.</item>
     </string-array>
     <!-- Do not translate. -->
-    <string-array name="tts_engine_entries">
+    <string-array name="tts_engine_entries" translatable="false">
         <item>Pico TTS</item>
     </string-array>
     <!-- Do not translate. -->
-    <string-array name="tts_engine_values">
+    <string-array name="tts_engine_values" translatable="false">
         <item>com.svox.pico</item>
     </string-array>
 
@@ -276,13 +279,30 @@
 
     <!-- Match with wifi_sleep_policy_entries and the values of the settings in Settings class. --> <skip />
     <!-- Do not translate. -->
-    <string-array name="wifi_sleep_policy_values">
+    <string-array name="wifi_sleep_policy_values" translatable="false">
         <!-- Do not translate. -->
         <item>0</item>
         <!-- Do not translate. -->
         <item>1</item>
         <!-- Do not translate. -->
         <item>2</item>
+    </string-array>
+
+    <!-- Match with constants in BatteryHistory class -->
+    <string-array name="battery_history_type_spinner">
+        <item>CPU usage</item>
+        <item>Network usage</item>
+        <item>GPS usage</item>
+        <item>Sensor usage</item>
+        <item>Partial wake usage</item>
+        <item>Other usage</item>
+    </string-array>
+
+    <!-- Match with constants in BatteryStats class -->
+    <string-array name="battery_history_which_spinner">
+        <item>Since last unplugged</item>
+        <item>Total since boot</item>
+        <item>Total in all time</item>
     </string-array>
 
     <!-- Display options for UsageStats class -->
@@ -316,10 +336,24 @@
     </string-array>
 
     <!-- Do not translate. -->
-    <string-array name="emergency_tone_values">
+    <string-array name="emergency_tone_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
+    </string-array>
+
+    <!-- openvpn advanced menu protocol entries -->
+    <!-- Do not translate. -->
+    <string-array name="vpn_openvpn_protocol_entries" translatable="false">
+        <item>udp</item>
+        <item>tcp</item>
+    </string-array>
+
+    <!-- openvpn advanced menu device entries -->
+    <!-- Do not translate. -->
+    <string-array name="vpn_openvpn_device_entries" translatable="false">
+        <item>tun</item>
+        <item>tap</item>
     </string-array>
 
     <!-- Locales in this list are displayed with the corresponding
@@ -415,4 +449,35 @@
     <item>240</item>  
   </string-array>
     
+    <string-array name="brightnessWidget" translatable="false">
+        <item>Auto/Dim/40%/100%</item>
+        <item>Auto/Dim/25%/75%/100%</item>
+        <item>Auto/25%/100%</item>
+        <item>Dim/100%</item>
+    </string-array>
+
+    <string-array name="networkModesWidget" translatable="false">
+        <item>2G/3G+2G</item>
+        <item>2G/3G Only</item>
+        <item>2G/3G Only/3G+2G</item>
+    </string-array>
+    
+    <string-array name="screenTimeoutWidget" translatable="false">
+        <item>15s/1m/5m</item>
+        <item>30s/2m/5m</item>
+    </string-array>
+
+    <string-array name="ringModeWidget" translatable="false">
+        <item>Sound+Vibrate/Vibrate</item>
+        <item>Sound/Vibrate</item>
+        <item>Sound/Silent</item>
+        <item>Sound+Vib/Vib/Silent</item>
+        <item>Sound/Vibrate/Silent</item>
+    </string-array>
+    
+    <string-array name="backgroundWidget">
+        <item>Grey</item>
+        <item>Transparent</item>
+    </string-array>
+
 </resources>

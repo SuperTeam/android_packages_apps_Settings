@@ -1162,6 +1162,7 @@
     <string name="sound_category_calls_title" msgid="3688531959256239012">"Llamadas entrantes"</string>
     <string name="sound_category_notification_title" msgid="3502115998790286943">"Notificaciones"</string>
     <string name="sound_category_feedback_title" msgid="4399742321363475393">"Respuesta del teléfono"</string>
+
     <!-- Hostname Settings -->
     <!-- Button when saving a device hostname -->
     <string name="device_hostname">Nombre dispositivo Wifi</string>
@@ -1170,75 +1171,143 @@
     <string name="hostname_cancel">Cancela</string>
     <string name="supsetup_settings_title">SupSetup</string>
 
-    <!-- Main Settings screen setting option name to go into the profile settings screen -->
+
     <string name="profile_settings_title">Perfiles</string>
-    <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
-    <string name="soundtone_title">Tono de notificación</string>
-    <!-- Sound settings screen, setting option summary text -->
-    <string name="soundtone_summary">""</string>
-    <!-- Profile Settings screen --><skip/>
-    <!-- Profile Settings profile config screen title -->
-    <string name="profile_title">Configura perfil</string>
-    <!-- Profile Settings apgroup config screen title -->
-    <string name="profile_appgroup_list_title">Configura grupos de aplicaciones</string>
-    <!-- Profile Settings sound mode label -->
-    <string name="sound_mode">Modo de notificación</string>
-    <!-- Profile Settings ringer mode label -->
-    <string name="ringer_mode">Modo de timbre</string>
-    <!-- Profile Settings lights mode label -->
-    <string name="lights_mode">Modo de luces</string>
-    <!-- Profile Settings vibrate mode label -->
+    <string name="profile_title">Configuración de perfiles</string>
+    <string name="profile_appgroup_list_title">Configurar grupos de aplicaciones</string>
+    <string name="sound_mode">Modo de sonido</string>
+    <string name="ringer_mode">Modo de llamada</string>
+    <string name="lights_mode">Modo de Luz</string>
     <string name="vibrate_mode">Modo de vibración</string>
-    <!-- Profile notification tone -->
-    <string name="choose_soundtone">Escoje tono de notificación</string>
-    <!-- Profile ringtone -->
-    <string name="choose_ringtone">Escoje tono de llamada</string>
-    <!-- Profile settings screen, section header for settings related to notification profiles -->
-    <string name="profile_settings">Ajuestes de perfiles</string>
-    <!-- Name of the profile, setting caption -->
-    <string name="profile_name">Nombre de perfil</string>
-    <!-- Profile summary - hint that touching configures profile -->
-    <string name="profile_summary">Toca para configurar el perfil</string>
-    <!-- Title for application group setting screen -->
+    <string name="choose_soundtone">Tono del teléfono</string>
+    <string name="choose_ringtone">Tono de llamada</string>
+    <string name="profile_settings">Configuración del perfil</string>
+    <string name="profile_name">Nombre del perfil</string>
+    <string name="profile_summary">Pulse para configurar su perfil</string>
     <string name="profile_appgroup_title">Grupo de aplicaciones: %s</string>
-    <!-- Title for application group list screen -->
     <string name="profile_appgroups_title">Grupos de aplicaciones</string>
-    <!-- Title for application group list section, hint at delete action -->
-    <string name="profile_applist_title">Aplicaciones - click para borrar del grupo</string>
-    <!-- Prompt for name when adding a new app group -->
-    <string name="profile_appgroup_name_prompt">Teclea un nombre para la aplicación del grupo</string>
-    <!-- Delete profile setting item -->
-    <string name="profile_delete">Borra perfil</string>
-    <!-- Delete profile confimation message -->
-    <string name="profile_delete_confirm">Estás seguro de que quieres borrar este perfil?</string>
-    <!-- Delete application from group confirm message -->
-    <string name="profile_app_delete_confirm">Estas seguro de que quieres borrar esta aplicación?</string>
-    <!-- Add application dialog box title -->
-    <string name="profile_choose_app">Escoje aplicación</string>
-    <!-- Title for profile settings screen -->
-    <string name="profile_settings_header">Ajustes de perfil: %s</string>
-    <!-- Profile category settings heading -->
-    <string name="profile_group_header">Perfil: %1$s categoria: %2$s</string>
-    <!-- Menu item for managing app groups -->
-    <string name="menu_appgroups">Edita grupos de aplicaciones</string>
-    <!-- Menu item for adding a new profile -->
+    <string name="profile_applist_title">Aplicaciones - haga clic para quitar del grupo</string>
+    <string name="profile_appgroup_name_prompt">Escriba el nombre del grupo de aplicaciones</string>
+    <string name="profile_delete">Eliminar Perfil</string>
+    <string name="profile_delete_confirm">¿Está seguro que desea eliminar este perfil?</string>
+    <string name="profile_app_delete_confirm">¿Está seguro que desea eliminar esta aplicación?</string>
+    <string name="profile_choose_app">Seleccione la aplicación</string>
+    <string name="profile_settings_header">Configuración del perfil: %s</string>
+    <string name="profile_group_header">Perfil: %1$s Categoría: %2$s</string>
+    <string name="menu_appgroups">Administrar grupos de aplicaciones</string>
     <string name="menu_new_profile">Nuevo perfil</string>
-    <!-- Menu item for adding a new profile - summary -->
-    <string name="menu_new_profile_summary">Añade y configura un nuevo perfil</string>
-    <!-- Delete an item context menu item -->
-    <string name="profile_menu_delete">Borra</string>
-    <!-- Message when trying to delete the active profile -->
-    <string name="profile_cannot_delete">No puedes borrar el perfil activo.</string>
-    <!-- Menu item for adding a new app group -->
-    <string name="profile_new_appgroup">Nueva aplicación de grupo</string>
-    <!-- Menu item for deleting an app group -->
-    <string name="profile_delete_appgroup">Borra esta aplicación del grupo</string>
-    <!-- Menu item for adding an app -->
-    <string name="profile_add_app">Añade aplicación</string>
-    <!-- Menu item for managing profiles -->
-    <string name="profile_manage">Edita perfiles</string>
-    <!-- Menu item for managing app groups -->
-    <string name="profile_appgroups_manage">Edita aplicaciones de grupo</string>
-    <!-- Menu item for managing app list -->
-    <string name="profile_applist_manage">Edita lista de aplicaciones</string>
+    <string name="menu_new_profile_summary">Agregar y configurar un nuevo perfil</string>
+    <string name="profile_menu_delete">Quitar</string>
+    <string name="profile_new_appgroup">Nuevo grupo de aplicaciones</string>
+    <string name="profile_delete_appgroup">Eliminar este grupo de aplicaciones</string>
+    <string name="profile_add_app">Agregar aplicación</string>
+    <string name="profile_manage">Administración de perfiles</string>
+    <string name="profile_appgroups_manage">Administrar grupos de aplicaciones</string>
+    <string name="profile_applist_manage">Gestión de lista de aplicaciones</string>
+
+    <string name="kill_app_longpress_back">Cierre la aplicación con pulsación larga</string>
+    <string name="kill_app_longpress_back_summary">Mantenga pulsado el botón VOLVER para cerrar la aplicación activa.</string>
+
+    <string name="battery_history_details_for">Detalles de la UID <xliff:g id="number" example="1234">%d</xliff:g></string>
+    <string name="battery_history_uid">UID <xliff:g id="user_id">%1$d</xliff:g></string>
+    <string name="battery_history_network_usage">Red de información de uso de <xliff:g id="app_name">%1$s</xliff:g>:</string>
+    <string name="battery_history_bytes_received">Recibido bytes: <xliff:g id="bytes">%1$d</xliff:g></string>
+    <string name="battery_history_bytes_sent">Enviado bytes: <xliff:g id="bytes">%1$d</xliff:g></string>
+    <string name="battery_history_bytes_total">Número total de bytes: <xliff:g id="bytes">%1$d</xliff:g></string>
+    <string name="battery_history_cpu_usage">CPU-detalles uso <xliff:g id="app_name">%1$s</xliff:g>:</string>
+    <string name="battery_history_user_time">Tiempo usuario: </string>
+    <string name="battery_history_system_time">Tiempo sistema: </string>
+    <string name="battery_history_total_time">Tiempo Total: </string>
+    <string name="battery_history_starts">Iniciado: <xliff:g id="starts">%1$d</xliff:g></string>
+    <string name="battery_history_packages_sharing_this_uid">Paquetes distribuidos por este UID:</string>
+    <string name="battery_history_no_data">No hay datos con el uso de las baterías disponibles</string>
+    <string name="battery_history_sensor">Sensor:</string>
+    <string name="battery_history_wakelock">Bloqueo:</string>
+    <string name="battery_history_used_by_packages">Sensor de uso de paquetes:</string>
+    <string name="battery_history_sensor_usage">Uso <xliff:g id="count">%1$d</xliff:g> tiempo de <xliff:g id="package">%2$s</xliff:g></string>
+    <string name="battery_history_sensor_usage_multi">Uso <xliff:g id="count">%1$d</xliff:g> veces de cada uno de:</string>
+    <string name="battery_history_awake_label">Ejecutar</string>
+    <string name="battery_history_screen_on_label">En pantalla</string>
+    <string name="battery_history_phone_on_label">En teléfono</string>
+    <string name="battery_history_awake">Tiempo en espera:</string>
+    <string name="battery_history_screen_on">Tiempo con pantalla encendida:</string>
+    <string name="battery_history_phone_on">Tiempo usado con teléfono:</string>
+    <string name="battery_history_screen_on_battery">Con bateria:</string>
+    <string name="battery_history_screen_on_plugged">A la red:</string>
+
+    <string name="possibleButtons">Posibles botones</string>
+    <string name="toggleWifi">Wifi</string>
+    <string name="toggleWifiAp">Wi-Fi Hotspot</string>
+    <string name="toggleBluetooth">Bluetooth</string>
+    <string name="toggleGPS">GPS</string>
+    <string name="toggleData">Datos Móviles</string>
+    <string name="toggleSync">Sinc. de Datos</string>
+    <string name="toggle2g3g">2G/3G</string>
+    <string name="toggleSound">Sonido</string>
+    <string name="toggleBrightness">Brillo</string>
+    <string name="toggleAutoRotate">Orientación</string>
+    <string name="toggleScreenTimeout">Pantalla en espera</string>
+    <string name="toggleAirplane">Modo vuelo</string>
+    <string name="toggleFlashlight">Flash</string>
+    <string name="toggleLockScreen">Bloqueo</string>
+
+    <string name="toggleWifiDescription">Activa/Desactiva Wifi</string>
+    <string name="toggleWifiApDescription">Activa/Desactiva el WI-FI hotspot</string>
+    <string name="toggleBluetoothDescription">Activa/Desactiva Bluetooth</string>
+    <string name="toggleGPSDescription">Activa/Desactiva GPS</string>
+    <string name="toggleDataDescription">Activa/Desactiva datos móviles</string>
+    <string name="toggleSyncDescription">Activa/Desactiva sincronización de datos</string>
+    <string name="toggle2g3gDescription">Cambia estre 2G y 3G</string>
+    <string name="toggleSoundDescription">Cambia entre ring y vibración solo</string>
+    <string name="toggleBrightnessDescription">Cambia los nveles de brillo</string>
+    <string name="toggleAutoRotateDescription">Activa/Desactiva sensor de orientación</string>
+    <string name="toggleScreenTimeoutDescription">Elije diferentes tiempos para apagar pantalla</string>
+    <string name="toggleAirplaneDescription">Activa/Desactiva modo avión</string>
+    <string name="toggleFlashlightDescription">Activa/Desactiva modo flash</string>
+    <string name="toggleLockScreenDescription">Activa/Desactiva bloqueo de pantalla</string>
+
+    <string name="widgetSettings">Configuración de Widgets</string>
+    <string name="wifiSettings">Ajustes eventos de Wi-Fi</string>
+    <string name="dataSettings">Ajustes eventos de datos</string>
+    <string name="powerSettings">Ajustes eventos de Power</string>
+    
+    <string name="generalSettings">Ajustes Generales</string>
+
+    <string name="autoDisable3G">Datos desac. 3G</string>
+    <string name="autoEnable3G">Datos activ. 3G</string>
+    <string name="autoDisable3GWithWifi">Wi-Fi desac. 3G</string>
+    <string name="autoEnable3GWithWifi">Wi-Fi activ. 3G</string>
+    <string name="useRoundCorners">Esquinas redondeadas</string>
+    <string name="useVertical">Modo vertical</string>
+    <string name="useTransparent">Widgets transparentes</string>
+    <string name="autoEnableSyncWithWifi">Wi-Fi activ. Sync</string>
+    <string name="autoDisableSyncWithWifi">Wi-Fi desac. Sync</string>
+    <string name="ringModeVibrateAsOn">Vibración encendida</string>
+    <string name="monitorDataRoaming">Monitor de datos en roaming</string>
+    <string name="autoEnableBluetoothWithPower">Ext. PWR activ. Bluetooth</string>
+    <string name="autoDisableBluetoothWithPower">Ext. PWD desac. Bluetooth</string>
+    <string name="autoEnableWifiWithPower">Ext. PWD activ. Wi-Fi</string>
+    <string name="autoDisableWifiWithPower">Ext. PWD desac. Wi-Fi</string>
+
+    <string name="autoDisable3GDescription">2G cuando los datos móviles estan desac,</string>
+    <string name="autoEnable3GDescription">3G cuando los datos móviles estan activ,</string>
+    <string name="autoDisable3GWithWifiDescription">2G cuando Wi-Fi esta activ.</string>
+    <string name="autoEnable3GWithWifiDescription">3G cuando Wi-Fi esta desac.</string>
+    <string name="useRoundCornersDescription">Usa iconos con esquinas redondeadas</string>
+    <string name="useTransparentDescription">Sin fondo en el widget</string>
+    <string name="useVerticalDescription">Muestra con horientación vertical</string>
+    <string name="autoEnableSyncWithWifiDescription">Activa Sync cuando el WIFI esta activado</string>
+    <string name="autoDisableSyncWithWifiDescription">Desactiva Sync cuando el WIFI esta desactivado</string>
+    <string name="ringModeVibrateAsOnDescription">Sonido solo cuando este en modo vibración</string>
+    <string name="monitorDataRoamingDescription">Barra roja de datos en roaming</string>
+    <string name="autoEnableBluetoothWithPowerDescription">Bluetooth activ. cuando esté conectado</string>
+    <string name="autoDisableBluetoothWithPowerDescription">Bluetooth desac. cuando esté desconectado</string>
+    <string name="autoEnableWifiWithPowerDescription">Wi-Fi activ. cuando esté conectado</string>
+    <string name="autoDisableWifiWithPowerDescription">Wi-Fi desac. cuando esté desconectado</string>
+
+    <string name="networkModeSpinner">Escoje modo de red</string>
+    <string name="brightnessSpinner">Escoje niveles de brillo</string>
+    <string name="ringModeSpinner">Escoje modo de sonidos</string>
+    <string name="screenTimeoutSpinner">Escoje tiempo de pantalla en espera</string>
+    <string name="backgroundImageSpinner">Escoje fondo</string>
 </resources>
