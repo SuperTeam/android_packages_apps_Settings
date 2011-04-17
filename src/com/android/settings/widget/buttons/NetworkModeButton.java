@@ -32,7 +32,7 @@ public class NetworkModeButton extends WidgetButton {
 
     private static final int MODE_BOTH = 2;
 
-    private static final int DEFAULT_SETTTING = 0;
+    private static final int DEFAULT_SETTTING = 1;
 
     static NetworkModeButton ownButton = null;
 

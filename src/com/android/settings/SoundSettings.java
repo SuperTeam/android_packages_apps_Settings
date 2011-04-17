@@ -126,7 +126,7 @@ public class SoundSettings extends PreferenceActivity implements
         mHapticFeedback = (CheckBoxPreference) findPreference(KEY_HAPTIC_FEEDBACK);
         mHapticFeedback.setPersistent(false);
         mHapticFeedback.setChecked(Settings.System.getInt(resolver,
-                Settings.System.HAPTIC_FEEDBACK_ENABLED, 0) != 0);
+                Settings.System.HAPTIC_FEEDBACK_ENABLED, 1) != 0);
         mLockSounds = (CheckBoxPreference) findPreference(KEY_LOCK_SOUNDS);
         mLockSounds.setPersistent(false);
         mLockSounds.setChecked(Settings.System.getInt(resolver,
