@@ -1414,7 +1414,6 @@
     <string name="status_up_time" msgid="7294859476816760399">"開機時間"</string>
     <!-- About phone, status item title.  How much time the device has had its main CPU awake. -->
     <string name="status_awake_time" msgid="2393949909051183652">"清醒時間"</string>
-    <!-- SD card & phone storage settings screen heading. This is displayed above items that pertain to the SD card [CHAR LIMIT=30] -->
     <string name="internal_memory" msgid="9129595691484260784">"內部儲存空間"</string>
     <string name="sd_memory" product="nosdcard" msgid="2510246194083052841">"USB 儲存裝置"</string>
     <!-- SD card & phone storage settings screen heading. This is displayed above items that pertain to the SD card -->
@@ -1529,8 +1528,6 @@
     <string name="apn_auth_type_pap_chap" msgid="9102343063036134541">"PAP 或 CHAP"</string>
     <!-- Edit access point labels: The type of APN -->
     <string name="apn_type" msgid="469613123902220544">"APN 類型"</string>
-
-    <!-- Edit access point screen menu option to delete this APN -->
     <string name="apn_protocol" msgid="3272222921649348640">"APN 通訊協定"</string>
     <string name="menu_delete" msgid="6981294422841124659">"刪除 APN"</string>
     <!-- APNs screen menu option to create a brand spanking new APN -->

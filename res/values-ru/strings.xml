@@ -1161,7 +1161,6 @@
     <string name="sound_category_notification_title" msgid="3502115998790286943">"Оповещения"</string>
     <string name="sound_category_feedback_title" msgid="4399742321363475393">"Отклик на действия"</string>
 
-	
     <string name="cpu_info">Информация о ЦП</string>
     <string name="mem_info">Память (доступно/всего)</string>
     <string name="mod_version">Версия CyanogenMod</string>
@@ -1327,4 +1326,7 @@
     <string name="wimax_settings" msgid="1574837328738396794">"Настройки 4G"</string>
     <string name="wimax_settings_summary" msgid="3207355006084135453">"Подключение и настройка сети и модема 4G"</string>
     <string name="status_wimax_mac_address" msgid="8390791848661413416">"МАС-адрес для 4G"</string>
+    <string name="wimax_settings" msgid="1574837328738396794">"Настройки 4G"</string>
+    <string name="wimax_settings_summary" msgid="3207355006084135453">"Подключение и настройка сети и модема 4G"</string>
+    <string name="status_wimax_mac_address" msgid="8390791848661413416">"МАС-адрес 4G"</string>
 </resources>
