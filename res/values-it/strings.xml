@@ -446,8 +446,6 @@
 
     <!-- Used in the 1st-level settings screen to go to the 2nd-level settings screen -->
     <string name="wimax_settings_title">Impostazioni WiMAX</string>
-    <!--Wireless controls setting screen, Wimax settings summary text -->
-    <string name="wimax_settings_summary">Configura wimax</string>
 
     <!-- Title of the Wimax settings screen -->
     <string name="wimax_settings_category">Impostazioni WiMAX</string>
@@ -1407,9 +1405,6 @@
     <string name="profile_applist_manage">Gestisci lista applicazioni</string>
 
     <string name="privacy_settings" msgid="9206631214140954954">"Backup e ripristino"</string>
-=======
-    <string name="privacy_settings" msgid="9206631214140954954">"Privacy"</string>
->>>>>>> 37063d6adf9b472a8bb4bd58493517e04aafba95
     <string name="privacy_settings_title" msgid="1987089301293213705">"Impostazioni privacy"</string>
     <string name="backup_section_title" msgid="8856083167469467588">"Backup e ripristino"</string>
     <string name="personal_data_section_title" msgid="7815209034443782061">"Dati personali"</string>

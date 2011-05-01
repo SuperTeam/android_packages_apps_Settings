@@ -1170,7 +1170,6 @@
     <string name="error_wimax_starting">Não é possível iniciar WiMAX</string>
     <string name="error_wimax_stopping">Não é possível parar WiMAX</string>
     <string name="wimax_settings_title">Configurações WiMAX</string>
-    <string name="wimax_settings_summary">Gerenciar WiMax</string>
     <string name="wimax_settings_category">Configurações WiMAX</string>
     <string name="wimax">WiMAX</string>
     <string name="scan_wimax">Procurar</string>
@@ -1383,7 +1382,6 @@
     <string name="battery_history_bluetooth_on">Tempo com Bluetooth ligado:</string>
     <string name="additional_memory">Armazenamento adicional</string>
     <string name="scan_for_wimax">Procurar WiMAX</string>
-</resources>
     <string name="wimax_settings" msgid="1574837328738396794">"Configurações de 4G"</string>
     <string name="wimax_settings_summary" msgid="3207355006084135453">"Configure e gerencie a rede e o modem 4G"</string>
     <string name="status_wimax_mac_address" msgid="8390791848661413416">"Endereço MAC 4G"</string>
