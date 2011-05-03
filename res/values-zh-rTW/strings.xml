@@ -1531,8 +1531,8 @@
     <!-- Edit access point labels: The type of APN -->
     <string name="apn_type" msgid="469613123902220544">"APN 類型"</string>
     <string name="apn_protocol" msgid="3272222921649348640">"APN 通訊協定"</string>
-<    <!-- Edit access point screen menu option to delete this APN -->
->    <string name="menu_delete" msgid="6981294422841124659">"刪除 APN"</string>
+    <!-- Edit access point screen menu option to delete this APN -->
+    <string name="menu_delete" msgid="6981294422841124659">"刪除 APN"</string>
     <!-- APNs screen menu option to create a brand spanking new APN -->
     <string name="menu_new" msgid="3014205883303921729">"新增 APN"</string>
     <!-- Edit access point screen menu option to save the user's changes for this APN to the persistent storage -->
@@ -1818,7 +1818,6 @@
     <!-- Applications settings screen, setting check box title. If checked, the system allows installation of applications that are downloaded from random places, such as web sites.  -->
     <string name="install_applications" msgid="4872012136210802181">"不明的來源"</string>
     <!-- Applications settings screen, setting check box summary.  This is the summary for "Unknown sources" checkbox  -->
->
     <string name="install_unknown_applications" msgid="6612824788917283662">"允許安裝非 Market 應用程式"</string>
     <!-- Applications settings screen, message text of alert that appears if user selects the "Unknown sources" check box -->
     <string name="install_all_warning" msgid="1923717607319933741">"未知來源的應用程式可能會損害您的手機及個人資訊。如使用這些應用程式而造成手機受損或資料遺失，您必須自行承擔責任。"</string>
@@ -2931,7 +2930,6 @@
     <string name="sound_category_sound_title" msgid="1488759370067953996">"一般"</string>
     <string name="sound_category_calls_title" msgid="3688531959256239012">"來電"</string>
     <string name="sound_category_notification_title" msgid="3502115998790286943">"通知"</string>
-    <string name="sound_category_feedback_title" msgid="4399742321363475393">"回饋"</string>
 
     <string name="launcher_settings_title">ADW 主介面</string>
 
