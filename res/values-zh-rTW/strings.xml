@@ -1412,7 +1412,11 @@
     <string name="status_up_time" msgid="7294859476816760399">"開機時間"</string>
     <!-- About phone, status item title.  How much time the device has had its main CPU awake. -->
     <string name="status_awake_time" msgid="2393949909051183652">"清醒時間"</string>
+    <!-- SD card & phone storage settings screen heading. This is displayed above items that pertain to the phone's internal storage  -->
     <string name="internal_memory" msgid="9129595691484260784">"內部儲存空間"</string>
+    <!-- SD card & additional storage settings screen heading. This is displayed above items that pertain to the phone's additional storage  -->
+    <string name="additional_memory">額外的儲存空間</string>
+    <!-- SD card & phone storage settings screen heading. This is displayed above items that pertain to the SD card [CHAR LIMIT=30] -->
     <string name="sd_memory" product="nosdcard" msgid="2510246194083052841">"USB 儲存裝置"</string>
     <!-- SD card & phone storage settings screen heading. This is displayed above items that pertain to the SD card -->
     <string name="sd_memory" product="default" msgid="151871913888051515">"SD 卡"</string>
@@ -1527,7 +1531,8 @@
     <!-- Edit access point labels: The type of APN -->
     <string name="apn_type" msgid="469613123902220544">"APN 類型"</string>
     <string name="apn_protocol" msgid="3272222921649348640">"APN 通訊協定"</string>
-    <string name="menu_delete" msgid="6981294422841124659">"刪除 APN"</string>
+<    <!-- Edit access point screen menu option to delete this APN -->
+>    <string name="menu_delete" msgid="6981294422841124659">"刪除 APN"</string>
     <!-- APNs screen menu option to create a brand spanking new APN -->
     <string name="menu_new" msgid="3014205883303921729">"新增 APN"</string>
     <!-- Edit access point screen menu option to save the user's changes for this APN to the persistent storage -->
@@ -1809,7 +1814,11 @@
     <string name="applications_settings_summary" msgid="2714215108369119717">"管理應用程式，設定快速啟動鍵"</string>
     <!-- Applications settings screen heading. The header for the Application settings screen. -->
     <string name="applications_settings_header" msgid="6018266337275422250">"應用程式設定"</string>
+
+    <!-- Applications settings screen, setting check box title. If checked, the system allows installation of applications that are downloaded from random places, such as web sites.  -->
     <string name="install_applications" msgid="4872012136210802181">"不明的來源"</string>
+    <!-- Applications settings screen, setting check box summary.  This is the summary for "Unknown sources" checkbox  -->
+>
     <string name="install_unknown_applications" msgid="6612824788917283662">"允許安裝非 Market 應用程式"</string>
     <!-- Applications settings screen, message text of alert that appears if user selects the "Unknown sources" check box -->
     <string name="install_all_warning" msgid="1923717607319933741">"未知來源的應用程式可能會損害您的手機及個人資訊。如使用這些應用程式而造成手機受損或資料遺失，您必須自行承擔責任。"</string>
@@ -1888,7 +1897,9 @@
     <string name="disabled" msgid="9206776641295849915">"已停用"</string>
     <!-- [CHAR LIMIT=25] Text shown when there are no applications to display. -->
     <string name="no_applications" msgid="5190227407135243904">"沒有應用程式。"</string>
+    <!-- [CHAR LIMIT=15] Manage applications, label for chart showing internal storage use. -->
     <string name="internal_storage" msgid="1584700623164275282">"內部儲存空間"</string>
+    <!-- [CHAR LIMIT=15] Manage applications, label for chart showing SD card storage use. -->
     <string name="sd_card_storage" product="nosdcard" msgid="2673203150465132465">"USB 儲存裝置"</string>
     <!-- [CHAR LIMIT=15] Manage applications, label for chart showing SD card storage use. -->
     <string name="sd_card_storage" product="default" msgid="7623513618171928235">"SD 卡儲存裝置"</string>
@@ -2429,7 +2440,9 @@
 
     <!-- Description for power consumed by display -->
     <string name="battery_desc_display" msgid="5432795282958076557">"顯示與背光啟動時的耗電量"</string>
+    <!-- Suggestion for reducing display power -->
     <string name="battery_sugg_display" msgid="3370202402045141760">"降低螢幕亮度和/或螢幕自動關閉時間"</string>
+    <!-- Description for Wi-Fi connectivity -->
     <string name="battery_desc_wifi" msgid="1702486494565080431">"Wi-Fi 耗電量"</string>
     <!-- Suggestion for Wi-Fi connectivity power drain -->
     <string name="battery_sugg_wifi" msgid="7542345142282261691">"未使用或無法使用 Wi-Fi 時即關閉 Wi-Fi"</string>
@@ -3009,6 +3022,8 @@
     <string name="widget_count">（%d 個小工具）</string>
 
     <string name="cm_settings_title">CyanogenMod 設定</string>
+
+    <string name="sound_category_feedback_title" msgid="4399742321363475393">"意見"</string>
     <string name="wimax_settings" msgid="1574837328738396794">"4G 設定"</string>
     <string name="wimax_settings_summary" msgid="3207355006084135453">"設定與管理 4G 網路及數據機"</string>
     <string name="status_wimax_mac_address" msgid="8390791848661413416">"4G MAC 位址"</string>

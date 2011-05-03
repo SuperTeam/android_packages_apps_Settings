@@ -1255,6 +1255,7 @@
     <string name="mem_info">메모리 정보 (사용 가능 / 전체)</string>
     <string name="mod_version">Mod 버전</string>
     <string name="mod_version_default">알 수 없음</string>
+
     <string name="wimax_settings" msgid="1574837328738396794">"4G 설정"</string>
     <string name="wimax_settings_summary" msgid="3207355006084135453">"4G 네트워크와 모뎀 설정 및 관리"</string>
     <string name="status_wimax_mac_address" msgid="8390791848661413416">"4G MAC 주소"</string>
