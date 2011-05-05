@@ -168,25 +168,6 @@
                 <category android:name="android.intent.category.VOICE_LAUNCH" />
             </intent-filter>
         </activity>
-        <activity android:name=".wimax.WimaxSettings" android:label="@string/wimax_settings_title"
-                android:theme="@android:style/Theme.NoTitleBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.settings.WIMAX_SETTINGS" />
-                <action android:name="android.net.wimax.PICK_WIMAX_NETWORK" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.VOICE_LAUNCH" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name=".wimax.AdvancedSettings" android:label="@string/wimax_advanced_titlebar"
-                android:theme="@android:style/Theme.NoTitleBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.settings.WIMAX_SETTINGS" />
-                <category android:name="android.intent.category.VOICE_LAUNCH" />
-            </intent-filter>
-        </activity>
 
         <activity android:name="ApnSettings" android:label="@string/apn_settings"
                   android:configChanges="orientation|keyboardHidden"
