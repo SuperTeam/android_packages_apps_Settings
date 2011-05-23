@@ -117,6 +117,9 @@ public class DeviceInfoSettings extends PreferenceActivity {
         boolean mUpdateSettingAvailable =
                 getResources().getBoolean(R.bool.config_additional_system_update_setting_enable);
 
+        if(mUpdateSettingAvailable == false) {
+            getPreferenceScreen().removePreference(findPreference(KEY_UPDATE_SETTING));
+        }
     }
 
     @Override

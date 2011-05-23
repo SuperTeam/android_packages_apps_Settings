@@ -28,6 +28,7 @@ import android.os.Handler;
 import android.os.SystemProperties;
 import android.preference.Preference;
 import android.preference.CheckBoxPreference;
+import android.provider.Settings;
 
 /**
  * BluetoothDiscoverableEnabler is a helper to manage the "Discoverable"
