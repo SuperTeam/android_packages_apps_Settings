@@ -1352,11 +1352,11 @@
     <string name="autoEnableWifiWithPowerDescription">Wi-Fi activ. cuando esté conectado</string>
     <string name="autoDisableWifiWithPowerDescription">Wi-Fi desac. cuando esté desconectado</string>
 
-    <string name="networkModeSpinner">Escoje modo de red</string>
-    <string name="brightnessSpinner">Escoje niveles de brillo</string>
-    <string name="ringModeSpinner">Escoje modo de sonidos</string>
-    <string name="screenTimeoutSpinner">Escoje tiempo de pantalla en espera</string>
-    <string name="backgroundImageSpinner">Escoje fondo</string>
+    <string name="networkModeSpinner">Escoge modo de red</string>
+    <string name="brightnessSpinner">Escoge niveles de brillo</string>
+    <string name="ringModeSpinner">Escoge modo de sonidos</string>
+    <string name="screenTimeoutSpinner">Escoge tiempo de pantalla en espera</string>
+    <string name="backgroundImageSpinner">Escoge fondo</string>
     <string name="wimax_settings" msgid="1574837328738396794">"Ajustes de 4G"</string>
     <string name="wimax_settings_summary" msgid="3207355006084135453">"Configurar y gestionar módem y red 4G"</string>
     <string name="status_wimax_mac_address" msgid="8390791848661413416">"Dirección MAC 4G"</string>
