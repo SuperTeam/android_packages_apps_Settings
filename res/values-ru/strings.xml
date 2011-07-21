@@ -319,6 +319,7 @@
     <string name="bluetooth_profile_headset" msgid="1874975688666658946">"Телефон"</string>
     <string name="bluetooth_profile_opp" msgid="3799470046565284440">"Передать"</string>
     <string name="bluetooth_profile_hid">HID</string>
+    <string name="bluetooth_profile_network">Сеть</string>
     <string name="bluetooth_summary_connected_to_a2dp" msgid="510833839847758664">"Подключено к мультимедийному аудиоустройству"</string>
     <string name="bluetooth_summary_connected_to_headset" msgid="4876496372728623918">"Подключено к аудиоустройству телефона"</string>
     <string name="bluetooth_summary_connected_to_a2dp_headset" msgid="3045032710457800891">"Подключено к телефону и мультимедийному аудиоустройству"</string>
@@ -673,6 +674,7 @@
     <string name="settings_license_activity_title" msgid="7553683406244228650">"Лицензии открытого ПО"</string>
     <string name="settings_license_activity_unavailable" msgid="4210539215951487627">"При загрузке лицензий возникла неполадка."</string>
     <string name="settings_license_activity_loading" msgid="3337535809093591740">"Идет загрузка…"</string>
+    <string name="settings_cmlicense_activity_title">Лицензии CyanogenMod</string>
     <string name="settings_safetylegal_title" msgid="1289483965535937431">"Сведения о безопасности"</string>
     <string name="settings_safetylegal_activity_title" msgid="6901214628496951727">"Сведения о безопасности"</string>
     <string name="settings_safetylegal_activity_unreachable" msgid="3198912875259612887">"Телефон не подключен к службе передачи данных. Чтобы просмотреть эту информацию, откройте страницу %s на любом компьютере, подключенном к Интернету."</string>
