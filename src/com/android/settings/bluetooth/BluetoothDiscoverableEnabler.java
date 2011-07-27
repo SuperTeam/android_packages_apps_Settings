@@ -58,7 +58,6 @@ public class BluetoothDiscoverableEnabler implements Preference.OnPreferenceChan
 
     static final int DEFAULT_DISCOVERABLE_TIMEOUT = DISCOVERABLE_TIMEOUT_TWO_MINUTES;
 
-    private BluetoothDiscoverableDuration mDiscoverableDuration;
     private final Context mContext;
     private final Handler mUiHandler;
     private final CheckBoxPreference mCheckBoxPreference;
@@ -169,8 +168,7 @@ public class BluetoothDiscoverableEnabler implements Preference.OnPreferenceChan
     }
 
     private int getDiscoverableTimeout() {
-        //int timeout = SystemProperties.getInt(SYSTEM_PROPERTY_DISCOVERABLE_TIMEOUT, -1);
-        int timeout = mDiscoverableDuration.getValue();
+        int timeout = SystemProperties.getInt(SYSTEM_PROPERTY_DISCOVERABLE_TIMEOUT, -1);
         if (timeout < 0) {
             String timeoutValue = null;
             if (mTimeoutListPreference != null && mTimeoutListPreference.getValue() != null) {

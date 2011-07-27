@@ -180,9 +180,6 @@
 
     <!-- Used as setting title (for checkbox) on second screen after selecting Bluetooth settings -->
     <string name="bluetooth">Bluetooth</string>
-    <string name="bluetooth_visibility_duration">Visibility duration</string>
-    <string name="bluetooth_visibility_duration_summary">Set to <xliff:g id="DISCOVERABLE_TIME_DURATION">%1$s</xliff:g> seconds</string>
-    <string name="bluetooth_visibility_duration_summary_always">Visible always</string>
     <!-- Bluetooth settings screen, check box label when the Bluetooth device can be seen by others -->
     <string name="bluetooth_visibility">Discoverable</string>
     <!-- Bluetooth settings screen, summary after selecting Discoverable check box -->
@@ -1297,7 +1294,6 @@
     <string name="kernel_version">Kernel version</string>
     <!-- About phone screen,  setting option name-->
     <string name="build_number">Build number</string>
-
     <!-- About phone screen,  setting option name-->
     <string name="mod_version">Version MOD/ROM</string>
     <string name="mod_version_default">Unknown</string>
@@ -3014,6 +3010,7 @@ found in the list of installed applications.</string>
 
     <string name="ok">Ok</string>
 
+
     <!-- Widget Picker -->
     <string name="widget_count">(%d widgets)</string>
 
@@ -3027,5 +3024,4 @@ found in the list of installed applications.</string>
     from their cell phone carrier. The use of the string is similar to the string
     "system_update_settings_list_item_title" in this project. [CHAR LIMIT=25] -->
     <string name="additional_system_update_settings_list_item_title">Additional system updates</string>
-
 </resources>

@@ -39,9 +39,9 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.text.TextUtils;
 import android.view.ContextMenu;
-import android.view.ContextMenu.ContextMenuInfo;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ContextMenu.ContextMenuInfo;
 import android.widget.AdapterView.AdapterContextMenuInfo;
 
 import java.util.List;
@@ -78,7 +78,6 @@ public class BluetoothSettings extends PreferenceActivity
 
     private BluetoothEnabler mEnabler;
     private BluetoothDiscoverableEnabler mDiscoverableEnabler;
-    private BluetoothDiscoverableDuration mDiscoverableDuration;
 
     private BluetoothNamePreference mNamePreference;
 
@@ -175,7 +174,6 @@ public class BluetoothSettings extends PreferenceActivity
             mEnabler.resume();
             mDiscoverableEnabler.resume();
             mNamePreference.resume();
-            mDiscoverableDuration.resume();
         }
 
         mLocalManager.registerCallback(this);
@@ -203,7 +201,6 @@ public class BluetoothSettings extends PreferenceActivity
         if (mScreenType == SCREEN_TYPE_SETTINGS) {
             mNamePreference.pause();
             mDiscoverableEnabler.pause();
-            mDiscoverableDuration.pause();
             mEnabler.pause();
         }
     }

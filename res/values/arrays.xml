@@ -265,7 +265,7 @@
         <item>2 Minutes</item>
         <item>5 Minutes</item>
         <item>1 Hour</item>
-        <item>Never</item>
+        <item>Always</item>
     </string-array>
 
     <!-- Values for visibility_duration_entries matching constants in BluetoothSettings. Do not translate. -->
@@ -451,7 +451,7 @@
         <item>silent</item>
         <item>notsilent</item>
     </string-array>
-
+    
 <!-- Profile mode options. -->
     <string-array name="profile_entries">
         <item>On</item>
@@ -465,24 +465,7 @@
         <item>SUPPRESS</item>
         <item>DEFAULT</item>
     </string-array>
-    
-  <string-array name="discoverableduration">
-    <item>Visible always</item>
-    <item>60 seconds</item>
-    <item>90 seconds</item>
-    <item>120 seconds</item>
-    <item>180 seconds</item>
-    <item>240 seconds</item>
-  </string-array>    
-  <string-array name="discoverableduration_values">
-    <item>0</item>
-    <item>60</item>
-    <item>90</item>
-    <item>120</item>
-    <item>180</item>
-    <item>240</item>  
-  </string-array>
-    
+
     <string-array name="brightnessWidget" translatable="false">
         <item>Auto/Dim/40%/100%</item>
         <item>Auto/Dim/25%/75%/100%</item>

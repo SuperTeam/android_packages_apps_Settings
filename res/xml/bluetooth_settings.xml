@@ -31,14 +31,6 @@
         android:dependency="bt_checkbox"
         android:persistent="false"
         android:singleLine="true" />
-        
-    <ListPreference
-    	android:key="bt_discoverable_duration"
-    	android:title="@string/bluetooth_visibility_duration"
-    	android:summary="@string/bluetooth_visibility_duration_summary"
-    	android:dialogTitle="@string/bluetooth_visibility_duration"
-    	android:entries="@array/discoverableduration"
-    	android:entryValues="@array/discoverableduration_values"/>
 
     <CheckBoxPreference
         android:key="bt_discoverable"
