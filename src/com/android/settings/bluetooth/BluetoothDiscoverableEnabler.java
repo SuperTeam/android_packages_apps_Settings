@@ -85,12 +85,12 @@ public class BluetoothDiscoverableEnabler implements Preference.OnPreferenceChan
         }
     };
 
-    public BluetoothDiscoverableEnabler(Context context, CheckBoxPreference checkBoxPreference,
-            BluetoothDiscoverableDuration discoverableDuration) {
+    public BluetoothDiscoverableEnabler(Context context,
+            CheckBoxPreference checkBoxPreference, ListPreference timeoutListPreference) {
         mContext = context;
         mUiHandler = new Handler();
         mCheckBoxPreference = checkBoxPreference;
-        mDiscoverableDuration = discoverableDuration;
+        mTimeoutListPreference = timeoutListPreference;
 
         checkBoxPreference.setPersistent(false);
         // we actually want to persist this since can't infer from BT device state
