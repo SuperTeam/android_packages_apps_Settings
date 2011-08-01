@@ -1355,4 +1355,14 @@
     <string name="bluetooth_hid_profile_summary_use_for">HIDデバイスのために使用する</string>
 
     <string name="additional_system_update_settings_list_item_title" msgid="214987609894661992">"その他のシステムアップデート"</string>
+    <string name="rotation_category_title">加速度センサによる回転</string>
+
+    <string name="pref_rotation_0_title">0度</string>
+
+    <string name="pref_rotation_90_title">90度</string>
+
+    <string name="pref_rotation_180_title">180度</string>
+
+    <string name="pref_rotation_270_title">270度</string>
+
 </resources>

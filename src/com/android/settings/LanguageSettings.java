@@ -16,16 +16,17 @@
 
 package com.android.settings;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.os.Environment;
-import android.os.SystemProperties;
 import android.preference.CheckBoxPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
@@ -33,13 +34,8 @@ import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.text.TextUtils;
-import android.view.View.OnClickListener;
 import android.view.inputmethod.InputMethodInfo;
 import android.view.inputmethod.InputMethodManager;
-
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
 
 public class LanguageSettings extends PreferenceActivity {
     
@@ -234,11 +230,6 @@ public class LanguageSettings extends PreferenceActivity {
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         
-        // Input Method stuff
-        if (Utils.isMonkeyRunning()) {
-            return false;
-        }
-
         if (preference instanceof CheckBoxPreference) {
             final CheckBoxPreference chkPref = (CheckBoxPreference) preference;
             final String id = getInputMethodIdFromKey(chkPref.getKey());

@@ -3024,4 +3024,14 @@ found in the list of installed applications.</string>
     from their cell phone carrier. The use of the string is similar to the string
     "system_update_settings_list_item_title" in this project. [CHAR LIMIT=25] -->
     <string name="additional_system_update_settings_list_item_title">Additional system updates</string>
+    <string name="rotation_category_title">Accelerometer rotation</string>
+
+    <string name="pref_rotation_0_title">0 degrees</string>
+
+    <string name="pref_rotation_90_title">90 degrees</string>
+
+    <string name="pref_rotation_180_title">180 degrees</string>
+
+    <string name="pref_rotation_270_title">270 degrees</string>
+
 </resources>

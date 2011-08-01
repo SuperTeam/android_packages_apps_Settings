@@ -23,8 +23,6 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.media.AudioManager;
 import android.os.Bundle;
-import android.os.RemoteException;
-import android.os.ServiceManager;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
@@ -35,7 +33,6 @@ import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.telephony.TelephonyManager;
 import android.util.Log;
-import android.view.IWindowManager;
 
 public class SoundSettings extends PreferenceActivity implements
         Preference.OnPreferenceChangeListener {

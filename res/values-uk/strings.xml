@@ -1349,4 +1349,14 @@
     <string name="wimax_settings_summary" msgid="3207355006084135453">"Налаштувати 4G мережу та модем і керувати ними"</string>
     <string name="status_wimax_mac_address" msgid="8390791848661413416">"4G MAC-адреса"</string>
     <string name="additional_system_update_settings_list_item_title" msgid="214987609894661992">"Додаткові оновлення системи"</string>
+  <string name="rotation_category_title">Обернення за акселерометром</string>
+
+  <string name="pref_rotation_0_title">0 градусів</string>
+
+  <string name="pref_rotation_90_title">90 градусів</string>
+
+  <string name="pref_rotation_180_title">180 градусів</string>
+
+  <string name="pref_rotation_270_title">270 градусів</string>
+
 </resources>

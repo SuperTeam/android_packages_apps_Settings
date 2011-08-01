@@ -16,13 +16,18 @@
 
 package com.android.settings;
 
-import static android.provider.Settings.Secure.TTS_USE_DEFAULTS;
-import static android.provider.Settings.Secure.TTS_DEFAULT_RATE;
-import static android.provider.Settings.Secure.TTS_DEFAULT_LANG;
 import static android.provider.Settings.Secure.TTS_DEFAULT_COUNTRY;
-import static android.provider.Settings.Secure.TTS_DEFAULT_VARIANT;
+import static android.provider.Settings.Secure.TTS_DEFAULT_LANG;
+import static android.provider.Settings.Secure.TTS_DEFAULT_RATE;
 import static android.provider.Settings.Secure.TTS_DEFAULT_SYNTH;
+import static android.provider.Settings.Secure.TTS_DEFAULT_VARIANT;
 import static android.provider.Settings.Secure.TTS_ENABLED_PLUGINS;
+import static android.provider.Settings.Secure.TTS_USE_DEFAULTS;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.StringTokenizer;
 
 import android.app.AlertDialog;
 import android.content.ContentResolver;
@@ -32,22 +37,17 @@ import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.os.Bundle;
+import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
-import android.preference.CheckBoxPreference;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
-import java.util.StringTokenizer;
 
 public class TextToSpeechSettings extends PreferenceActivity implements
         Preference.OnPreferenceChangeListener, Preference.OnPreferenceClickListener,
@@ -566,9 +566,6 @@ public class TextToSpeechSettings extends PreferenceActivity implements
 
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        if (Utils.isMonkeyRunning()) {
-            return false;
-        }
 
         if (preference instanceof CheckBoxPreference) {
             final CheckBoxPreference chkPref = (CheckBoxPreference) preference;

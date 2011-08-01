@@ -16,30 +16,27 @@
 
 package com.android.settings;
 
-import com.android.settings.wifi.WifiApEnabler;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Locale;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.os.Bundle;
-import android.os.SystemProperties;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.AssetManager;
 import android.net.ConnectivityManager;
+import android.os.Bundle;
 import android.os.Environment;
 import android.preference.CheckBoxPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceScreen;
-import android.provider.Settings;
-import android.util.Log;
 import android.webkit.WebView;
 
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.Locale;
+import com.android.settings.wifi.WifiApEnabler;
 
 /*
  * Displays preferences for Tethering.
@@ -67,8 +64,6 @@ public class TetherSettings extends PreferenceActivity {
     private BroadcastReceiver mTetherChangeReceiver;
 
     private String[] mUsbRegexs;
-    private ArrayList mUsbIfaces;
-
     private String[] mWifiRegexs;
 
     @Override
@@ -86,9 +81,8 @@ public class TetherSettings extends PreferenceActivity {
                 (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
 
         mUsbRegexs = cm.getTetherableUsbRegexs();
-        if (mUsbRegexs.length == 0 || Utils.isMonkeyRunning()) {
+        if (mUsbRegexs.length == 0) {
             getPreferenceScreen().removePreference(mUsbTether);
-
             setTitle(R.string.tether_settings_title_wifi);
         }
 

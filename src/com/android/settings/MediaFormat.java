@@ -52,9 +52,6 @@ public class MediaFormat extends Activity {
     private Button.OnClickListener mFinalClickListener = new Button.OnClickListener() {
             public void onClick(View v) {
 
-                if (Utils.isMonkeyRunning()) {
-                    return;
-                }
                 Intent i = getIntent();
                 String path = i.getStringExtra("path");
                 Intent intent = new Intent(ExternalStorageFormatter.FORMAT_ONLY);

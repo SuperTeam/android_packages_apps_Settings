@@ -1356,4 +1356,14 @@
     <string name="settings_cmlicense_activity_title">Licenças CyanogenMod</string>
     <string name="bluetooth_profile_network">Rede</string>
     <string name="additional_system_update_settings_list_item_title" msgid="214987609894661992">"Atualizações adicionais do sistema"</string>
+    <string name="rotation_category_title">Rotação com acelerômetro</string>
+
+    <string name="pref_rotation_0_title">0 grau</string>
+
+    <string name="pref_rotation_90_title">90 graus</string>
+
+    <string name="pref_rotation_180_title">180 graus</string>
+
+    <string name="pref_rotation_270_title">270 graus</string>
+
 </resources>

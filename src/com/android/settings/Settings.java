@@ -25,6 +25,7 @@ import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceGroup;
 import android.telephony.TelephonyManager;
+import android.util.Log;
 import android.content.pm.PackageManager;
 
 public class Settings extends PreferenceActivity {
@@ -45,6 +46,7 @@ public class Settings extends PreferenceActivity {
         addPreferencesFromResource(R.xml.settings);
 
         int activePhoneType = TelephonyManager.getDefault().getPhoneType();
+        Log.i("Settings", "podxboq: activePhoneType: " + activePhoneType);
 
         PreferenceGroup parent = (PreferenceGroup) findPreference(KEY_PARENT);
         Utils.updatePreferenceToSpecificActivityOrRemove(this, parent, KEY_SYNC_SETTINGS, 0);

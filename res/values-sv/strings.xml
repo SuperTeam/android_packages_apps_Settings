@@ -1349,4 +1349,12 @@
     <string name="wimax_settings_summary" msgid="3207355006084135453">"Konfigurera och hantera 4G-nätverk och modem"</string>
     <string name="status_wimax_mac_address" msgid="8390791848661413416">"4G Mac-adress"</string>
     <string name="additional_system_update_settings_list_item_title" msgid="214987609894661992">"Ytterligare systemuppdateringar"</string>
+    <string name="rotation_category_title">Accelerometer rotation</string>
+
+    <string name="pref_rotation_90_title">90 grader</string>
+
+    <string name="pref_rotation_180_title">180 grader</string>
+
+    <string name="pref_rotation_270_title">270 grader</string>
+
 </resources>

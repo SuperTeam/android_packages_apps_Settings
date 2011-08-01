@@ -2945,4 +2945,14 @@
     from their cell phone carrier. The use of the string is similar to the string
     "system_update_settings_list_item_title" in this project. [CHAR LIMIT=25] -->
     <string name="additional_system_update_settings_list_item_title" msgid="214987609894661992">"其他系統更新"</string>
+    <string name="rotation_category_title">自動旋轉允許角度</string>
+
+    <string name="pref_rotation_0_title">0 度</string>
+
+    <string name="pref_rotation_90_title">90 度</string>
+
+    <string name="pref_rotation_180_title">180 度</string>
+
+    <string name="pref_rotation_270_title">270 度</string>
+
 </resources>

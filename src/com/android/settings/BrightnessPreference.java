@@ -17,20 +17,17 @@
 package com.android.settings;
 
 import android.content.Context;
-import android.os.RemoteException;
 import android.os.IPowerManager;
+import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.preference.SeekBarPreference;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.SeekBar;
-
-import java.util.Map;
 
 public class BrightnessPreference extends SeekBarPreference implements
         SeekBar.OnSeekBarChangeListener, CheckBox.OnCheckedChangeListener {

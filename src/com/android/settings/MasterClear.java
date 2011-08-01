@@ -16,9 +16,6 @@
 
 package com.android.settings;
 
-import com.android.internal.os.storage.ExternalStorageFormatter;
-import com.android.internal.widget.LockPatternUtils;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -26,6 +23,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+
+import com.android.internal.os.storage.ExternalStorageFormatter;
 
 /**
  * Confirm and execute a reset of the device to a clean "just out of the box"
@@ -40,7 +39,6 @@ public class MasterClear extends Activity {
     private static final int KEYGUARD_REQUEST = 55;
 
     private LayoutInflater mInflater;
-    private LockPatternUtils mLockUtils;
 
     private View mInitialView;
     private Button mInitiateButton;
@@ -57,10 +55,6 @@ public class MasterClear extends Activity {
      */
     private Button.OnClickListener mFinalClickListener = new Button.OnClickListener() {
             public void onClick(View v) {
-                if (Utils.isMonkeyRunning()) {
-                    return;
-                }
-
                 if (mExternalStorage.isChecked()) {
                     Intent intent = new Intent(ExternalStorageFormatter.FORMAT_AND_FACTORY_RESET);
                     intent.setComponent(ExternalStorageFormatter.COMPONENT_NAME);
@@ -171,7 +165,6 @@ public class MasterClear extends Activity {
         mInitialView = null;
         mFinalView = null;
         mInflater = LayoutInflater.from(this);
-        mLockUtils = new LockPatternUtils(this);
 
         establishInitialState();
     }
