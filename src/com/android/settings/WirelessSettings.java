@@ -20,7 +20,6 @@ import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
-import android.nfc.NfcAdapter;
 import android.os.Bundle;
 import android.os.ServiceManager;
 import android.os.SystemProperties;
@@ -33,14 +32,12 @@ import com.android.internal.telephony.TelephonyIntents;
 import com.android.internal.telephony.TelephonyProperties;
 import com.android.settings.bluetooth.BluetoothEnabler;
 import com.android.settings.wifi.WifiEnabler;
-import com.android.settings.nfc.NfcEnabler;
 
 public class WirelessSettings extends PreferenceActivity {
 
     private static final String KEY_TOGGLE_AIRPLANE = "toggle_airplane";
     private static final String KEY_TOGGLE_BLUETOOTH = "toggle_bluetooth";
     private static final String KEY_TOGGLE_WIFI = "toggle_wifi";
-    private static final String KEY_TOGGLE_NFC = "toggle_nfc";
     private static final String KEY_WIFI_SETTINGS = "wifi_settings";
     private static final String KEY_WIMAX_SETTINGS = "wimax_settings";
     private static final String KEY_BT_SETTINGS = "bt_settings";
@@ -53,7 +50,6 @@ public class WirelessSettings extends PreferenceActivity {
     private AirplaneModeEnabler mAirplaneModeEnabler;
     private CheckBoxPreference mAirplaneModePreference;
     private WifiEnabler mWifiEnabler;
-    private NfcEnabler mNfcEnabler;
     private BluetoothEnabler mBtEnabler;
 
     /**
@@ -94,13 +90,11 @@ public class WirelessSettings extends PreferenceActivity {
         CheckBoxPreference airplane = (CheckBoxPreference) findPreference(KEY_TOGGLE_AIRPLANE);
         CheckBoxPreference wifi = (CheckBoxPreference) findPreference(KEY_TOGGLE_WIFI);
         CheckBoxPreference bt = (CheckBoxPreference) findPreference(KEY_TOGGLE_BLUETOOTH);
-        CheckBoxPreference nfc = (CheckBoxPreference) findPreference(KEY_TOGGLE_NFC);
 
         mAirplaneModeEnabler = new AirplaneModeEnabler(this, airplane);
         mAirplaneModePreference = (CheckBoxPreference) findPreference(KEY_TOGGLE_AIRPLANE);
         mWifiEnabler = new WifiEnabler(this, wifi);
         mBtEnabler = new BluetoothEnabler(this, bt);
-        mNfcEnabler = new NfcEnabler(this, nfc);
 
         String toggleable = Settings.System.getString(getContentResolver(),
                 Settings.System.AIRPLANE_MODE_TOGGLEABLE_RADIOS);
@@ -139,11 +133,6 @@ public class WirelessSettings extends PreferenceActivity {
             getPreferenceScreen().removePreference(bt);
         }
 
-        // Remove NFC if its not available
-        if (NfcAdapter.getDefaultAdapter(this) == null) {
-            getPreferenceScreen().removePreference(nfc);
-        }
-
         // Disable Tethering if it's not allowed
         ConnectivityManager cm =
                 (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -175,7 +164,6 @@ public class WirelessSettings extends PreferenceActivity {
         mAirplaneModeEnabler.resume();
         mWifiEnabler.resume();
         mBtEnabler.resume();
-        mNfcEnabler.resume();
     }
 
     @Override
@@ -185,7 +173,6 @@ public class WirelessSettings extends PreferenceActivity {
         mAirplaneModeEnabler.pause();
         mWifiEnabler.pause();
         mBtEnabler.pause();
-        mNfcEnabler.pause();
     }
 
     @Override
