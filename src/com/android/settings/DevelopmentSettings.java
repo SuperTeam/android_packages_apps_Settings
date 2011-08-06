@@ -85,10 +85,6 @@ public class DevelopmentSettings extends PreferenceActivity
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
 
-        if (Utils.isMonkeyRunning()) {
-            return false;
-        }
-
         if (preference == mEnableAdb) {
             if (mEnableAdb.isChecked()) {
                 mOkClicked = false;
