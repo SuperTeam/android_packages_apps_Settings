@@ -11,7 +11,6 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.graphics.Color;
 import android.net.ConnectivityManager;
-import android.net.wimax.WimaxHelper;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -300,12 +299,6 @@ public class WidgetSettings extends Activity {
         if (cm.getTetherableWifiRegexs().length <= 0) {
             findViewById(R.id.toggleWifiApPreference).setVisibility(View.GONE);
             findViewById(R.id.toggleWifiApPreferenceDivider).setVisibility(View.GONE);
-        }
-
-        // disable WiMAX preference if unsupported
-        if (!WimaxHelper.isWimaxSupported(this)) {
-            findViewById(R.id.toggleWimaxPreference).setVisibility(View.GONE);
-            findViewById(R.id.toggleWimaxPreferenceDivider).setVisibility(View.GONE);
         }
 
         Spinner spinner = (Spinner) findViewById(R.id.brightnessSpinner);

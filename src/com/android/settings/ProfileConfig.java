@@ -32,7 +32,6 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
-import android.widget.SeekBar;
 import android.widget.Toast;
 
 public class ProfileConfig extends PreferenceActivity implements OnPreferenceChangeListener {
@@ -179,8 +178,6 @@ public class ProfileConfig extends PreferenceActivity implements OnPreferenceCha
         }
         return true;
     }
-
-    private StreamItem mPreferenceItem = null;
 
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
