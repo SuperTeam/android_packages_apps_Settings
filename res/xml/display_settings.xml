@@ -17,9 +17,6 @@
 		android:title="@string/brightness"
 		android:dialogTitle="@string/brightness" />
 
-	<CheckBoxPreference android:key="accelerometer"
-		android:title="@string/accelerometer_title" />
-
 	<PreferenceScreen android:key="accelerometer"
 		android:title="@string/accelerometer_title" 
 		android:summary="@string/accelerometer_summary_on">

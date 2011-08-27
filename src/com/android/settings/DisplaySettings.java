@@ -26,11 +26,9 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.ServiceManager;
-import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
-import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.IWindowManager;
@@ -44,10 +42,8 @@ public class DisplaySettings extends PreferenceActivity implements
 
     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
     private static final String KEY_ANIMATIONS = "animations";
-    private static final String KEY_ACCELEROMETER = "accelerometer";
 
     private ListPreference mAnimations;
-    private CheckBoxPreference mAccelerometer;
     private float[] mAnimationScales;
 
     private IWindowManager mWindowManager;
@@ -62,8 +58,6 @@ public class DisplaySettings extends PreferenceActivity implements
 
         mAnimations = (ListPreference) findPreference(KEY_ANIMATIONS);
         mAnimations.setOnPreferenceChangeListener(this);
-        mAccelerometer = (CheckBoxPreference) findPreference(KEY_ACCELEROMETER);
-        mAccelerometer.setPersistent(false);
 
         ListPreference screenTimeoutPreference =
             (ListPreference) findPreference(KEY_SCREEN_TIMEOUT);
@@ -112,10 +106,6 @@ public class DisplaySettings extends PreferenceActivity implements
     protected void onResume() {
         super.onResume();
 
-        updateState(true);
-    }
-
-    private void updateState(boolean force) {
         int animations = 0;
         try {
             mAnimationScales = mWindowManager.getAnimationScales();
@@ -141,9 +131,6 @@ public class DisplaySettings extends PreferenceActivity implements
         }
         mAnimations.setValueIndex(idx);
         updateAnimationsSummary(mAnimations.getValue());
-        mAccelerometer.setChecked(Settings.System.getInt(
-                getContentResolver(),
-                Settings.System.ACCELEROMETER_ROTATION, 0) != 0);
     }
 
     private void updateAnimationsSummary(Object value) {
@@ -157,17 +144,6 @@ public class DisplaySettings extends PreferenceActivity implements
                 break;
             }
         }
-    }
-
-    @Override
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        if (preference == mAccelerometer) {
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.ACCELEROMETER_ROTATION,
-                    mAccelerometer.isChecked() ? 1 : 0);
-            return true;
-        }
-        return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
