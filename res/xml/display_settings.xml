@@ -18,17 +18,13 @@
 		android:title="@string/brightness"
 		android:dialogTitle="@string/brightness" />
 
-        <CheckBoxPreference android:key="accelerometer"
-            android:title="@string/accelerometer_title"/>
-<!--             
-	<ItemCheckBoxPreference android:key="accelerometer"
+	<PreferenceScreen android:key="accelerometer"
 		android:title="@string/accelerometer_title" 
 		android:summary="@string/accelerometer_summary_on">
 		<intent android:action="android.intent.action.MAIN"
 			android:targetPackage="com.android.settings" 
 			android:targetClass="com.android.settings.RotationSettings" />
-	</ItemCheckBoxPreference>
- -->
+	</PreferenceScreen>
 	<ListPreference android:key="animations" android:title="@string/animations_title"
 		android:persistent="false" android:entries="@array/animations_entries"
 		android:entryValues="@array/animations_values" />

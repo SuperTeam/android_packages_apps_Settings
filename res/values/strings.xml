@@ -3033,5 +3033,8 @@ found in the list of installed applications.</string>
     <string name="pref_rotation_180_title">180 degrees</string>
 
     <string name="pref_rotation_270_title">270 degrees</string>
+    
+    <string name="pref_toggle_all">Connections control</string>
+    <string name="pref_toggle_all_summary">Control wireless connections</string>
 
 </resources>

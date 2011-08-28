@@ -28,6 +28,7 @@ import android.provider.Settings;
 
 public class RotationSettings extends PreferenceActivity implements OnPreferenceChangeListener {
 
+    private static final String KEY_ACCELEROMETER = "accelerometer";
     private static final String ROTATION_0_PREF = "pref_rotation_0";
     private static final String ROTATION_90_PREF = "pref_rotation_90";
     private static final String ROTATION_180_PREF = "pref_rotation_180";
@@ -38,6 +39,7 @@ public class RotationSettings extends PreferenceActivity implements OnPreference
     private static final int ROTATION_180_MODE = 2;
     private static final int ROTATION_270_MODE = 4;
 
+    private CheckBoxPreference mAccelerometer;
     private CheckBoxPreference mRotation0Pref;
     private CheckBoxPreference mRotation90Pref;
     private CheckBoxPreference mRotation180Pref;
@@ -49,10 +51,12 @@ public class RotationSettings extends PreferenceActivity implements OnPreference
 
         addPreferencesFromResource(R.xml.rotation_settings);
 
+        mAccelerometer = (CheckBoxPreference) findPreference(KEY_ACCELEROMETER);
         mRotation0Pref = (CheckBoxPreference) findPreference(ROTATION_0_PREF);
         mRotation90Pref = (CheckBoxPreference) findPreference(ROTATION_90_PREF);
         mRotation180Pref = (CheckBoxPreference) findPreference(ROTATION_180_PREF);
         mRotation270Pref = (CheckBoxPreference) findPreference(ROTATION_270_PREF);
+        mAccelerometer.setPersistent(false);
         int mode = Settings.System.getInt(getContentResolver(),
                         Settings.System.ACCELEROMETER_ROTATION_MODE,
                         ROTATION_0_MODE|ROTATION_90_MODE|ROTATION_270_MODE);
@@ -64,7 +68,12 @@ public class RotationSettings extends PreferenceActivity implements OnPreference
 
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
 
-        if (preference == mRotation0Pref ||
+        if (preference == mAccelerometer) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.ACCELEROMETER_ROTATION,
+                    mAccelerometer.isChecked() ? 1 : 0);
+        } else if
+        	(preference == mRotation0Pref ||
             preference == mRotation90Pref ||
             preference == mRotation180Pref ||
             preference == mRotation270Pref) {
@@ -85,6 +94,15 @@ public class RotationSettings extends PreferenceActivity implements OnPreference
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         return false;
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        mAccelerometer.setChecked(Settings.System.getInt(
+                getContentResolver(),
+                Settings.System.ACCELEROMETER_ROTATION, 0) != 0);
     }
 
 }
