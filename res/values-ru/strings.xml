@@ -1296,11 +1296,8 @@
     <string name="profile_name">Имя профиля</string>
     <!-- Profile summary - hint that touching configures profile -->
     <string name="profile_summary">Нажмите для настройки профиля</string>
-<<<<<<< HEAD
     <!-- If the logo should be displayed in the status bar, setting caption -->
     <string name="profile_statusbar">Индикатор строки состояния</string>
-=======
->>>>>>> Revert
     <!-- Title for application group setting screen -->
     <string name="profile_appgroup_title">Группа приложения: %s</string>
     <!-- Title for application group list screen -->
