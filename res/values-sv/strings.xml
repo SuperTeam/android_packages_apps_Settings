@@ -953,6 +953,9 @@
     <string name="battery_history_awake">Tid spenderad utan viloläge:</string>
     <string name="battery_history_screen_on">Tid spenderad med skärmen på:</string>
     <string name="battery_history_phone_on">Tid spenderad med telefon på:</string>
+    <string name="battery_history_wifi_on">Tid spenderad med Wifi på:</string>
+    <string name="battery_history_wifi_running">Tid spenderad med Wifi igång:</string>
+    <string name="battery_history_bluetooth_on">Tid spenderad med Bluetooth på:</string>
     <string name="battery_history_screen_on_battery">På batteri:</string>
     <string name="battery_history_screen_on_plugged">Inkopplad:</string>
     <string name="usage_stats_label" msgid="5890846333487083609">"Användningsstatistik"</string>
