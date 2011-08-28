@@ -248,7 +248,6 @@
     <string name="bluetooth_ask_discovery" msgid="669870705606180872">"手機上的某個應用程式要求開啟藍牙裝置，這表示您的藍牙連線將開放 <xliff:g id="TIMEOUT">%1$d</xliff:g> 秒，讓其他裝置可在時間內搜尋到您的手機。您想要允許要求嗎？"</string>
 
     <!-- Strings for asking to the user whether to allow an app to enable lasting discovery mode  -->
->>>>>>> ea22ccae37282c13fd6ffffd62068692f70260c8
     <string name="bluetooth_ask_lasting_discovery" msgid="3413855805411554871">"手機上的某個應用程式要求將手機設成「永遠」開放其他藍牙裝置搜尋。您想要允許這項要求嗎？"</string>
 
     <!-- Strings for asking to the user whether to allow an app to enable bluetooth and discovery mode -->

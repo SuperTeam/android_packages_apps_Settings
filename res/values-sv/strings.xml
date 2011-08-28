@@ -947,9 +947,6 @@
     <string name="battery_history_wifi_on_label">Wifi På</string>
     <string name="battery_history_wifi_running_label">Wifi Igång</string>
     <string name="battery_history_bluetooth_on_label">Bluetooth På</string>
-    <string name="battery_history_wifi_on">Tid spenderad med Wifi på:</string>
-    <string name="battery_history_wifi_running">Tid spenderad med Wifi igång:</string>
-    <string name="battery_history_bluetooth_on">Tid spenderad med Bluetooth på:</string>
     <string name="battery_history_awake">Tid spenderad utan viloläge:</string>
     <string name="battery_history_screen_on">Tid spenderad med skärmen på:</string>
     <string name="battery_history_phone_on">Tid spenderad med telefon på:</string>
