@@ -1007,7 +1007,7 @@
     <string name="menu_stats_refresh" msgid="1676215433344981075">"Aktualisieren"</string>
     <string name="process_kernel_label" msgid="3916858646836739323">"Android OS"</string>
     <string name="process_mediaserver_label" msgid="6500382062945689285">"Mediaserver"</string>
-    <string name="voice_input_output_settings" msgid="1336135218350444783">"Spracheingabe&amp;-ausgabe"</string>
+    <string name="voice_input_output_settings" msgid="1336135218350444783">"Sprachein- &amp; -ausgabe"</string>
     <string name="voice_input_output_settings_title" msgid="2442850635048676991">"Einstellungen für Spracheingabe &amp; -ausgabe"</string>
     <string name="voice_search_settings_title" msgid="2775469246913196536">"Sprachsuche"</string>
     <string name="keyboard_settings_title" msgid="5080115226780201234">"Android-Tastatur"</string>
@@ -1211,6 +1211,8 @@
     <string name="profile_summary">Berühren zum Profil ändern</string>
     <string name="profile_appgroup_title">Anwendungsgruppe: %s</string>
     <string name="profile_appgroups_title">Anwendungsgruppen</string>
+    <string name="profile_volumeoverrides_title">Lautstärke festlegen</string>
+    <string name="profile_volumeoverrides_summary">Berühren um Lautstärke zu ändern</string>
     <string name="profile_applist_title">Anwendungen - Klicken zum Entfernen von Gruppe</string>
     <string name="profile_appgroup_name_prompt">Name für Gruppe eingeben</string>
     <string name="profile_delete">Profil löschen</string>
