@@ -549,6 +549,7 @@
     <string name="status_imei_sv">IMEI SV</string>
     <string name="status_number" msgid="5123197324870153205">"Mitt telefonnummer"</string>
     <string name="status_min_number" msgid="3519504522179420597">"MIN"</string>
+    <string name="status_msid_number" msgid="909010114445780530">"MSID"</string>
     <string name="status_prl_version" msgid="8499039751817386529">"PRL-version"</string>
     <string name="status_meid_number" msgid="1751442889111731088">"MEID"</string>
     <string name="status_network_type" msgid="3279383550222116235">"Mobil nätverkstyp"</string>
@@ -1237,8 +1238,11 @@
     <string name="profile_name">Profilnamn</string>
     <string name="new_profile_name">&lt;ny profil&gt;</string>
     <string name="profile_summary">Tryck för att konfigurera profil</string>
+    <string name="profile_statusbar">Statusradsindikator</string>
     <string name="profile_appgroup_title">Applikationsgrupp: %s</string>
     <string name="profile_appgroups_title">Applikationsgrupper</string>
+    <string name="profile_connectionoverrides_title">Anslutningsåsidosättanden</string>
+    <string name="profile_connectionoverrides_summary">Tryck för att ange aktiverad/inaktiverad</string>
     <string name="profile_volumeoverrides_title">Åsidosättanden av volym</string>
     <string name="profile_volumeoverrides_summary">Tryck för att ställa in volym.</string>
     <string name="profile_applist_title">Applikationer - klicka för att ta bort från grupp</string>
