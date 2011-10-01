@@ -16,15 +16,16 @@
 
 package com.android.settings;
 
-import java.util.List;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.os.SystemProperties;
 import android.preference.Preference;
 import android.preference.PreferenceGroup;
+
+import java.util.List;
 
 public class Utils {
 
@@ -86,6 +87,13 @@ public class Utils {
         parentPreferenceGroup.removePreference(preference);
 
         return true;
+    }
+
+    /**
+     * Returns true if Monkey is running.
+     */
+    public static boolean isMonkeyRunning() {
+        return SystemProperties.getBoolean("ro.monkey", false);
     }
 
 }

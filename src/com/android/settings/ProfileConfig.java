@@ -17,6 +17,7 @@
 package com.android.settings;
 
 import android.app.AlertDialog;
+import android.app.ConnectionSettings;
 import android.app.Dialog;
 import android.app.Profile;
 import android.app.ProfileGroup;
@@ -34,6 +35,8 @@ import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
 import android.widget.Toast;
 
+import java.util.UUID;
+
 public class ProfileConfig extends PreferenceActivity implements OnPreferenceChangeListener {
 
     static final String TAG = "ProfileConfig";
@@ -48,8 +51,12 @@ public class ProfileConfig extends PreferenceActivity implements OnPreferenceCha
 
     private PreferenceScreen mDeletePreference;
 
+    //Below line intended for use with upcoming Status Bar Indicator functionality
+    //private CheckBoxPreference mStatusBarPreference;
+
     private StreamItem[] mStreams;
 
+    private ConnectionItem[] mConnections;
 
     @Override
     protected void onCreate(Bundle icicle) {
@@ -62,6 +69,14 @@ public class ProfileConfig extends PreferenceActivity implements OnPreferenceCha
                         getString(R.string.incoming_call_volume_title)),
                 new StreamItem(AudioManager.STREAM_NOTIFICATION,
                         getString(R.string.notification_volume_title))
+        };
+
+        mConnections = new ConnectionItem[] {
+                new ConnectionItem(ConnectionSettings.PROFILE_CONNECTION_BLUETOOTH, getString(R.string.toggleBluetooth)),
+                new ConnectionItem(ConnectionSettings.PROFILE_CONNECTION_GPS, getString(R.string.toggleGPS)),
+                new ConnectionItem(ConnectionSettings.PROFILE_CONNECTION_WIFI, getString(R.string.toggleWifi)),
+                new ConnectionItem(ConnectionSettings.PROFILE_CONNECTION_WIFIAP, getString(R.string.toggleWifiAp))
+                //new ConnectionItem(ConnectivityManager.TYPE_WIMAX, getString(R.string.toggleWimax))
         };
 
         addPreferencesFromResource(R.xml.profile_config);
@@ -86,7 +101,7 @@ public class ProfileConfig extends PreferenceActivity implements OnPreferenceCha
     protected void onResume() {
         super.onResume();
 
-        mProfile = mProfileManager.getProfile(mProfile.getName());
+        mProfile = mProfileManager.getProfile(mProfile.getUuid());
 
         fillList();
     }
@@ -96,7 +111,7 @@ public class ProfileConfig extends PreferenceActivity implements OnPreferenceCha
         super.onPause();
         // Save profile here
         if (mProfile != null) {
-            mProfileManager.addProfile(mProfile);
+            mProfileManager.updateProfile(mProfile);
         }
     }
 
@@ -109,6 +124,14 @@ public class ProfileConfig extends PreferenceActivity implements OnPreferenceCha
         mNamePreference.setText(mProfile.getName());
         mNamePreference.setSummary(mProfile.getName());
         mNamePreference.setOnPreferenceChangeListener(this);
+
+        //Below lines intended for use with upcoming Status Bar Indicator functionality
+        //mStatusBarPreference = (CheckBoxPreference) findPreference("profile_statusbar");
+        //mStatusBarPreference.setChecked(mProfile.getStatusBarIndicator());
+        //mStatusBarPreference.setOnPreferenceChangeListener(this);
+
+        PreferenceGroup connectionList = (PreferenceGroup) findPreference("profile_connectionoverrides");
+        connectionList.removeAll();
 
         PreferenceGroup streamList = (PreferenceGroup) findPreference("profile_volumeoverrides");
         streamList.removeAll();
@@ -131,51 +154,73 @@ public class ProfileConfig extends PreferenceActivity implements OnPreferenceCha
             streamList.addPreference(pref);
         }
 
+        for (ConnectionItem connection : mConnections) {
+            ConnectionSettings settings = mProfile.getSettingsForConnection(connection.mConnectionId);
+            if (settings == null) {
+                settings = new ConnectionSettings(connection.mConnectionId);
+                mProfile.setConnectionSettings(settings);
+            }
+            connection.mSettings = settings;
+            ProfileConnectionPreference pref = new ProfileConnectionPreference(this);
+            pref.setKey("connection_" + connection.mConnectionId);
+            pref.setTitle(connection.mLabel);
+            pref.setSummary(getString(R.string.profile_connectionoverrides_summary));
+            pref.setPersistent(false);
+            pref.setConnectionItem(connection);
+
+            connection.mCheckbox = pref;
+            connectionList.addPreference(pref);
+        }
+
         PreferenceGroup groupList = (PreferenceGroup) findPreference("profile_appgroups");
         groupList.removeAll();
 
         for (ProfileGroup profileGroup : mProfile.getProfileGroups()) {
-
             PreferenceScreen pref = new PreferenceScreen(this, null);
+            UUID uuid = profileGroup.getUuid();
 
-            pref.setKey(profileGroup.getName());
-            pref.setTitle(profileGroup.getName());
+            pref.setKey(uuid.toString());
+            pref.setTitle(mProfileManager.getNotificationGroup(uuid).getName());
             // pref.setSummary(R.string.profile_summary);
             pref.setPersistent(false);
             // pref.setSelectable(true);
 
             groupList.addPreference(pref);
-
         }
-
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        // Check name isn't already in use.
         if (preference instanceof StreamVolumePreference) {
             for (StreamItem stream : mStreams) {
                 if (preference == stream.mCheckbox) {
                     stream.mSettings.setOverride((Boolean) newValue);
                 }
             }
+        } else if (preference instanceof ProfileConnectionPreference) {
+            for (ConnectionItem connection : mConnections) {
+                if (preference == connection.mCheckbox) {
+                    connection.mSettings.setOverride((Boolean) newValue);
+                }
+            }
         }
+        // Check name isn't already in use.
         if (preference == mNamePreference) {
             String value = (String) newValue;
-            if (mProfileManager.getProfile(value) != null) {
+            if (mProfileManager.profileExists(value)) {
                 // Rollback the change.
                 return false;
             }
-            boolean active = mProfile.getName()
-                    .equals(mProfileManager.getActiveProfile().getName());
-            mProfileManager.removeProfile(mProfile);
             mProfile.setName(value);
             preference.setSummary(value);
-            mProfileManager.addProfile(mProfile);
-            if (active) {
-                mProfileManager.setActiveProfile(mProfile.getName());
-            }
         }
+        //Below lines intended for use with upcoming Status Bar Indicator functionality
+        /*
+        if (preference == mStatusBarPreference) {
+            mProfile.setStatusBarIndicator((Boolean) newValue);
+            mProfileManager.updateProfile(mProfile);
+        }
+        */
         return true;
     }
 
@@ -185,10 +230,8 @@ public class ProfileConfig extends PreferenceActivity implements OnPreferenceCha
             if (preference == mDeletePreference) {
                 deleteProfile();
             } else {
-                ProfileGroup profGroup = mProfile.getProfileGroup(preference.getTitle().toString());
-
                 Intent intent = new Intent(this, ProfileGroupConfig.class);
-                intent.putExtra("ProfileGroup", profGroup.getName());
+                intent.putExtra("ProfileGroup", preference.getKey());
                 intent.putExtra("Profile", mProfile);
                 startActivity(intent);
             }
@@ -199,7 +242,7 @@ public class ProfileConfig extends PreferenceActivity implements OnPreferenceCha
     }
 
     private void deleteProfile() {
-        if (mProfile.getName().equals(mProfileManager.getActiveProfile().getName())) {
+        if (mProfile.getUuid().equals(mProfileManager.getActiveProfile().getUuid())) {
             Toast toast = Toast.makeText(this, getString(R.string.profile_cannot_delete),
                     Toast.LENGTH_SHORT);
             toast.show();
@@ -253,6 +296,21 @@ public class ProfileConfig extends PreferenceActivity implements OnPreferenceCha
 
         public StreamItem(int streamId, String label) {
             mStreamId = streamId;
+            mLabel = label;
+        }
+    }
+
+    static class ConnectionItem {
+        int mConnectionId;
+
+        String mLabel;
+
+        ConnectionSettings mSettings;
+
+        ProfileConnectionPreference mCheckbox;
+
+        public ConnectionItem(int connectionId, String label) {
+            mConnectionId = connectionId;
             mLabel = label;
         }
     }

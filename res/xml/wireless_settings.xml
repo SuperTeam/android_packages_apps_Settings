@@ -54,23 +54,13 @@
     
     <!-- Programmatically will have dynamic summary, but we provide the fallback summary. -->
     <PreferenceScreen
-        android:key="wifi_settings"
-        android:title="@string/wifi_settings"
-        android:summary="@string/wifi_settings_summary" >
+        android:key="tether_settings"
+        android:title="@string/tether_settings_title_both"
+        android:summary="@string/tether_settings_summary_both">
         <intent
             android:action="android.intent.action.MAIN"
             android:targetPackage="com.android.settings"
-            android:targetClass="com.android.settings.wifi.WifiSettings" />
-    </PreferenceScreen>
-
-    <PreferenceScreen
-        android:key="wimax_settings"
-        android:title="@string/wimax_settings"
-        android:summary="@string/wimax_settings_summary" >
-        <intent
-            android:action="android.intent.action.MAIN"
-            android:targetPackage="com.android.settings.wimax"
-            android:targetClass="com.android.settings.wimax.WimaxSettings" />
+            android:targetClass="com.android.settings.TetherSettings" />
     </PreferenceScreen>
 
     <PreferenceScreen
@@ -84,13 +74,50 @@
     </PreferenceScreen>
 
     <PreferenceScreen
-        android:key="tether_settings"
-        android:title="@string/tether_settings_title_both"
-        android:summary="@string/tether_settings_summary_both">
+        android:key="all_toggle"
+        android:title="@string/pref_toggle_all"
+        android:summary="@string/pref_toggle_all_summary" >
+	    <CheckBoxPreference
+	        android:key="toggle_bluetooth"
+	        android:title="@string/bluetooth_quick_toggle_title"
+	        android:summary="@string/bluetooth_quick_toggle_summary"
+	        android:persistent="false" />
+	    <CheckBoxPreference
+	        android:key="toggle_airplane"
+	        android:title="@string/airplane_mode"
+	        android:summary="@string/airplane_mode_summary"
+	        android:persistent="false"
+	        android:disableDependentsState="true" />
+	   <CheckBoxPreference
+	        android:key="toggle_nfc"
+	        android:title="@string/nfc_quick_toggle_title"
+	        android:summary="@string/nfc_quick_toggle_summary"
+	        android:persistent="false" />
+	    <CheckBoxPreference
+	        android:key="toggle_wifi"
+	        android:title="@string/wifi_quick_toggle_title"
+	        android:summary="@string/wifi_quick_toggle_summary"
+	        android:persistent="false" />
+    </PreferenceScreen>
+    
+    <PreferenceScreen
+        android:title="@string/network_settings_title"
+        android:summary="@string/network_settings_summary"
+        android:dependency="toggle_airplane">
         <intent
             android:action="android.intent.action.MAIN"
-            android:targetPackage="com.android.settings"
-            android:targetClass="com.android.settings.TetherSettings" />
+            android:targetPackage="com.android.phone"
+            android:targetClass="com.android.phone.Settings" />
+    </PreferenceScreen>
+    
+    <PreferenceScreen
+        android:key="wimax_settings"
+        android:title="@string/wimax_settings"
+        android:summary="@string/wimax_settings_summary" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.settings.wimax"
+            android:targetClass="com.android.settings.wimax.WimaxSettings" />
     </PreferenceScreen>
 
     <PreferenceScreen
@@ -101,6 +128,17 @@
             android:action="android.intent.action.MAIN"
             android:targetPackage="com.android.settings"
             android:targetClass="com.android.settings.vpn.VpnSettings" />
+    </PreferenceScreen>
+
+    <!-- Programmatically will have dynamic summary, but we provide the fallback summary. -->
+    <PreferenceScreen
+        android:key="wifi_settings"
+        android:title="@string/wifi_settings"
+        android:summary="@string/wifi_settings_summary" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.settings"
+            android:targetClass="com.android.settings.wifi.WifiSettings" />
     </PreferenceScreen>
 
 </PreferenceScreen>

@@ -126,6 +126,9 @@
     <string name="bluetooth_ask_enablement_and_discovery" msgid="7220210326619399542">"Приложение на вашем телефоне запрашивает разрешение на включение Bluetooth и видимого режима на <xliff:g id="TIMEOUT">%1$d</xliff:g> с. Разрешить?"</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" msgid="7471195931669103553">"Приложение на телефоне запрашивает разрешение на включение режима постоянной видимости для других устройств с поддержкой Bluetooth. Разрешить?"</string>
     <string name="bluetooth_turning_on" msgid="3107102168379705771">"Включается Bluetooth..."</string>
+    <string name="bluetooth_connection_permission_request" msgid="4747918249032890077">"Запрос на подключение по Bluetooth"</string>
+    <string name="bluetooth_connection_notif_message" msgid="1833221950512058309">"Нажмите, чтобы подключиться к устройству \"<xliff:g id="DEVICE_NAME">%1$s</xliff:g>\""</string>
+    <string name="bluetooth_connection_dialog_text" msgid="8455427559949998023">"Подключиться к устройству \"<xliff:g id="DEVICE_NAME">%1$s</xliff:g>\"?"</string>
     <string name="date_and_time" msgid="4114084177056654663">"Настройки даты и времени"</string>
     <string name="date_time_12_hour_sample" msgid="3259617262618020574">"1:00 pm"</string>
     <string name="date_time_24_hour_sample" msgid="8916857570746212357">"13:00"</string>
@@ -239,7 +242,7 @@
     <string name="sum_carrier_select" msgid="6648929373316748020">"Выберите оператора связи"</string>
     <string name="date_and_time_settings_title" msgid="3350640463596716780">"Дата и время"</string>
     <string name="date_and_time_settings_summary" msgid="2435705040205950381">"Установка даты, времени, часового пояса и форматов"</string>
-    <string name="date_time_auto" msgid="3086083265745944725"></string>
+    <string name="date_time_auto" msgid="3086083265745944725">Автоматически</string>
     <string name="date_time_auto_summaryOn" msgid="9034585614665299846">"Использовать данные, предоставленные сетью"</string>
     <string name="date_time_auto_summaryOff" msgid="3900356736797266448">"Использовать данные, предоставленные сетью"</string>
     <string name="date_time_24hour" msgid="1193032284921000063">"24-часовой формат"</string>
@@ -427,6 +430,7 @@
     <string name="silent_mode_summary" msgid="3309650676072917899">"Отключить все звуки, кроме мультимедиа и будильника"</string>
     <string name="silent_mode_incl_alarm_summary" msgid="2088830834182228458">"Все звуки, кроме аудио и видео, отключены"</string>
     <string name="ringtone_title" msgid="5379026328015343686">"Мелодия телефона"</string>
+    <string name="soundtone_title">Звук уведомления</string>
     <string name="ringtone_summary" msgid="2630023412632683493"></string>
     <string name="all_volume_title" msgid="8741571721868253103">"Громкость"</string>
     <string name="ring_volume_title" msgid="7938706566797464165">"Громкость звонка"</string>
@@ -530,6 +534,7 @@
     <string name="storage_settings_summary" product="default" msgid="9176693537325988610">"Отключение SD-карты, сведения о доступной памяти"</string>
     <string name="status_number" msgid="5123197324870153205">"Мой номер телефона"</string>
     <string name="status_min_number" msgid="3519504522179420597">"MIN"</string>
+    <string name="status_msid_number" msgid="909010114445780530">"MSID"</string>
     <string name="status_prl_version" msgid="8499039751817386529">"Версия PRL"</string>
     <string name="status_meid_number" msgid="1751442889111731088">"MEID"</string>
     <string name="status_network_type" msgid="3279383550222116235">"Тип мобильной сети"</string>
@@ -544,6 +549,7 @@
     <string name="status_up_time" msgid="7294859476816760399">"Время с момента включения"</string>
     <string name="status_awake_time" msgid="2393949909051183652">"Время работы"</string>
     <string name="internal_memory" msgid="9129595691484260784">"Внутренний накопитель"</string>
+    <string name="additional_memory">Дополнительный накопитель</string>
     <string name="sd_memory" product="nosdcard" msgid="2510246194083052841">"USB-накопитель"</string>
     <string name="sd_memory" product="default" msgid="151871913888051515">"SD-карта"</string>
     <string name="memory_available" msgid="418542433817289474">"Свободно"</string>
@@ -1295,10 +1301,16 @@
     <string name="profile_name">Имя профиля</string>
     <!-- Profile summary - hint that touching configures profile -->
     <string name="profile_summary">Нажмите для настройки профиля</string>
+    <!-- If the logo should be displayed in the status bar, setting caption -->
+    <string name="profile_statusbar">Индикатор строки состояния</string>
     <!-- Title for application group setting screen -->
     <string name="profile_appgroup_title">Группа приложения: %s</string>
     <!-- Title for application group list screen -->
     <string name="profile_appgroups_title">Группы приложений</string>
+    <!-- Title for connection overrides via profiles -->
+    <string name="profile_connectionoverrides_title">Сетевые подключения</string>
+    <!-- Summary for connection overrides via profiles -->
+    <string name="profile_connectionoverrides_summary">Нажмите для включения/выключения</string>
     <!-- Title for application group list screen -->
     <string name="profile_volumeoverrides_title">Переопределение громкости</string>
     <!-- Title for application group list screen -->

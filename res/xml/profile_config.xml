@@ -27,6 +27,14 @@
             android:title="@string/profile_delete">
     </PreferenceScreen>
 
+    <!--  CheckBoxPreference
+            android:key="profile_statusbar"
+            android:title="@string/profile_statusbar"
+              -->
+
+    <PreferenceCategory android:key="profile_connectionoverrides"
+            android:title="@string/profile_connectionoverrides_title" />
+
     <PreferenceCategory android:key="profile_volumeoverrides"
             android:title="@string/profile_volumeoverrides_title" />
 
