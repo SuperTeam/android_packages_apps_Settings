@@ -180,16 +180,16 @@
   </string-array>
  
      <string-array name="networkModesWidget" translatable="false">
-        <item>2G/3G+2G</item>
+        <item>2G/3G2G</item>
         <item>2G/3G Solo</item>
-        <item>2G/3G Solo/3G+2G</item>
+        <item>2G/3G Solo/3G2G</item>
     </string-array>
 
     <string-array name="ringModeWidget" translatable="false">
-        <item>Sonido+Vibración/Vibración</item>
+        <item>SonidoVibración/Vibración</item>
         <item>Sonido/Vibración</item>
         <item>Sonido/Silencio</item>
-        <item>Sonido+Vib/Vib/Silencio</item>
+        <item>SonidoVib/Vib/Silencio</item>
         <item>Sonido/Vibración/Silencio</item>
     </string-array>
     
@@ -211,4 +211,30 @@
         <item>600 segundos</item>
         <item>Infinito</item>
     </string-array>
+    
+    <string-array name="entries_animations">
+        <item>Off</item>
+        <item>Fast</item>
+        <item>Normal</item>
+        <item>Slow</item>
+        <item>Very Slow</item>
+    </string-array>
+
+    <string-array name="entries_font_size">
+        <item>Extremadamente pequeño</item>
+        <item>Muy pequeño</item>
+        <item>Pequeño</item>
+        <item>Normal</item>
+        <item>Grance</item>
+        <item>Muy grande</item>
+        <item>Extremadamente grande</item>
+    </string-array>
+
+    <string-array name="entries_end_button">
+        <item>Nada</item>
+        <item>Ir al escritorio</item>
+        <item>Apagar pantalla</item>
+        <item>Ir al escritorio y apagar pantalla</item>
+    </string-array>
+
 </resources>

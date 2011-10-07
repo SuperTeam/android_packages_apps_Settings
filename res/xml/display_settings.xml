@@ -25,12 +25,32 @@
 			android:targetClass="com.android.settings.RotationSettings" />
 	</PreferenceScreen>
 
+    <ListPreference android:key="screen_timeout"
+        android:title="@string/screen_timeout" android:summary="@string/screen_timeout_summary"
+        android:persistent="false" android:entries="@array/screen_timeout_entries"
+        android:entryValues="@array/screen_timeout_values" />
+        
+    <PreferenceCategory android:key="category_animations_title"
+        android:title="@string/category_animations_title" />
+        
 	<ListPreference android:key="animations" android:title="@string/animations_title"
 		android:persistent="false" android:entries="@array/animations_entries"
 		android:entryValues="@array/animations_values" />
+		
+    <ListPreference
+        android:key="window_animations"
+        android:title="@string/title_window_animations"
+        android:summary="@string/summary_window_animations"
+        android:entries="@array/entries_animations"
+        android:entryValues="@array/entryvalues_animations"
+        android:dialogTitle="@string/dialog_title_window_animations" />
+            
+    <ListPreference
+        android:key="transition_animations"
+        android:title="@string/title_transition_animations"
+        android:summary="@string/summary_transition_animations"
+        android:entries="@array/entries_animations"
+        android:entryValues="@array/entryvalues_animations"
+        android:dialogTitle="@string/dialog_title_transition_animations" />
 
-	<ListPreference android:key="screen_timeout"
-		android:title="@string/screen_timeout" android:summary="@string/screen_timeout_summary"
-		android:persistent="false" android:entries="@array/screen_timeout_entries"
-		android:entryValues="@array/screen_timeout_values" />
 </PreferenceScreen>

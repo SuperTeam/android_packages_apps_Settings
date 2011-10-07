@@ -79,7 +79,7 @@
     <string name="battery_info_power_unplugged" msgid="5987246575519551081">"No se está cargando"</string>
     <string name="battery_info_power_ac" msgid="6808516193001604634">"CA"</string>
     <string name="battery_info_power_usb" msgid="8012931702516331797">"USB"</string>
-    <string name="battery_info_power_ac_usb" msgid="6777734146838328688">"AC+USB"</string>
+    <string name="battery_info_power_ac_usb" msgid="6777734146838328688">"ACUSB"</string>
     <string name="battery_info_power_unknown" msgid="7344115502868899881">"Desconocido"</string>
     <string name="battery_info_health_unknown" msgid="5664295556921944255">"Desconocido"</string>
     <string name="battery_info_health_good" msgid="8070356565806711806">"Buena"</string>
@@ -894,7 +894,7 @@
     <string name="quick_launch_summary" msgid="3453825712466417452">"Establecer accesos rápidos del teclado para ejecutar aplicaciones"</string>
     <string name="quick_launch_assign_application" msgid="4521368464929956350">"Asignar aplicación"</string>
     <string name="quick_launch_no_shortcut" msgid="5998005833838278693">"Sin acceso directo"</string>
-    <string name="quick_launch_shortcut" msgid="5090405067413522300">"Buscar + <xliff:g id="SHORTCUT_LETTER">%1$s</xliff:g>"</string>
+    <string name="quick_launch_shortcut" msgid="5090405067413522300">"Buscar  <xliff:g id="SHORTCUT_LETTER">%1$s</xliff:g>"</string>
     <string name="quick_launch_clear_dialog_title" msgid="5546543501250320220">"Borrar"</string>
     <string name="quick_launch_clear_dialog_message" msgid="3921015601470260722">"Se eliminará el acceso directo <xliff:g id="SHORTCUT_LETTER">%1$s</xliff:g><xliff:g id="APPLICATION_NAME">%2$s</xliff:g>."</string>
     <string name="quick_launch_clear_ok_button" msgid="2634568926597586716">"Aceptar"</string>
@@ -1382,5 +1382,36 @@
     <string name="pref_toggle_all">Control de conexiones</string>
     <string name="pref_toggle_all_summary">Controla las conexiones inalámbricas</string>
 
+    <string name="category_animations_title">Animaciones</string>
+    <string name="title_window_animations">Animación de pantalla</string>
+    <string name="summary_window_animations">Velocidad de la animación de pantalla</string>
+    <string name="dialog_title_window_animations">Selecciona velocidad de pantalla</string>
+    
+    <string name="title_transition_animations">Animación de transición</string>
+    <string name="summary_transition_animations">Velocidad de la animación de transición</string>
+    <string name="dialog_title_transition_animations">Selecciona velocidad de transición</string>
+    
+    <string name="title_fancy_ime_animations">Animación del teclado</string>
+    <string name="summary_on_fancy_ime_animations">Usar animaciones suaves en la presentación del teclado</string>
+    <string name="summary_off_fancy_ime_animations">Usar animaciones normales en la presentación del teclado</string>
+    
+    <string name="title_haptic_feedback">Respuesta táctil</string>
+    <string name="summary_on_haptic_feedback">Usar respuesta táctil a los eventos del usuario</string>
+    <string name="summary_off_haptic_feedback">No usar respuesta táctil a los eventos del usuario</string>
+    
+    <string name="title_font_size">Tamaño de letra</string>
+    <string name="summary_font_size">Tamaño general de letra</string>
+    <string name="dialog_title_font_size">Selecciona el tamaño de la letra</string>
+    
+    <string name="title_end_button">End button behavior</string>
+    <string name="summary_end_button">Select End (red) button action</string>
+    <string name="dialog_title_end_button">Select End button</string>
+    
+    <!-- Sound & display settings screen, compatibility mode check box label -->
+    <string name="compatibility_mode_title">Modo compatible</string>
+    <!-- Sound & display settings screen, compatibility mode option summary text when check box is selected -->
+    <string name="compatibility_mode_summary_on">Ejecutar aplicaciones antiguas en modo compatible. Es necesario reiniciar.</string>
+    <!-- Sound & display settings screen, compatibility mode option summary text when check box is clear -->
+    <string name="compatibility_mode_summary_off">Ejecutar aplicaciones antiguas en modo normal. Es necesario reiniciar.</string>
 
 </resources>

@@ -1,0 +1,408 @@
+From 496dd8148cc549b0da0d873c70cd9633a54db4b1 Mon Sep 17 00:00:00 2001
+From: podxboq <podxboq@gmail.com>
+Date: Fri, 7 Oct 2011 12:41:55 +0200
+Subject: [PATCH] Merge SpareParts
+
+---
+ src/com/android/settings/ApplicationSettings.java  |   13 +++
+ src/com/android/settings/DevelopmentSettings.java  |    1 -
+ src/com/android/settings/DisplaySettings.java      |   54 +++++++++-
+ src/com/android/settings/LanguageSettings.java     |  109 +++++++++++++++++++-
+ .../settings/battery_history/BatteryHistory.java   |   14 +--
+ 14 files changed, 371 insertions(+), 37 deletions(-)
+ 
+diff --git a/src/com/android/settings/ApplicationSettings.java b/src/com/android/settings/ApplicationSettings.java
+index a919ae8..7a1007c 100644
+--- a/src/com/android/settings/ApplicationSettings.java
++++ b/src/com/android/settings/ApplicationSettings.java
+@@ -34,6 +34,7 @@ public class ApplicationSettings extends PreferenceActivity implements
+     private static final String KEY_TOGGLE_INSTALL_APPLICATIONS = "toggle_install_applications";
+     private static final String KEY_APP_INSTALL_LOCATION = "app_install_location";
+     private static final String KEY_QUICK_LAUNCH = "quick_launch";
++    private static final String KEY_COMPATIBILITY_MODE = "compatibility_mode";
+ 
+     // App installation location. Default is ask the user.
+     private static final int APP_INSTALL_AUTO = 0;
+@@ -45,6 +46,7 @@ public class ApplicationSettings extends PreferenceActivity implements
+     private static final String APP_INSTALL_AUTO_ID = "auto";
+     
+     private CheckBoxPreference mToggleAppInstallation;
++    private CheckBoxPreference mCompatibilityMode;
+ 
+     private ListPreference mInstallLocation;
+ 
+@@ -81,6 +83,11 @@ public class ApplicationSettings extends PreferenceActivity implements
+             Preference quickLaunchSetting = findPreference(KEY_QUICK_LAUNCH);
+             getPreferenceScreen().removePreference(quickLaunchSetting);
+         }
++        
++        mCompatibilityMode = (CheckBoxPreference) findPreference(KEY_COMPATIBILITY_MODE);
++        mCompatibilityMode.setPersistent(false);
++        mCompatibilityMode.setChecked(Settings.System.getInt(getContentResolver(),
++                Settings.System.COMPATIBILITY_MODE, 1) != 0);
+     }
+ 
+     protected void handleUpdateAppInstallLocation(final String value) {
+@@ -119,6 +126,12 @@ public class ApplicationSettings extends PreferenceActivity implements
+                 setNonMarketAppsAllowed(false);
+             }
+         }
++        else if (preference == mCompatibilityMode) {
++            Settings.System.putInt(getContentResolver(),
++                    Settings.System.COMPATIBILITY_MODE,
++                    mCompatibilityMode.isChecked() ? 1 : 0);
++            return true;
++        }
+ 
+         return super.onPreferenceTreeClick(preferenceScreen, preference);
+     }
+diff --git a/src/com/android/settings/DevelopmentSettings.java b/src/com/android/settings/DevelopmentSettings.java
+index d3dce23..a845299 100644
+--- a/src/com/android/settings/DevelopmentSettings.java
++++ b/src/com/android/settings/DevelopmentSettings.java
+@@ -37,7 +37,6 @@ public class DevelopmentSettings extends PreferenceActivity
+     private static final String ADB_NOTIFY = "adb_notify";
+     private static final String KEEP_SCREEN_ON = "keep_screen_on";
+     private static final String ALLOW_MOCK_LOCATION = "allow_mock_location";
+-    private static final String USE_DITHERING_DEFAULT = "0";
+     private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
+ 
+     private CheckBoxPreference mEnableAdb;
+diff --git a/src/com/android/settings/DisplaySettings.java b/src/com/android/settings/DisplaySettings.java
+index 8773d8c..3977c75 100644
+--- a/src/com/android/settings/DisplaySettings.java
++++ b/src/com/android/settings/DisplaySettings.java
+@@ -20,6 +20,8 @@ import static android.provider.Settings.System.SCREEN_OFF_TIMEOUT;
+ 
+ import java.util.ArrayList;
+ 
++import com.android.settings.R;
++
+ import android.app.admin.DevicePolicyManager;
+ import android.content.ContentResolver;
+ import android.content.Context;
+@@ -29,6 +31,7 @@ import android.os.ServiceManager;
+ import android.preference.ListPreference;
+ import android.preference.Preference;
+ import android.preference.PreferenceActivity;
++import android.preference.PreferenceScreen;
+ import android.provider.Settings;
+ import android.util.Log;
+ import android.view.IWindowManager;
+@@ -42,9 +45,13 @@ public class DisplaySettings extends PreferenceActivity implements
+ 
+     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
+     private static final String KEY_ANIMATIONS = "animations";
++    private static final String WINDOW_ANIMATIONS_PREF = "window_animations";
++    private static final String TRANSITION_ANIMATIONS_PREF = "transition_animations";
+ 
+     private ListPreference mAnimations;
+     private float[] mAnimationScales;
++    private ListPreference mWindowAnimationsPref;
++    private ListPreference mTransitionAnimationsPref;
+ 
+     private IWindowManager mWindowManager;
+ 
+@@ -56,8 +63,14 @@ public class DisplaySettings extends PreferenceActivity implements
+ 
+         addPreferencesFromResource(R.xml.display_settings);
+ 
++        PreferenceScreen prefSet = getPreferenceScreen();
++
+         mAnimations = (ListPreference) findPreference(KEY_ANIMATIONS);
+         mAnimations.setOnPreferenceChangeListener(this);
++        mWindowAnimationsPref = (ListPreference) prefSet.findPreference(WINDOW_ANIMATIONS_PREF);
++        mWindowAnimationsPref.setOnPreferenceChangeListener(this);
++        mTransitionAnimationsPref = (ListPreference) prefSet.findPreference(TRANSITION_ANIMATIONS_PREF);
++        mTransitionAnimationsPref.setOnPreferenceChangeListener(this);
+ 
+         ListPreference screenTimeoutPreference =
+             (ListPreference) findPreference(KEY_SCREEN_TIMEOUT);
+@@ -67,6 +80,37 @@ public class DisplaySettings extends PreferenceActivity implements
+         disableUnusableTimeouts(screenTimeoutPreference);
+     }
+ 
++    public void writeAnimationPreference(int which, Object objValue) {
++        try {
++            float val = Float.parseFloat(objValue.toString());
++            mWindowManager.setAnimationScale(which, val);
++        } catch (NumberFormatException e) {
++        } catch (RemoteException e) {
++        }
++    }
++        
++    int floatToIndex(float val, int resid) {
++        String[] indices = getResources().getStringArray(resid);
++        float lastVal = Float.parseFloat(indices[0]);
++        for (int i=1; i<indices.length; i++) {
++            float thisVal = Float.parseFloat(indices[i]);
++            if (val < (lastVal + (thisVal-lastVal)*.5f)) {
++                return i-1;
++            }
++            lastVal = thisVal;
++        }
++        return indices.length-1;
++    }
++    
++    public void readAnimationPreference(int which, ListPreference pref) {
++        try {
++            float scale = mWindowManager.getAnimationScale(which);
++            pref.setValueIndex(floatToIndex(scale,
++                    R.array.entryvalues_animations));
++        } catch (RemoteException e) {
++        }
++    }
++    
+     private void disableUnusableTimeouts(ListPreference screenTimeoutPreference) {
+         final DevicePolicyManager dpm =
+             (DevicePolicyManager) getSystemService(Context.DEVICE_POLICY_SERVICE);
+@@ -131,7 +175,9 @@ public class DisplaySettings extends PreferenceActivity implements
+         }
+         mAnimations.setValueIndex(idx);
+         updateAnimationsSummary(mAnimations.getValue());
+-    }
++        readAnimationPreference(0, mWindowAnimationsPref);
++        readAnimationPreference(1, mTransitionAnimationsPref);
++     }
+ 
+     private void updateAnimationsSummary(Object value) {
+         CharSequence[] summaries = getResources().getTextArray(R.array.animations_summaries);
+@@ -176,7 +222,11 @@ public class DisplaySettings extends PreferenceActivity implements
+                 Log.e(TAG, "could not persist screen timeout setting", e);
+             }
+         }
+-
++        if (preference == mWindowAnimationsPref) {
++            writeAnimationPreference(0, objValue);
++        } else if (preference == mTransitionAnimationsPref) {
++            writeAnimationPreference(1, objValue);
++        }
+         return true;
+     }
+ }
+diff --git a/src/com/android/settings/LanguageSettings.java b/src/com/android/settings/LanguageSettings.java
+index 7dd4be1..7a79bed 100644
+--- a/src/com/android/settings/LanguageSettings.java
++++ b/src/com/android/settings/LanguageSettings.java
+@@ -20,33 +20,53 @@ import java.util.ArrayList;
+ import java.util.HashSet;
+ import java.util.List;
+ 
++import com.android.settings.R;
++
++import android.app.ActivityManagerNative;
+ import android.app.AlertDialog;
+ import android.content.Context;
+ import android.content.DialogInterface;
+ import android.content.Intent;
++import android.content.SharedPreferences;
+ import android.content.pm.ApplicationInfo;
+ import android.content.res.Configuration;
+ import android.os.Bundle;
++import android.os.RemoteException;
+ import android.preference.CheckBoxPreference;
++import android.preference.ListPreference;
+ import android.preference.Preference;
+ import android.preference.PreferenceActivity;
+ import android.preference.PreferenceGroup;
+ import android.preference.PreferenceScreen;
+ import android.provider.Settings;
++import android.provider.Settings.SettingNotFoundException;
+ import android.text.TextUtils;
+ import android.view.inputmethod.InputMethodInfo;
+ import android.view.inputmethod.InputMethodManager;
+ 
+-public class LanguageSettings extends PreferenceActivity {
++
++public class LanguageSettings extends PreferenceActivity
++							  implements Preference.OnPreferenceChangeListener,
++					                     SharedPreferences.OnSharedPreferenceChangeListener {
++
+     
+     private static final String KEY_PHONE_LANGUAGE = "phone_language";
+     private static final String KEY_KEYBOARD_SETTINGS_CATEGORY = "keyboard_settings_category";
+     private static final String KEY_HARDKEYBOARD_CATEGORY = "hardkeyboard_category";
++    private static final String FANCY_IME_ANIMATIONS_PREF = "fancy_ime_animations";
++    private static final String HAPTIC_FEEDBACK_PREF = "haptic_feedback";
++    private static final String FONT_SIZE_PREF = "font_size";
++
+     private boolean mHaveHardKeyboard;
++    private final Configuration mCurConfig = new Configuration();
+ 
+     private List<InputMethodInfo> mInputMethodProperties;
+     private List<CheckBoxPreference> mCheckboxes;
+     private Preference mLanguagePref;
++    private CheckBoxPreference mFancyImeAnimationsPref;
++    private CheckBoxPreference mHapticFeedbackPref;
++    private ListPreference mFontSizePref;
++    private ListPreference mEndButtonPref;
+ 
+     final TextUtils.SimpleStringSplitter mStringColonSplitter
+             = new TextUtils.SimpleStringSplitter(':');
+@@ -65,6 +85,7 @@ public class LanguageSettings extends PreferenceActivity {
+         super.onCreate(icicle);
+ 
+         addPreferencesFromResource(R.xml.language_settings);
++        PreferenceScreen prefSet = getPreferenceScreen();
+ 
+         if (getAssets().getLocales().length == 1) {
+             getPreferenceScreen().
+@@ -82,6 +103,11 @@ public class LanguageSettings extends PreferenceActivity {
+         }
+         mCheckboxes = new ArrayList<CheckBoxPreference>();
+         onCreateIMM();
++        
++        mFancyImeAnimationsPref = (CheckBoxPreference) prefSet.findPreference(FANCY_IME_ANIMATIONS_PREF);
++        mHapticFeedbackPref = (CheckBoxPreference) prefSet.findPreference(HAPTIC_FEEDBACK_PREF);
++        mFontSizePref = (ListPreference) prefSet.findPreference(FONT_SIZE_PREF);
++        mFontSizePref.setOnPreferenceChangeListener(this);
+     }
+     
+     private boolean isSystemIme(InputMethodInfo property) {
+@@ -174,6 +200,16 @@ public class LanguageSettings extends PreferenceActivity {
+                 mLanguagePref.setSummary(locale);
+             }
+         }
++        
++        readFontSizePreference(mFontSizePref);
++        readEndButtonPreference(mEndButtonPref);
++
++        mFancyImeAnimationsPref.setChecked(Settings.System.getInt(
++                getContentResolver(), 
++                Settings.System.FANCY_IME_ANIMATIONS, 0) != 0);
++        mHapticFeedbackPref.setChecked(Settings.System.getInt(
++                getContentResolver(), 
++                Settings.System.HAPTIC_FEEDBACK_ENABLED, 0) != 0);
+     }
+ 
+     @Override
+@@ -299,6 +335,77 @@ public class LanguageSettings extends PreferenceActivity {
+         return super.onPreferenceTreeClick(preferenceScreen, preference);
+     }
+ 
++    public boolean onPreferenceChange(Preference preference, Object objValue) {
++        if (preference == mFontSizePref) {
++            writeFontSizePreference(objValue);
++        } else if (preference == mEndButtonPref) {
++            writeEndButtonPreference(objValue);
++        }
++        // always let the preference setting proceed.
++        return true;
++    }
++
++    public void onSharedPreferenceChanged(SharedPreferences preferences, String key) {
++        if (FANCY_IME_ANIMATIONS_PREF.equals(key)) {
++            Settings.System.putInt(getContentResolver(),
++                    Settings.System.FANCY_IME_ANIMATIONS,
++                    mFancyImeAnimationsPref.isChecked() ? 1 : 0);
++        } else if (HAPTIC_FEEDBACK_PREF.equals(key)) {
++            Settings.System.putInt(getContentResolver(),
++                    Settings.System.HAPTIC_FEEDBACK_ENABLED,
++                    mHapticFeedbackPref.isChecked() ? 1 : 0);
++        }
++    }
++
++    public void writeFontSizePreference(Object objValue) {
++        try {
++            mCurConfig.fontScale = Float.parseFloat(objValue.toString());
++            ActivityManagerNative.getDefault().updateConfiguration(mCurConfig);
++        } catch (RemoteException e) {
++        }
++    }
++    
++    public void readFontSizePreference(ListPreference pref) {
++        try {
++            mCurConfig.updateFrom(
++                ActivityManagerNative.getDefault().getConfiguration());
++        } catch (RemoteException e) {
++        }
++        pref.setValueIndex(floatToIndex(mCurConfig.fontScale,
++                R.array.entryvalues_font_size));
++    }
++    
++
++    int floatToIndex(float val, int resid) {
++        String[] indices = getResources().getStringArray(resid);
++        float lastVal = Float.parseFloat(indices[0]);
++        for (int i=1; i<indices.length; i++) {
++            float thisVal = Float.parseFloat(indices[i]);
++            if (val < (lastVal + (thisVal-lastVal)*.5f)) {
++                return i-1;
++            }
++            lastVal = thisVal;
++        }
++        return indices.length-1;
++    }
++    
++    public void writeEndButtonPreference(Object objValue) {
++        try {
++            int val = Integer.parseInt(objValue.toString());
++            Settings.System.putInt(getContentResolver(),
++                    Settings.System.END_BUTTON_BEHAVIOR, val);
++        } catch (NumberFormatException e) {
++        }
++    }
++    
++    public void readEndButtonPreference(ListPreference pref) {
++        try {
++            pref.setValueIndex(Settings.System.getInt(getContentResolver(),
++                    Settings.System.END_BUTTON_BEHAVIOR));
++        } catch (SettingNotFoundException e) {
++        }
++    }
++    
+     @Override
+     protected void onDestroy() {
+         super.onDestroy();
+diff --git a/src/com/android/settings/battery_history/BatteryHistory.java b/src/com/android/settings/battery_history/BatteryHistory.java
+index 932bbd7..cdae6a8 100644
+--- a/src/com/android/settings/battery_history/BatteryHistory.java
++++ b/src/com/android/settings/battery_history/BatteryHistory.java
+@@ -19,38 +19,36 @@ package com.android.settings.battery_history;
+ import java.util.ArrayList;
+ import java.util.Collections;
+ import java.util.Formatter;
+-import java.util.HashSet;
+ import java.util.List;
+ import java.util.Map;
+ 
+-import com.android.internal.app.IBatteryStats;
+-import com.android.settings.R;
+-
+ import android.app.Activity;
+ import android.content.pm.ApplicationInfo;
+ import android.content.pm.PackageInfo;
+ import android.content.pm.PackageManager;
+ import android.content.pm.PackageManager.NameNotFoundException;
+ import android.os.BatteryStats;
++import android.os.BatteryStats.Timer;
++import android.os.BatteryStats.Uid;
+ import android.os.Bundle;
+ import android.os.Parcel;
+ import android.os.RemoteException;
+ import android.os.ServiceManager;
+ import android.os.SystemClock;
+-import android.os.BatteryStats.Timer;
+-import android.os.BatteryStats.Uid;
+ import android.util.Log;
+-import android.util.LogPrinter;
+ import android.util.SparseArray;
+ import android.view.KeyEvent;
+ import android.view.View;
+ import android.view.View.OnClickListener;
+ import android.widget.AdapterView;
++import android.widget.AdapterView.OnItemSelectedListener;
+ import android.widget.Button;
+ import android.widget.LinearLayout;
+ import android.widget.Spinner;
+ import android.widget.TextView;
+-import android.widget.AdapterView.OnItemSelectedListener;
++
++import com.android.internal.app.IBatteryStats;
++import com.android.settings.R;
+ 
+ public class BatteryHistory extends Activity implements OnClickListener, OnItemSelectedListener {
+     private static final String TAG = "BatteryHistory";
+-- 
+1.7.4.1
+
