@@ -20,33 +20,53 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
+import com.android.settings.R;
+
+import android.app.ActivityManagerNative;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.ApplicationInfo;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.os.RemoteException;
 import android.preference.CheckBoxPreference;
+import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
+import android.provider.Settings.SettingNotFoundException;
 import android.text.TextUtils;
 import android.view.inputmethod.InputMethodInfo;
 import android.view.inputmethod.InputMethodManager;
 
-public class LanguageSettings extends PreferenceActivity {
+
+public class LanguageSettings extends PreferenceActivity
+							  implements Preference.OnPreferenceChangeListener,
+					                     SharedPreferences.OnSharedPreferenceChangeListener {
+
     
     private static final String KEY_PHONE_LANGUAGE = "phone_language";
     private static final String KEY_KEYBOARD_SETTINGS_CATEGORY = "keyboard_settings_category";
     private static final String KEY_HARDKEYBOARD_CATEGORY = "hardkeyboard_category";
+    private static final String FANCY_IME_ANIMATIONS_PREF = "fancy_ime_animations";
+    private static final String HAPTIC_FEEDBACK_PREF = "haptic_feedback";
+    private static final String FONT_SIZE_PREF = "font_size";
+
     private boolean mHaveHardKeyboard;
+    private final Configuration mCurConfig = new Configuration();
 
     private List<InputMethodInfo> mInputMethodProperties;
     private List<CheckBoxPreference> mCheckboxes;
     private Preference mLanguagePref;
+    private CheckBoxPreference mFancyImeAnimationsPref;
+    private CheckBoxPreference mHapticFeedbackPref;
+    private ListPreference mFontSizePref;
+    private ListPreference mEndButtonPref;
 
     final TextUtils.SimpleStringSplitter mStringColonSplitter
             = new TextUtils.SimpleStringSplitter(':');
@@ -65,6 +85,7 @@ public class LanguageSettings extends PreferenceActivity {
         super.onCreate(icicle);
 
         addPreferencesFromResource(R.xml.language_settings);
+        PreferenceScreen prefSet = getPreferenceScreen();
 
         if (getAssets().getLocales().length == 1) {
             getPreferenceScreen().
@@ -82,6 +103,11 @@ public class LanguageSettings extends PreferenceActivity {
         }
         mCheckboxes = new ArrayList<CheckBoxPreference>();
         onCreateIMM();
+        
+        mFancyImeAnimationsPref = (CheckBoxPreference) prefSet.findPreference(FANCY_IME_ANIMATIONS_PREF);
+        mHapticFeedbackPref = (CheckBoxPreference) prefSet.findPreference(HAPTIC_FEEDBACK_PREF);
+        mFontSizePref = (ListPreference) prefSet.findPreference(FONT_SIZE_PREF);
+        mFontSizePref.setOnPreferenceChangeListener(this);
     }
     
     private boolean isSystemIme(InputMethodInfo property) {
@@ -174,6 +200,16 @@ public class LanguageSettings extends PreferenceActivity {
                 mLanguagePref.setSummary(locale);
             }
         }
+        
+        readFontSizePreference(mFontSizePref);
+        readEndButtonPreference(mEndButtonPref);
+
+        mFancyImeAnimationsPref.setChecked(Settings.System.getInt(
+                getContentResolver(), 
+                Settings.System.FANCY_IME_ANIMATIONS, 0) != 0);
+        mHapticFeedbackPref.setChecked(Settings.System.getInt(
+                getContentResolver(), 
+                Settings.System.HAPTIC_FEEDBACK_ENABLED, 0) != 0);
     }
 
     @Override
@@ -299,6 +335,77 @@ public class LanguageSettings extends PreferenceActivity {
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
+        if (preference == mFontSizePref) {
+            writeFontSizePreference(objValue);
+        } else if (preference == mEndButtonPref) {
+            writeEndButtonPreference(objValue);
+        }
+        // always let the preference setting proceed.
+        return true;
+    }
+
+    public void onSharedPreferenceChanged(SharedPreferences preferences, String key) {
+        if (FANCY_IME_ANIMATIONS_PREF.equals(key)) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.FANCY_IME_ANIMATIONS,
+                    mFancyImeAnimationsPref.isChecked() ? 1 : 0);
+        } else if (HAPTIC_FEEDBACK_PREF.equals(key)) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.HAPTIC_FEEDBACK_ENABLED,
+                    mHapticFeedbackPref.isChecked() ? 1 : 0);
+        }
+    }
+
+    public void writeFontSizePreference(Object objValue) {
+        try {
+            mCurConfig.fontScale = Float.parseFloat(objValue.toString());
+            ActivityManagerNative.getDefault().updateConfiguration(mCurConfig);
+        } catch (RemoteException e) {
+        }
+    }
+    
+    public void readFontSizePreference(ListPreference pref) {
+        try {
+            mCurConfig.updateFrom(
+                ActivityManagerNative.getDefault().getConfiguration());
+        } catch (RemoteException e) {
+        }
+        pref.setValueIndex(floatToIndex(mCurConfig.fontScale,
+                R.array.entryvalues_font_size));
+    }
+    
+
+    int floatToIndex(float val, int resid) {
+        String[] indices = getResources().getStringArray(resid);
+        float lastVal = Float.parseFloat(indices[0]);
+        for (int i=1; i<indices.length; i++) {
+            float thisVal = Float.parseFloat(indices[i]);
+            if (val < (lastVal + (thisVal-lastVal)*.5f)) {
+                return i-1;
+            }
+            lastVal = thisVal;
+        }
+        return indices.length-1;
+    }
+    
+    public void writeEndButtonPreference(Object objValue) {
+        try {
+            int val = Integer.parseInt(objValue.toString());
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.END_BUTTON_BEHAVIOR, val);
+        } catch (NumberFormatException e) {
+        }
+    }
+    
+    public void readEndButtonPreference(ListPreference pref) {
+        try {
+            pref.setValueIndex(Settings.System.getInt(getContentResolver(),
+                    Settings.System.END_BUTTON_BEHAVIOR));
+        } catch (SettingNotFoundException e) {
+        }
+    }
+    
     @Override
     protected void onDestroy() {
         super.onDestroy();

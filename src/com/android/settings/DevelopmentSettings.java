@@ -37,7 +37,6 @@ public class DevelopmentSettings extends PreferenceActivity
     private static final String ADB_NOTIFY = "adb_notify";
     private static final String KEEP_SCREEN_ON = "keep_screen_on";
     private static final String ALLOW_MOCK_LOCATION = "allow_mock_location";
-    private static final String USE_DITHERING_DEFAULT = "0";
     private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
 
     private CheckBoxPreference mEnableAdb;

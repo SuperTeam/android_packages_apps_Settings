@@ -20,6 +20,8 @@ import static android.provider.Settings.System.SCREEN_OFF_TIMEOUT;
 
 import java.util.ArrayList;
 
+import com.android.settings.R;
+
 import android.app.admin.DevicePolicyManager;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -29,6 +31,7 @@ import android.os.ServiceManager;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
+import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.IWindowManager;
@@ -42,9 +45,13 @@ public class DisplaySettings extends PreferenceActivity implements
 
     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
     private static final String KEY_ANIMATIONS = "animations";
+    private static final String WINDOW_ANIMATIONS_PREF = "window_animations";
+    private static final String TRANSITION_ANIMATIONS_PREF = "transition_animations";
 
     private ListPreference mAnimations;
     private float[] mAnimationScales;
+    private ListPreference mWindowAnimationsPref;
+    private ListPreference mTransitionAnimationsPref;
 
     private IWindowManager mWindowManager;
 
@@ -56,8 +63,14 @@ public class DisplaySettings extends PreferenceActivity implements
 
         addPreferencesFromResource(R.xml.display_settings);
 
+        PreferenceScreen prefSet = getPreferenceScreen();
+
         mAnimations = (ListPreference) findPreference(KEY_ANIMATIONS);
         mAnimations.setOnPreferenceChangeListener(this);
+        mWindowAnimationsPref = (ListPreference) prefSet.findPreference(WINDOW_ANIMATIONS_PREF);
+        mWindowAnimationsPref.setOnPreferenceChangeListener(this);
+        mTransitionAnimationsPref = (ListPreference) prefSet.findPreference(TRANSITION_ANIMATIONS_PREF);
+        mTransitionAnimationsPref.setOnPreferenceChangeListener(this);
 
         ListPreference screenTimeoutPreference =
             (ListPreference) findPreference(KEY_SCREEN_TIMEOUT);
@@ -67,6 +80,37 @@ public class DisplaySettings extends PreferenceActivity implements
         disableUnusableTimeouts(screenTimeoutPreference);
     }
 
+    public void writeAnimationPreference(int which, Object objValue) {
+        try {
+            float val = Float.parseFloat(objValue.toString());
+            mWindowManager.setAnimationScale(which, val);
+        } catch (NumberFormatException e) {
+        } catch (RemoteException e) {
+        }
+    }
+        
+    int floatToIndex(float val, int resid) {
+        String[] indices = getResources().getStringArray(resid);
+        float lastVal = Float.parseFloat(indices[0]);
+        for (int i=1; i<indices.length; i++) {
+            float thisVal = Float.parseFloat(indices[i]);
+            if (val < (lastVal + (thisVal-lastVal)*.5f)) {
+                return i-1;
+            }
+            lastVal = thisVal;
+        }
+        return indices.length-1;
+    }
+    
+    public void readAnimationPreference(int which, ListPreference pref) {
+        try {
+            float scale = mWindowManager.getAnimationScale(which);
+            pref.setValueIndex(floatToIndex(scale,
+                    R.array.entryvalues_animations));
+        } catch (RemoteException e) {
+        }
+    }
+    
     private void disableUnusableTimeouts(ListPreference screenTimeoutPreference) {
         final DevicePolicyManager dpm =
             (DevicePolicyManager) getSystemService(Context.DEVICE_POLICY_SERVICE);
@@ -131,7 +175,9 @@ public class DisplaySettings extends PreferenceActivity implements
         }
         mAnimations.setValueIndex(idx);
         updateAnimationsSummary(mAnimations.getValue());
-    }
+        readAnimationPreference(0, mWindowAnimationsPref);
+        readAnimationPreference(1, mTransitionAnimationsPref);
+     }
 
     private void updateAnimationsSummary(Object value) {
         CharSequence[] summaries = getResources().getTextArray(R.array.animations_summaries);
@@ -176,7 +222,11 @@ public class DisplaySettings extends PreferenceActivity implements
                 Log.e(TAG, "could not persist screen timeout setting", e);
             }
         }
-
+        if (preference == mWindowAnimationsPref) {
+            writeAnimationPreference(0, objValue);
+        } else if (preference == mTransitionAnimationsPref) {
+            writeAnimationPreference(1, objValue);
+        }
         return true;
     }
 }
