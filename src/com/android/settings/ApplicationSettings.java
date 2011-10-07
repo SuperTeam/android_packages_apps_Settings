@@ -34,6 +34,7 @@ public class ApplicationSettings extends PreferenceActivity implements
     private static final String KEY_TOGGLE_INSTALL_APPLICATIONS = "toggle_install_applications";
     private static final String KEY_APP_INSTALL_LOCATION = "app_install_location";
     private static final String KEY_QUICK_LAUNCH = "quick_launch";
+    private static final String KEY_COMPATIBILITY_MODE = "compatibility_mode";
 
     // App installation location. Default is ask the user.
     private static final int APP_INSTALL_AUTO = 0;
@@ -45,6 +46,7 @@ public class ApplicationSettings extends PreferenceActivity implements
     private static final String APP_INSTALL_AUTO_ID = "auto";
     
     private CheckBoxPreference mToggleAppInstallation;
+    private CheckBoxPreference mCompatibilityMode;
 
     private ListPreference mInstallLocation;
 
@@ -81,6 +83,11 @@ public class ApplicationSettings extends PreferenceActivity implements
             Preference quickLaunchSetting = findPreference(KEY_QUICK_LAUNCH);
             getPreferenceScreen().removePreference(quickLaunchSetting);
         }
+        
+        mCompatibilityMode = (CheckBoxPreference) findPreference(KEY_COMPATIBILITY_MODE);
+        mCompatibilityMode.setPersistent(false);
+        mCompatibilityMode.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.COMPATIBILITY_MODE, 1) != 0);
     }
 
     protected void handleUpdateAppInstallLocation(final String value) {
@@ -118,6 +125,12 @@ public class ApplicationSettings extends PreferenceActivity implements
             } else {
                 setNonMarketAppsAllowed(false);
             }
+        }
+        else if (preference == mCompatibilityMode) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.COMPATIBILITY_MODE,
+                    mCompatibilityMode.isChecked() ? 1 : 0);
+            return true;
         }
 
         return super.onPreferenceTreeClick(preferenceScreen, preference);

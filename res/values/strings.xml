@@ -3043,4 +3043,36 @@ found in the list of installed applications.</string>
     <string name="pref_toggle_all">Connections control</string>
     <string name="pref_toggle_all_summary">Control wireless connections</string>
 
+    <string name="title_window_animations">Window animations</string>
+    <string name="category_animations_title">Animations</string>
+    <string name="summary_window_animations">Speed of animations in individual windows</string>
+    <string name="dialog_title_window_animations">Select window speed</string>
+    
+    <string name="title_transition_animations">Transition animations</string>
+    <string name="summary_transition_animations">Speed of animations moving between screens</string>
+    <string name="dialog_title_transition_animations">Select transition speed</string>
+    
+    <string name="title_fancy_ime_animations">Fancy input animations</string>
+    <string name="summary_on_fancy_ime_animations">Use fancier animations for input method windows</string>
+    <string name="summary_off_fancy_ime_animations">Use normal animations for input method windows</string>
+    
+    <string name="title_haptic_feedback">Haptic feedback</string>
+    <string name="summary_on_haptic_feedback">Use haptic feedback with user interaction</string>
+    <string name="summary_off_haptic_feedback">Use haptic feedback with user interaction</string>
+    
+    <string name="title_font_size">Font size</string>
+    <string name="summary_font_size">Overall size of fonts</string>
+    <string name="dialog_title_font_size">Select font size</string>
+    
+    <string name="title_end_button">End button behavior</string>
+    <string name="summary_end_button">Select End (red) button action</string>
+    <string name="dialog_title_end_button">Select End button</string>
+    
+    <!-- Sound & display settings screen, compatibility mode check box label -->
+    <string name="compatibility_mode_title">Compatibility Mode</string>
+    <!-- Sound & display settings screen, compatibility mode option summary text when check box is selected -->
+    <string name="compatibility_mode_summary_on">Run older apps in Compatibility mode. This require rebooting. </string>
+    <!-- Sound & display settings screen, compatibility mode option summary text when check box is clear -->
+    <string name="compatibility_mode_summary_off">Run older apps in Compatibility mode. This require rebooting. </string>
+    
 </resources>

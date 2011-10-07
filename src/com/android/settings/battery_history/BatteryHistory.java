@@ -19,12 +19,8 @@ package com.android.settings.battery_history;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Formatter;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
-
-import com.android.internal.app.IBatteryStats;
-import com.android.settings.R;
 
 import android.app.Activity;
 import android.content.pm.ApplicationInfo;
@@ -32,25 +28,27 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.BatteryStats;
+import android.os.BatteryStats.Timer;
+import android.os.BatteryStats.Uid;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.os.SystemClock;
-import android.os.BatteryStats.Timer;
-import android.os.BatteryStats.Uid;
 import android.util.Log;
-import android.util.LogPrinter;
 import android.util.SparseArray;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.AdapterView.OnItemSelectedListener;
+
+import com.android.internal.app.IBatteryStats;
+import com.android.settings.R;
 
 public class BatteryHistory extends Activity implements OnClickListener, OnItemSelectedListener {
     private static final String TAG = "BatteryHistory";
