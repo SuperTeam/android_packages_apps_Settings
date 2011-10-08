@@ -16,17 +16,15 @@
 
 package com.android.settings;
 
+import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
 import android.net.sip.SipManager;
 import android.os.Bundle;
-import android.content.Intent;
-import android.content.pm.ApplicationInfo;
-import android.content.pm.ActivityInfo;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceGroup;
-import android.telephony.TelephonyManager;
-import android.util.Log;
-import android.content.pm.PackageManager;
 
 public class Settings extends PreferenceActivity {
 
@@ -44,9 +42,6 @@ public class Settings extends PreferenceActivity {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.settings);
-
-        int activePhoneType = TelephonyManager.getDefault().getPhoneType();
-        Log.i("Settings", "podxboq: activePhoneType: " + activePhoneType);
 
         PreferenceGroup parent = (PreferenceGroup) findPreference(KEY_PARENT);
         Utils.updatePreferenceToSpecificActivityOrRemove(this, parent, KEY_SYNC_SETTINGS, 0);
