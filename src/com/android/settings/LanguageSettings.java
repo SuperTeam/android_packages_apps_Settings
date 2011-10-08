@@ -41,6 +41,7 @@ import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.inputmethod.InputMethodInfo;
 import android.view.inputmethod.InputMethodManager;
 
@@ -48,13 +49,11 @@ import android.view.inputmethod.InputMethodManager;
 public class LanguageSettings extends PreferenceActivity
 							  implements Preference.OnPreferenceChangeListener,
 					                     SharedPreferences.OnSharedPreferenceChangeListener {
-
-    
+	
     private static final String KEY_PHONE_LANGUAGE = "phone_language";
     private static final String KEY_KEYBOARD_SETTINGS_CATEGORY = "keyboard_settings_category";
     private static final String KEY_HARDKEYBOARD_CATEGORY = "hardkeyboard_category";
     private static final String FANCY_IME_ANIMATIONS_PREF = "fancy_ime_animations";
-    private static final String HAPTIC_FEEDBACK_PREF = "haptic_feedback";
     private static final String FONT_SIZE_PREF = "font_size";
 
     private boolean mHaveHardKeyboard;
@@ -64,7 +63,6 @@ public class LanguageSettings extends PreferenceActivity
     private List<CheckBoxPreference> mCheckboxes;
     private Preference mLanguagePref;
     private CheckBoxPreference mFancyImeAnimationsPref;
-    private CheckBoxPreference mHapticFeedbackPref;
     private ListPreference mFontSizePref;
     private ListPreference mEndButtonPref;
 
@@ -105,9 +103,9 @@ public class LanguageSettings extends PreferenceActivity
         onCreateIMM();
         
         mFancyImeAnimationsPref = (CheckBoxPreference) prefSet.findPreference(FANCY_IME_ANIMATIONS_PREF);
-        mHapticFeedbackPref = (CheckBoxPreference) prefSet.findPreference(HAPTIC_FEEDBACK_PREF);
         mFontSizePref = (ListPreference) prefSet.findPreference(FONT_SIZE_PREF);
         mFontSizePref.setOnPreferenceChangeListener(this);
+
     }
     
     private boolean isSystemIme(InputMethodInfo property) {
@@ -207,9 +205,6 @@ public class LanguageSettings extends PreferenceActivity
         mFancyImeAnimationsPref.setChecked(Settings.System.getInt(
                 getContentResolver(), 
                 Settings.System.FANCY_IME_ANIMATIONS, 0) != 0);
-        mHapticFeedbackPref.setChecked(Settings.System.getInt(
-                getContentResolver(), 
-                Settings.System.HAPTIC_FEEDBACK_ENABLED, 0) != 0);
     }
 
     @Override
@@ -265,10 +260,13 @@ public class LanguageSettings extends PreferenceActivity
 
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        
+    	Log.i("podxboq onPreferenceTreeClick: ", preference.toString());
         if (preference instanceof CheckBoxPreference) {
+        	
             final CheckBoxPreference chkPref = (CheckBoxPreference) preference;
             final String id = getInputMethodIdFromKey(chkPref.getKey());
+            if (mFancyImeAnimationsPref.equals(chkPref))
+            	return false;
             if (chkPref.isChecked()) {
                 InputMethodInfo selImi = null;
                 final int N = mInputMethodProperties.size();
@@ -336,6 +334,7 @@ public class LanguageSettings extends PreferenceActivity
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
+    	Log.i("podxboq onPreferenceChange: ", objValue.toString());
         if (preference == mFontSizePref) {
             writeFontSizePreference(objValue);
         } else if (preference == mEndButtonPref) {
@@ -346,14 +345,11 @@ public class LanguageSettings extends PreferenceActivity
     }
 
     public void onSharedPreferenceChanged(SharedPreferences preferences, String key) {
+    	Log.i("podxboq onSharedPreferenceChanged: ", key);
         if (FANCY_IME_ANIMATIONS_PREF.equals(key)) {
             Settings.System.putInt(getContentResolver(),
                     Settings.System.FANCY_IME_ANIMATIONS,
                     mFancyImeAnimationsPref.isChecked() ? 1 : 0);
-        } else if (HAPTIC_FEEDBACK_PREF.equals(key)) {
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.HAPTIC_FEEDBACK_ENABLED,
-                    mHapticFeedbackPref.isChecked() ? 1 : 0);
         }
     }
 

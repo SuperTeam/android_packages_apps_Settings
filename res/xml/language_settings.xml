@@ -45,12 +45,6 @@
             android:summaryOn="@string/summary_on_fancy_ime_animations"
             android:summaryOff="@string/summary_off_fancy_ime_animations"/>
         
-        <CheckBoxPreference 
-            android:key="haptic_feedback" 
-            android:title="@string/title_haptic_feedback" 
-            android:summaryOn="@string/summary_on_haptic_feedback"
-            android:summaryOff="@string/summary_off_haptic_feedback"/>
-
         <ListPreference
                 android:key="font_size"
                 android:title="@string/title_font_size"
