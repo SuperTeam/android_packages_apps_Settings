@@ -700,7 +700,6 @@
     <string name="settings_license_activity_title" msgid="7553683406244228650">"Öppen källkodslicens"</string>
     <string name="settings_license_activity_unavailable" msgid="4210539215951487627">"Ett problem inträffade när licenserna lästes in."</string>
     <string name="settings_license_activity_loading" msgid="3337535809093591740">"Läser in…"</string>
-    <string name="settings_cmlicense_activity_title">CyanogenMod-licenser</string>
     <string name="settings_safetylegal_title" msgid="1289483965535937431">"Säkerhetsinformation"</string>
     <string name="settings_safetylegal_activity_title" msgid="6901214628496951727">"Säkerhetsinformation"</string>
     <string name="settings_safetylegal_activity_unreachable" msgid="3198912875259612887">"Din telefon är inte ansluten till en datatjänst. Besök %s på en dator som är ansluten till Internet om du vill visa informationen nu."</string>

@@ -1354,7 +1354,6 @@
     <string name="profile_volumeoverrides_summary">Toque para definir o volume</string>
     <string name="power_sounds_enable_title">Som de nível baixo de bateria</string>
     <string name="power_sounds_enable_summary">Tocar som com o alerta de bateria baixa</string>
-    <string name="settings_cmlicense_activity_title">Licenças CyanogenMod</string>
     <string name="bluetooth_profile_network">Rede</string>
     <string name="additional_system_update_settings_list_item_title" msgid="214987609894661992">"Atualizações adicionais do sistema"</string>
     <string name="rotation_category_title">Rotação com acelerômetro</string>
