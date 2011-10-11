@@ -486,9 +486,9 @@
     </string-array>
 
     <string-array name="networkModesWidget" translatable="false">
-        <item>2G/3G+2G</item>
+        <item>2G/3G2G</item>
         <item>2G/3G Only</item>
-        <item>2G/3G Only/3G+2G</item>
+        <item>2G/3G Only/3G2G</item>
     </string-array>
     
     <string-array name="screenTimeoutWidget" translatable="false">
@@ -497,10 +497,10 @@
     </string-array>
 
     <string-array name="ringModeWidget" translatable="false">
-        <item>Sound+Vibrate/Vibrate</item>
+        <item>SoundVibrate/Vibrate</item>
         <item>Sound/Vibrate</item>
         <item>Sound/Silent</item>
-        <item>Sound+Vib/Vib/Silent</item>
+        <item>SoundVib/Vib/Silent</item>
         <item>Sound/Vibrate/Silent</item>
     </string-array>
     

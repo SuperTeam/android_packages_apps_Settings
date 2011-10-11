@@ -79,7 +79,7 @@
     <string name="battery_info_power_unplugged" msgid="5987246575519551081">"No se está cargando"</string>
     <string name="battery_info_power_ac" msgid="6808516193001604634">"CA"</string>
     <string name="battery_info_power_usb" msgid="8012931702516331797">"USB"</string>
-    <string name="battery_info_power_ac_usb" msgid="6777734146838328688">"AC+USB"</string>
+    <string name="battery_info_power_ac_usb" msgid="6777734146838328688">"ACUSB"</string>
     <string name="battery_info_power_unknown" msgid="7344115502868899881">"Desconocido"</string>
     <string name="battery_info_health_unknown" msgid="5664295556921944255">"Desconocido"</string>
     <string name="battery_info_health_good" msgid="8070356565806711806">"Buena"</string>
@@ -894,7 +894,7 @@
     <string name="quick_launch_summary" msgid="3453825712466417452">"Establecer accesos rápidos del teclado para ejecutar aplicaciones"</string>
     <string name="quick_launch_assign_application" msgid="4521368464929956350">"Asignar aplicación"</string>
     <string name="quick_launch_no_shortcut" msgid="5998005833838278693">"Sin acceso directo"</string>
-    <string name="quick_launch_shortcut" msgid="5090405067413522300">"Buscar + <xliff:g id="SHORTCUT_LETTER">%1$s</xliff:g>"</string>
+    <string name="quick_launch_shortcut" msgid="5090405067413522300">"Buscar  <xliff:g id="SHORTCUT_LETTER">%1$s</xliff:g>"</string>
     <string name="quick_launch_clear_dialog_title" msgid="5546543501250320220">"Borrar"</string>
     <string name="quick_launch_clear_dialog_message" msgid="3921015601470260722">"Se eliminará el acceso directo <xliff:g id="SHORTCUT_LETTER">%1$s</xliff:g><xliff:g id="APPLICATION_NAME">%2$s</xliff:g>."</string>
     <string name="quick_launch_clear_ok_button" msgid="2634568926597586716">"Aceptar"</string>

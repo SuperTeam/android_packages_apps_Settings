@@ -180,16 +180,16 @@
   </string-array>
  
      <string-array name="networkModesWidget" translatable="false">
-        <item>2G/3G+2G</item>
+        <item>2G/3G2G</item>
         <item>2G/3G Solo</item>
-        <item>2G/3G Solo/3G+2G</item>
+        <item>2G/3G Solo/3G2G</item>
     </string-array>
 
     <string-array name="ringModeWidget" translatable="false">
-        <item>Sonido+Vibración/Vibración</item>
+        <item>SonidoVibración/Vibración</item>
         <item>Sonido/Vibración</item>
         <item>Sonido/Silencio</item>
-        <item>Sonido+Vib/Vib/Silencio</item>
+        <item>SonidoVib/Vib/Silencio</item>
         <item>Sonido/Vibración/Silencio</item>
     </string-array>
     

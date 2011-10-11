@@ -162,7 +162,7 @@
     <string name="battery_info_power_unplugged">Unplugged</string>
     <string name="battery_info_power_ac">AC</string>
     <string name="battery_info_power_usb">USB</string>
-    <string name="battery_info_power_ac_usb">AC+USB</string>
+    <string name="battery_info_power_ac_usb">ACUSB</string>
     <string name="battery_info_power_unknown">Unknown</string>
 
     <!-- Battery Info screen. Value for a status item.  Used for diagnostic info screens, precise translation isn't needed -->
@@ -2080,7 +2080,7 @@ found in the list of installed applications.</string>
     <!-- On the Quick launch settings screen, summary text for the item of letters that are not assigned. See the quick launch "Assign application" for a description of quick launch -->
     <string name="quick_launch_no_shortcut">No shortcut</string>
     <!-- On the Quick launch settings screen, summary text under the item for each assigned letter.  -->
-    <string name="quick_launch_shortcut">Search + <xliff:g id="shortcut_letter">%1$s</xliff:g></string>
+    <string name="quick_launch_shortcut">Search  <xliff:g id="shortcut_letter">%1$s</xliff:g></string>
     <!-- On the Quick launch settings screen, title of "Clear shortcut" confirmation dialog. This is reached by longpressing an item for a shortcut letter.  This allows the user to clear the assigned application for that shortcut letter. -->
     <string name="quick_launch_clear_dialog_title">Clear</string>
     <!-- On the Quick launch settings screen, message in the "Clear shortcut" confirmation dialog.  See the title for this dialog for more info. -->
@@ -3074,5 +3074,5 @@ found in the list of installed applications.</string>
     <string name="compatibility_mode_summary_on">Run older apps in Compatibility mode. This require rebooting. </string>
     <!-- Sound & display settings screen, compatibility mode option summary text when check box is clear -->
     <string name="compatibility_mode_summary_off">Run older apps in Compatibility mode. This require rebooting. </string>
-    
+
 </resources>

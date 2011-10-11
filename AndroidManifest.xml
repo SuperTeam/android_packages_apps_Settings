@@ -46,8 +46,8 @@
 	<uses-permission android:name="android.permission.REVOKE_PERMISSIONS" />
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.SET_ANIMATION_SCALE" />
-    
+	<uses-permission android:name="android.permission.SET_ANIMATION_SCALE" />
+
 	<application android:label="@string/settings_label"
 		android:icon="@drawable/ic_launcher_settings" android:taskAffinity="">
 
