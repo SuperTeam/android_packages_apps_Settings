@@ -17,19 +17,16 @@
 package com.android.settings;
 
 import android.app.AlertDialog;
-import android.content.Context;
+import android.content.DialogInterface;
 import android.content.res.Configuration;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.SystemProperties;
-import android.telephony.TelephonyManager;
-import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
 import com.android.internal.app.AlertActivity;
 import com.android.internal.app.AlertController;
-import android.content.DialogInterface;
 
 /**
  * The "dialog" that shows from "Safety information" in the Settings app.

@@ -349,14 +349,6 @@
     <string name="bluetooth_opp_profile_summary_use_for" msgid="1255674547144769756">"Uso de la transferencia de archivos"</string>
     <string name="bluetooth_hid_profile_summary_connected">Conectado a un dispositivo hid</string>
     <string name="bluetooth_hid_profile_summary_use_for">Utilizado por un dispositivo hid</string>
-    <string name="bluetooth_dock_settings" msgid="3218335822716052885">"Conector"</string>
-    <string name="bluetooth_dock_settings_title" msgid="5543069893044375188">"Uso del conector para audio"</string>
-    <string name="bluetooth_dock_settings_headset" msgid="1001821426078644650">"Como altavoz del teléfono"</string>
-    <string name="bluetooth_dock_settings_a2dp" msgid="8791004998846630574">"Para música y contenido multimedia"</string>
-    <string name="bluetooth_dock_settings_remember" msgid="5551459057010609115">"Ajustes de recordatorio"</string>
-    <string name="nfc_quick_toggle_title" msgid="6769159366307299004">"NFC"</string>
-    <string name="nfc_quick_toggle_summary" msgid="1988408027741447231">"Usar Comunicación de campo cercano (NFC) para leer e intercambiar etiquetas"</string>
-    <string name="nfc_toggle_error" msgid="2233172102497535522">"Se ha producido un error."</string>
         <string name="hostname_save">Guardar</string>
     <string name="hostname_cancel">Cancelar</string>
     <string name="wifi_quick_toggle_title" msgid="874495178395350104">"Wi-Fi"</string>
@@ -466,7 +458,6 @@
     <string name="media_volume_title" msgid="3576565767317118106">"Multimedia"</string>
     <string name="media_volume_summary" msgid="5363248930648849974">"Establecer volumen para música y vídeos"</string>
     <string name="alarm_volume_title" msgid="2285597478377758706">"Alarma"</string>
-    <string name="dock_settings_summary" msgid="455802113668982481">"Ajustes de audio del conector adjunto"</string>
     <string name="dtmf_tone_enable_title" msgid="1453831168789523185">"Tonos táctiles sonoros"</string>
     <string name="dtmf_tone_enable_summary_on" msgid="3028201873989887327">"Reproducir tonos al utilizar teclado de marcado"</string>
     <string name="dtmf_tone_enable_summary_off" msgid="7791065951268525678">"Reproducir tonos al utilizar teclado de marcado"</string>
@@ -483,18 +474,6 @@
     <string name="haptic_feedback_enable_summary_off" msgid="7287885436963105314">"Vibrar al pulsar teclas programables o durante ciertas interacciones con la interfaz de usuario"</string>
     <string name="audio_record_proc_title" msgid="4271091199976457534">"Supresión de ruido"</string>
     <string name="audio_record_proc_summary" msgid="8113628457499616498">"Eliminar ruido de fondo al hablar o al grabar"</string>
-    <string name="dock_settings" msgid="1820107306693002541">"Conector"</string>
-    <string name="dock_settings_title" msgid="9161438664257429372">"Conector"</string>
-    <string name="dock_audio_settings_title" msgid="3324750259959570305">"Audio"</string>
-    <string name="dock_audio_summary_desk" msgid="6487784412371139335">"Ajustes de la base"</string>
-    <string name="dock_audio_summary_car" msgid="6740897586006248450">"Ajustes del conector del coche adjunto"</string>
-    <string name="dock_audio_summary_none" msgid="289909253741048784">"Teléfono no conectado"</string>
-    <string name="dock_audio_summary_unknown" msgid="4465059868974255693">"Ajustes del conector adjunto"</string>
-    <string name="dock_not_found_title" msgid="3290961741828952424">"No se ha encontrado el conector"</string>
-    <string name="dock_not_found_text" msgid="3035260358985111855">"El teléfono debe estar conectado para configurar el audio del conector."</string>
-    <string name="dock_sounds_enable_title" msgid="3659084028644948905">"Reproducir sonido"</string>
-    <string name="dock_sounds_enable_summary_on" msgid="8491180514199743771">"Reproducir sonido al insertar o extraer el teléfono del conector"</string>
-    <string name="dock_sounds_enable_summary_off" msgid="3151046599205265919">"No reproducir sonido al insertar o extraer el teléfono del conector"</string>
     <string name="sync_settings" msgid="9186125469300013491">"Cuentas y sincronización"</string>
     <string name="sync_settings_summary" msgid="2962179505214965667">"Añadir o eliminar cuentas y modificar la configuración de las cuentas"</string>
     <string name="search_settings" msgid="1910951467596035063">"Búsqueda"</string>
@@ -886,10 +865,6 @@
     <string name="user_dict_settings_context_menu_edit_title" msgid="2210564879320004837">"Editar"</string>
     <string name="user_dict_settings_context_menu_delete_title" msgid="9140703913776549054">"Eliminar"</string>
     <string name="user_dict_settings_empty_text" msgid="6209268025109242806">"No tienes ninguna palabra en el diccionario del usuario. Puedes añadir una palabra a través del menú."</string>
-    <string name="testing" msgid="6584352735303604146">"Prueba"</string>
-    <string name="testing_phone_info" msgid="8656693364332840056">"Información sobre el teléfono"</string>
-    <string name="testing_battery_info" msgid="3497865525976497848">"Información sobre la batería"</string>
-    <string name="testing_battery_history">Historial batería</string>
     <string name="quick_launch_title" msgid="7904609846945905306">"Inicio rápido"</string>
     <string name="quick_launch_summary" msgid="3453825712466417452">"Establecer accesos rápidos del teclado para ejecutar aplicaciones"</string>
     <string name="quick_launch_assign_application" msgid="4521368464929956350">"Asignar aplicación"</string>
@@ -960,11 +935,7 @@
     <string name="battery_history_screen_on_battery">Con bateria:</string>
     <string name="battery_history_screen_on_plugged">A la red:</string>
     <string name="usage_stats_label" msgid="5890846333487083609">"Estadísticas de uso"</string>
-    <string name="testing_usage_stats" msgid="7823048598893937339">"Estadísticas de uso"</string>
-    <string name="display_order_text" msgid="8592776965827565271">"Ordenar por:"</string>
     <string name="app_name_label" msgid="2000949925256858308">"Aplicación"</string>
-    <string name="launch_count_label" msgid="4019444833263957024">"Número"</string>
-    <string name="usage_time_label" msgid="295954901452833058">"Tiempo de uso"</string>
     <string name="accessibility_settings" msgid="3975902491934816215">"Accesibilidad"</string>
     <string name="accessibility_settings_title" msgid="2130492524656204459">"Accesibilidad"</string>
     <string name="accessibility_settings_summary" msgid="8185181964847149507">"Administrar opciones de accesibilidad"</string>
@@ -1378,7 +1349,6 @@
 
     <string name="pref_rotation_180_title">180 grados</string>
 
-    <string name="pref_rotation_270_title">270 grados</string>
     <string name="pref_toggle_all">Control de conexiones</string>
     <string name="pref_toggle_all_summary">Controla las conexiones inalámbricas</string>
 
@@ -1413,5 +1383,7 @@
     <string name="compatibility_mode_summary_on">Ejecutar aplicaciones antiguas en modo compatible. Es necesario reiniciar.</string>
     <!-- Sound & display settings screen, compatibility mode option summary text when check box is clear -->
     <string name="compatibility_mode_summary_off">Ejecutar aplicaciones antiguas en modo normal. Es necesario reiniciar.</string>
+
+    <string name="pref_rotation_270_title">270 grados</string>
 
 </resources>

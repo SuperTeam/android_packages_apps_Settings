@@ -799,25 +799,6 @@
     <!-- Bluetooth settings.  Connection options screen.  The summary for the HID checkbox preference that describes how checking it will set the HID profile as preferred. -->
     <string name="bluetooth_hid_profile_summary_use_for">容許 HID 裝置進行操控／輸入</string>
 
-
-    <!-- Bluetooth settings.  Dock Setting Title -->
-    <string name="bluetooth_dock_settings" msgid="3218335822716052885">"座架設定"</string>
-    <!-- Bluetooth settings.  Dock Setting Dialog Title -->
-    <string name="bluetooth_dock_settings_title" msgid="5543069893044375188">"使用座架播放音訊"</string>
-    <!-- Bluetooth settings.  Dock Setting Dialog - Checkbox selection 1: Use dock as speaker phone -->
-    <string name="bluetooth_dock_settings_headset" msgid="1001821426078644650">"當成手機喇叭"</string>
-    <!-- Bluetooth settings.  Dock Setting Dialog - Checkbox selection 2: Use dock for media audio -->
-    <string name="bluetooth_dock_settings_a2dp" msgid="8791004998846630574">"使用於音樂與媒體"</string>
-    <!-- Bluetooth settings.  Dock Setting Dialog - Remember setting and don't ask user again -->
-    <string name="bluetooth_dock_settings_remember" msgid="5551459057010609115">"記住設定"</string>
-
-    <!-- NFC settings -->
-    <!-- Used in the 1st-level settings screen to turn on NFC -->
-    <string name="nfc_quick_toggle_title" msgid="6769159366307299004">"NFC"</string>
-    <!-- Used in the 1st-level settings screen as the turn-on summary -->
-    <string name="nfc_quick_toggle_summary" msgid="1988408027741447231">"使用近距離無線通訊讀取和交換標記"</string>
-    <string name="nfc_toggle_error" msgid="2233172102497535522">"發生錯誤。"</string>
-
     <!-- Hostname Settings -->
     <!-- Button when saving a device hostname -->
     <string name="hostname_save">儲存</string>
@@ -978,88 +959,6 @@
     <string name="wifi_tether_configure_ssid_default" msgid="8467525402622138547">"Android 無線基地台"</string>
 
 
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
-         Wi-Fi Testing on the diagnostic screen-->
-    <!-- skipping untranslatable /resources:0/string:name=testing_wifi_info -->
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
-         Menu item for Wi-FiManager disableNetwork API-->
-    <!-- skipping untranslatable /resources:0/string:name=disableNetwork -->
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
-         Menu item for Wi-FiManager enableNetwork API-->
-    <!-- skipping untranslatable /resources:0/string:name=enableNetwork -->
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
-         Menu item for Wi-FiManager disconnect API-->
-    <!-- skipping untranslatable /resources:0/string:name=disconnect -->
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
-         Menu item for Wi-FiManager getConfiguredNetworks API-->
-    <!-- skipping untranslatable /resources:0/string:name=getConfiguredNetworks -->
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
-         Menu item for Wi-FiManager getConnectionInfo API-->
-    <!-- skipping untranslatable /resources:0/string:name=getConnectionInfo -->
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
-         Menu item on Wi-Fi information screen-->
-    <!-- skipping untranslatable /resources:0/string:name=wifi_api_test -->
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
-         Menu item on Wi-Fi information screen-->
-    <!-- skipping untranslatable /resources:0/string:name=wifi_status_test -->
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
-         Button text on Wi-Fi Status screen-->
-    <!-- skipping untranslatable /resources:0/string:name=wifi_update -->
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
-         Label on Wi-Fi Status screen-->
-    <!-- skipping untranslatable /resources:0/string:name=wifi_state_label -->
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
-         Label on Wi-Fi Status screen-->
-    <!-- skipping untranslatable /resources:0/string:name=network_state_label -->
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
-        Label on Wi-Fi Status screen-->
-    <!-- skipping untranslatable /resources:0/string:name=supplicant_state_label -->
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
-         Label on Wi-Fi Status screen-->
-    <!-- skipping untranslatable /resources:0/string:name=rssi_label -->
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
-         Label on Wi-Fi Status screen-->
-    <!-- skipping untranslatable /resources:0/string:name=bssid_label -->
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
-         Label on Wi-Fi Status screen-->
-    <!-- skipping untranslatable /resources:0/string:name=ssid_label -->
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
-         Label on Wi-Fi Status screen-->
-    <!-- skipping untranslatable /resources:0/string:name=hidden_ssid_label -->
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
-         Label on Wi-Fi Status screen-->
-    <!-- skipping untranslatable /resources:0/string:name=ipaddr_label -->
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
-         Label on Wi-Fi Status screen-->
-    <!-- skipping untranslatable /resources:0/string:name=macaddr_label -->
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
-         Label on Wi-Fi Status screen-->
-    <!-- skipping untranslatable /resources:0/string:name=networkid_label -->
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
-         Label on Wi-Fi Status screen-->
-    <!-- skipping untranslatable /resources:0/string:name=link_speed_label -->
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
-         Label on Wi-Fi Status screen-->
-    <!-- skipping untranslatable /resources:0/string:name=scan_list_label -->
-
-    <!-- Wi-Fi state values-->
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary -->
-    <!-- skipping untranslatable /resources:0/string:name=wifi_state_disabling -->
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary -->
-    <!-- skipping untranslatable /resources:0/string:name=wifi_state_disabled -->
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary -->
-    <!-- skipping untranslatable /resources:0/string:name=wifi_state_enabling -->
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary -->
-    <!-- skipping untranslatable /resources:0/string:name=wifi_state_enabled -->
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary -->
-    <!-- skipping untranslatable /resources:0/string:name=wifi_state_unknown -->
-
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
-         Menu item on Wi-Fi information screen-->
-    <!-- skipping untranslatable /resources:0/string:name=wifi_config_info -->
-    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
-         Label on Wi-Fi Configuration screen-->
-    <!-- skipping untranslatable /resources:0/string:name=config_list_label -->
 
     <!-- Sound and alerts settings -->
     <!-- Main Settings screen setting option name to go into the sound settings screen -->
@@ -1133,8 +1032,6 @@
     <string name="media_volume_summary" msgid="5363248930648849974">"設定音樂與影片的音量"</string>
     <!-- Sound settings screen, alarm volume slider title -->
     <string name="alarm_volume_title" msgid="2285597478377758706">"鬧鐘"</string>
-    <!-- Sound settings screen, dock settings summary-->
-    <string name="dock_settings_summary" msgid="455802113668982481">"附加座架的音訊設定"</string>
     <!-- Sound settings screen, setting check box label -->
     <string name="dtmf_tone_enable_title" msgid="1453831168789523185">"觸控音效"</string>
     <!-- Sound settings screen, setting option summary text when check box is selected -->
@@ -1167,31 +1064,6 @@
     <string name="audio_record_proc_title" msgid="4271091199976457534">"噪音消除"</string>
     <!-- Sound settings screen, setting option summary text -->
     <string name="audio_record_proc_summary" msgid="8113628457499616498">"在說話或錄音時抑制背景雜音。"</string>
-
-    <!-- Dock settings title, top level -->
-    <string name="dock_settings" msgid="1820107306693002541">"座架"</string>
-    <!-- Dock settings title -->
-    <string name="dock_settings_title" msgid="9161438664257429372">"座架設定"</string>
-    <!-- Dock audio settings -->
-    <string name="dock_audio_settings_title" msgid="3324750259959570305">"音效"</string>
-    <!-- Dock audio summary for docked to desk dock -->
-    <string name="dock_audio_summary_desk" msgid="6487784412371139335">"隨附的桌上型座架設定"</string>
-    <!-- Dock audio summary for docked to car dock -->
-    <string name="dock_audio_summary_car" msgid="6740897586006248450">"隨附的車用座架設定"</string>
-    <!-- Dock audio summary for undocked -->
-    <string name="dock_audio_summary_none" msgid="289909253741048784">"手機未固定至座架"</string>
-    <!-- Dock audio summary for docked to unknown -->
-    <string name="dock_audio_summary_unknown" msgid="4465059868974255693">"隨附的座架設定"</string>
-    <!-- Dock not found dialog title -->
-    <string name="dock_not_found_title" msgid="3290961741828952424">"找不到座架"</string>
-    <!-- Dock not found dialog text -->
-    <string name="dock_not_found_text" msgid="3035260358985111855">"手機必須固定至座架才能設定座架音效"</string>
-    <!-- Dock settings screen, dock events SFX setting check box label -->
-    <string name="dock_sounds_enable_title" msgid="3659084028644948905">"底座插入音效"</string>
-    <!-- Dock settings screen, setting option summary text when check box is selected -->
-    <string name="dock_sounds_enable_summary_on" msgid="8491180514199743771">"手機插入底座或離開底座時播放音效"</string>
-    <!-- Sound settings screen, setting option summary text when check box is clear -->
-    <string name="dock_sounds_enable_summary_off" msgid="3151046599205265919">"手機插入底座或離開底座時，不要播放音效"</string>
 
     <!-- Acounts & Sync settings screen setting option name to go into the screen for data sync settings-->
     <string name="sync_settings" msgid="9186125469300013491">"帳戶與同步處理"</string>
@@ -2029,16 +1901,6 @@
     <!-- User dictionary settings. The text to show when there are no user-defined words in the dictionary -->
     <string name="user_dict_settings_empty_text" msgid="6209268025109242806">"您的使用者字典中沒有任何字詞，您可以透過 [Menu] 新增字詞。"</string>
 
-    <!-- This is for diagnostics screen. The title of a screen with various items realted to launching screens that will giev the user info. For example, it contains "Phone information" and "Battery information" -->
-    <string name="testing" msgid="6584352735303604146">"測試中"</string>
-    <!-- In the Testing screen.  The item title of the activity that shows a bunch of phone-related information.  -->
-    <string name="testing_phone_info" msgid="8656693364332840056">"手機資訊"</string>
-    <!-- In the Testing screen. The item title of the activity that shows a bunch of battery-related information.  -->
-    <string name="testing_battery_info" msgid="3497865525976497848">"電池資訊"</string>
-    <!-- In the Testing screen. The item title of the activity that shows a bunch of historical battery-related information. -->
-    <string name="testing_battery_history">電池使用狀況</string>
-    <!-- Do not translate. In the Testing screen. The item title of the activity that shows a bunch of SIM-related operations.  -->
-    <!-- skipping untranslatable /resources:0/string:name=testing_sim_toolkit -->
 
     <!-- The title of the item to go into the Quick launch settings. -->
     <string name="quick_launch_title" msgid="7904609846945905306">"快速啟動"</string>
@@ -2225,16 +2087,11 @@
     <!-- XXX remove? Strings used for displaying usage statistics -->
     <string name="usage_stats_label" msgid="5890846333487083609">"使用統計資料"</string>
 
-    <!-- In the Testing screen. The item title of the activity that shows usage statistics.  -->
-    <string name="testing_usage_stats" msgid="7823048598893937339">"使用統計資料"</string>
     <!-- label for text to indicate sort options -->
-    <string name="display_order_text" msgid="8592776965827565271">"排序依據："</string>
     <!-- label for application name -->
     <string name="app_name_label" msgid="2000949925256858308">"應用程式"</string>
     <!-- label for launch count -->
-    <string name="launch_count_label" msgid="4019444833263957024">"計數"</string>
     <!-- label for usage time -->
-    <string name="usage_time_label" msgid="295954901452833058">"使用時間"</string>
 
     <!-- Accessibility settings -->
     <skip/>
@@ -2990,6 +2847,7 @@
     <string name="pref_rotation_90_title">90 度</string>
 
     <string name="pref_rotation_180_title">180 度</string>
+
 
     <string name="pref_rotation_270_title">270 度</string>
 

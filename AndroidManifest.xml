@@ -329,17 +329,6 @@
 			android:clearTaskOnLaunch="false">
 		</activity>
 
-		<activity android:name="DockSettings" android:label="@string/dock_settings_title"
-			android:clearTaskOnLaunch="true">
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
-				<action android:name="com.android.settings.DOCK_SETTINGS" />
-				<category android:name="android.intent.category.DEFAULT" />
-				<category android:name="android.intent.category.VOICE_LAUNCH" />
-				<category android:name="com.android.settings.SHORTCUT" />
-			</intent-filter>
-		</activity>
-
 		<activity android:name="DeviceInfoSettings" android:label="@string/device_info_settings">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
@@ -646,18 +635,6 @@
 			</intent-filter>
 		</activity>
 
-		<receiver android:name=".bluetooth.DockEventReceiver">
-			<intent-filter>
-				<action android:name="android.intent.action.DOCK_EVENT" />
-				<action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
-				<action android:name="android.bluetooth.headset.action.STATE_CHANGED" />
-				<action android:name="android.bluetooth.a2dp.action.SINK_STATE_CHANGED" />
-				<category android:name="android.intent.category.DEFAULT" />
-			</intent-filter>
-		</receiver>
-
-		<service android:name=".bluetooth.DockService" />
-
 		<activity android:name=".bluetooth.RequestPermissionActivity"
 			android:label="@string/bluetooth_permission_request"
 			android:excludeFromRecents="true" android:permission="android.permission.BLUETOOTH"
@@ -775,20 +752,6 @@
 				<category android:name="android.intent.category.VOICE_LAUNCH" />
 			</intent-filter>
 		</activity>
-
-		<activity android:name="TestingSettings" android:label="@string/testing">
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
-				<category android:name="android.intent.category.DEFAULT" />
-			</intent-filter>
-		</activity>
-
-		<receiver android:name="TestingSettingsBroadcastReceiver">
-			<intent-filter>
-				<action android:name="android.provider.Telephony.SECRET_CODE" />
-				<data android:scheme="android_secret_code" android:host="4636" />
-			</intent-filter>
-		</receiver>
 
 		<!-- Standard picker for widgets -->
 		<activity android:name="AppWidgetPickActivity" android:label="@string/widget_picker_title"

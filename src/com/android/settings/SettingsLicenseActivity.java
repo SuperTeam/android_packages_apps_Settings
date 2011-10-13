@@ -16,21 +16,20 @@
 
 package com.android.settings;
 
-import android.os.Bundle;
-import android.os.SystemProperties;
-import android.text.TextUtils;
-import android.util.Config;
-import android.util.Log;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
-import android.widget.Toast;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.zip.GZIPInputStream;
+
+import android.os.Bundle;
+import android.os.SystemProperties;
+import android.text.TextUtils;
+import android.util.Log;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+import android.widget.Toast;
 
 import com.android.internal.app.AlertActivity;
 import com.android.internal.app.AlertController;
@@ -41,7 +40,6 @@ import com.android.internal.app.AlertController;
 public class SettingsLicenseActivity extends AlertActivity {
 
     private static final String TAG = "SettingsLicenseActivity";
-    private static final boolean LOGV = false || Config.LOGV;
 
     private static final String DEFAULT_LICENSE_PATH = "/system/etc/NOTICE.html.gz";
     private static final String PROPERTY_LICENSE_PATH = "ro.config.license_path";

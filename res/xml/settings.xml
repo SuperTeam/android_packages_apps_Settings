@@ -40,18 +40,6 @@
                 android:targetClass="com.android.phone.CallFeaturesSetting" />
         </com.android.settings.IconPreferenceScreen>
 
-        <!-- Launcher -->
-
-        <com.android.settings.IconPreferenceScreen
-            settings:icon="@drawable/ic_settings_launcher"
-            android:title="@string/launcher_settings_title"
-            android:key="launcher_settings">
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.launcher"
-                android:targetClass="com.android.launcher.MyLauncherSettings" />
-        </com.android.settings.IconPreferenceScreen>
-
         <!-- Sound -->
 
         <com.android.settings.IconPreferenceScreen
@@ -173,18 +161,6 @@
                 android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.settings"
                 android:targetClass="com.android.settings.AccessibilitySettings" />
-        </com.android.settings.IconPreferenceScreen>
-
-        <!-- Dock -->
-
-        <com.android.settings.IconPreferenceScreen
-            android:key="dock_settings"
-            settings:icon="@drawable/ic_settings_dock"
-            android:title="@string/dock_settings">
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.settings"
-                android:targetClass="com.android.settings.DockSettings" />
         </com.android.settings.IconPreferenceScreen>
 
         <!-- Date & Time -->

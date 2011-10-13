@@ -34,8 +34,6 @@ import android.widget.SeekBar;
 public class StreamVolumePreference extends Preference implements
         CompoundButton.OnCheckedChangeListener, View.OnClickListener {
 
-    private static String mSelectedKey = null;
-
     private boolean mProtectFromCheckedChange = false;
 
     private CheckBox mCheckBox;
@@ -124,7 +122,6 @@ public class StreamVolumePreference extends Preference implements
 
     protected Dialog createVolumeDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-        final Dialog dialog;
         final AudioManager am = (AudioManager) getContext().getSystemService(Context.AUDIO_SERVICE);
         builder.setTitle(mStreamItem.mLabel);
         mBar = new SeekBar(getContext());
@@ -152,7 +149,7 @@ public class StreamVolumePreference extends Preference implements
     @Override
     public void onClick(android.view.View v) {
         if ((v != null) && (R.id.text_layout == v.getId())) {
-            Context context = getContext();
+            getContext();
             createVolumeDialog().show();
         }
     }

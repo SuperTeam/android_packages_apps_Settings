@@ -336,14 +336,6 @@
     <string name="bluetooth_a2dp_profile_summary_use_for" msgid="4630849022250168427">"Utilizaţi pentru profilul pentru conţinut media audio"</string>
     <string name="bluetooth_headset_profile_summary_use_for" msgid="8705753622443862627">"Utilizaţi pentru componenta audio a telefonului"</string>
     <string name="bluetooth_opp_profile_summary_use_for" msgid="1255674547144769756">"Utilizaţi pentru transferul de fişiere"</string>
-    <string name="bluetooth_dock_settings" msgid="3218335822716052885">"Setări de andocare"</string>
-    <string name="bluetooth_dock_settings_title" msgid="5543069893044375188">"Utilizaţi dispozitivul de andocare pentru componenta audio"</string>
-    <string name="bluetooth_dock_settings_headset" msgid="1001821426078644650">"Ca difuzor"</string>
-    <string name="bluetooth_dock_settings_a2dp" msgid="8791004998846630574">"Pentru muzică şi fişiere media"</string>
-    <string name="bluetooth_dock_settings_remember" msgid="5551459057010609115">"Reţineţi setările"</string>
-    <string name="nfc_quick_toggle_title" msgid="6769159366307299004">"NFC"</string>
-    <string name="nfc_quick_toggle_summary" msgid="1988408027741447231">"Utilizaţi Near Field Communication pentru a citi şi a face schimb de etichete"</string>
-    <string name="nfc_toggle_error" msgid="2233172102497535522">"A apărut o eroare."</string>
     <string name="wifi_quick_toggle_title" msgid="874495178395350104">"Wi-Fi"</string>
     <string name="wifi_quick_toggle_summary" msgid="1047950931623694366">"Activaţi Wi-Fi"</string>
     <string name="wifi_settings" msgid="4746946030627213196">"Setări Wi-Fi"</string>
@@ -442,7 +434,6 @@
     <string name="media_volume_title" msgid="3576565767317118106">"Media"</string>
     <string name="media_volume_summary" msgid="5363248930648849974">"Setaţi volumul pentru muzică şi videoclipuri"</string>
     <string name="alarm_volume_title" msgid="2285597478377758706">"Alarmă"</string>
-    <string name="dock_settings_summary" msgid="455802113668982481">"Setări audio pentru dispozitivul de andocare ataşat"</string>
     <string name="dtmf_tone_enable_title" msgid="1453831168789523185">"Feedback audio la atingere"</string>
     <string name="dtmf_tone_enable_summary_on" msgid="3028201873989887327">"Redaţi tonuri la utilizarea tastaturii pentru apelare"</string>
     <string name="dtmf_tone_enable_summary_off" msgid="7791065951268525678">"Redaţi tonuri la utilizarea tastaturii pentru apelare"</string>
@@ -457,18 +448,6 @@
     <string name="haptic_feedback_enable_summary_off" msgid="7287885436963105314">"Vibrează la apăsarea pe tastele funcţionale şi la anumite interacţiuni cu interfaţa de utilizare"</string>
     <string name="audio_record_proc_title" msgid="4271091199976457534">"Anulare zgomot"</string>
     <string name="audio_record_proc_summary" msgid="8113628457499616498">"Suprimaţi zgomotul de fundal la vorbire sau la înregistrare."</string>
-    <string name="dock_settings" msgid="1820107306693002541">"Andocare"</string>
-    <string name="dock_settings_title" msgid="9161438664257429372">"Setări de andocare"</string>
-    <string name="dock_audio_settings_title" msgid="3324750259959570305">"Audio"</string>
-    <string name="dock_audio_summary_desk" msgid="6487784412371139335">"Setări pentru dispozitivul de andocare al desktopului ataşat"</string>
-    <string name="dock_audio_summary_car" msgid="6740897586006248450">"Setări pentru dispozitivul de andocare al maşinii ataşat"</string>
-    <string name="dock_audio_summary_none" msgid="289909253741048784">"Telefonul nu este andocat"</string>
-    <string name="dock_audio_summary_unknown" msgid="4465059868974255693">"Setări pentru dispozitivul de andocare ataşat"</string>
-    <string name="dock_not_found_title" msgid="3290961741828952424">"Dispozitivul de andocare nu a fost găsit"</string>
-    <string name="dock_not_found_text" msgid="3035260358985111855">"Telefonul trebuie să fie andocat pentru a configura componenta audio a dispozitivului de andocare"</string>
-    <string name="dock_sounds_enable_title" msgid="3659084028644948905">"Sunet de inserare în dispozitivul de andocare"</string>
-    <string name="dock_sounds_enable_summary_on" msgid="8491180514199743771">"Redaţi sunet la introducerea sau la scoaterea telefonului din dispozitivul de andocare"</string>
-    <string name="dock_sounds_enable_summary_off" msgid="3151046599205265919">"Nu redaţi sunetul la introducerea şi la scoaterea telefonului din dispozitivul de andocare"</string>
     <string name="sync_settings" msgid="9186125469300013491">"Conturi şi sincronizare"</string>
     <string name="sync_settings_summary" msgid="2962179505214965667">"Adăugaţi sau eliminaţi conturi şi modificaţi setările contului"</string>
     <string name="search_settings" msgid="1910951467596035063">"Căutaţi"</string>
@@ -857,9 +836,6 @@
     <string name="user_dict_settings_context_menu_edit_title" msgid="2210564879320004837">"Modificaţi"</string>
     <string name="user_dict_settings_context_menu_delete_title" msgid="9140703913776549054">"Ştergeţi"</string>
     <string name="user_dict_settings_empty_text" msgid="6209268025109242806">"Nu există cuvinte în dicţionarul pentru utilizator. Puteţi adăuga un cuvânt prin intermediul meniului."</string>
-    <string name="testing" msgid="6584352735303604146">"Testare"</string>
-    <string name="testing_phone_info" msgid="8656693364332840056">"Informaţii telefon"</string>
-    <string name="testing_battery_info" msgid="3497865525976497848">"Informaţii baterie"</string>
     <string name="quick_launch_title" msgid="7904609846945905306">"Lansare rapidă"</string>
     <string name="quick_launch_summary" msgid="3453825712466417452">"Setaţi comenzi rapide de la tastatură pentru a lansa aplicaţii"</string>
     <string name="quick_launch_assign_application" msgid="4521368464929956350">"Atribuiţi o aplicaţie"</string>
@@ -894,11 +870,7 @@
     <string name="battery_history_minutes" msgid="1467775596084148610">"<xliff:g id="MINUTES">%1$d</xliff:g> m <xliff:g id="SECONDS">%2$d</xliff:g> s"</string>
     <string name="battery_history_seconds" msgid="4283492130945761685">"<xliff:g id="SECONDS">%1$d</xliff:g> sec."</string>
     <string name="usage_stats_label" msgid="5890846333487083609">"Statistici de utilizare"</string>
-    <string name="testing_usage_stats" msgid="7823048598893937339">"Statistici de utilizare"</string>
-    <string name="display_order_text" msgid="8592776965827565271">"Sortaţi după:"</string>
     <string name="app_name_label" msgid="2000949925256858308">"Aplicaţie"</string>
-    <string name="launch_count_label" msgid="4019444833263957024">"Numărul total"</string>
-    <string name="usage_time_label" msgid="295954901452833058">"Durată de utilizare"</string>
     <string name="accessibility_settings" msgid="3975902491934816215">"Accesibilitate"</string>
     <string name="accessibility_settings_title" msgid="2130492524656204459">"Setări de accesibilitate"</string>
     <string name="accessibility_settings_summary" msgid="8185181964847149507">"Gestionaţi opţiunile de accesibilitate"</string>

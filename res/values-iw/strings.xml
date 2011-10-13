@@ -342,14 +342,6 @@
     <string name="bluetooth_opp_profile_summary_use_for" msgid="1255674547144769756">"השתמש להעברת קבצים"</string>
 	<string name="bluetooth_hid_profile_summary_connected">התחבר לאמצעי גישה אנושי</string>
     <string name="bluetooth_hid_profile_summary_use_for">השתמש באמצעי גישה אנושי</string>
-    <string name="bluetooth_dock_settings" msgid="3218335822716052885">"הגדרות עגינה"</string>
-    <string name="bluetooth_dock_settings_title" msgid="5543069893044375188">"שימוש בעגינה לאודיו"</string>
-    <string name="bluetooth_dock_settings_headset" msgid="1001821426078644650">"כדיבורית"</string>
-    <string name="bluetooth_dock_settings_a2dp" msgid="8791004998846630574">"עבור מוסיקה ומדיה"</string>
-    <string name="bluetooth_dock_settings_remember" msgid="5551459057010609115">"זכור הגדרות"</string>
-    <string name="nfc_quick_toggle_title" msgid="6769159366307299004">"NFC"</string>
-    <string name="nfc_quick_toggle_summary" msgid="1988408027741447231">"השתמש ב-Near Field Communication כדי לקרוא ולהחליף תגיות"</string>
-    <string name="nfc_toggle_error" msgid="2233172102497535522">"אירעה שגיאה."</string>
 	<string name="hostname_save">שמור</string>
     <string name="hostname_cancel">ביטול</string>
     <string name="wifi_quick_toggle_title" msgid="874495178395350104">"Wi-Fi"</string>
@@ -459,7 +451,6 @@
     <string name="media_volume_title" msgid="3576565767317118106">"מדיה"</string>
     <string name="media_volume_summary" msgid="5363248930648849974">"קבע עוצמת קול למוסיקה וסרטונים"</string>
     <string name="alarm_volume_title" msgid="2285597478377758706">"התראה"</string>
-    <string name="dock_settings_summary" msgid="455802113668982481">"הגדרות אודיו בחיבור לעגינה"</string>
     <string name="dtmf_tone_enable_title" msgid="1453831168789523185">"צלילי מגע נשמעים"</string>
     <string name="dtmf_tone_enable_summary_on" msgid="3028201873989887327">"הפעל צלילים בעת שימוש בלוח החיוג"</string>
     <string name="dtmf_tone_enable_summary_off" msgid="7791065951268525678">"הפעל צלילים בעת שימוש בלוח החיוג"</string>
@@ -474,18 +465,6 @@
     <string name="haptic_feedback_enable_summary_off" msgid="7287885436963105314">"רטט בעת לחיצה על מקשים רכים באינטראקציות מסוימות של ממשק המשתמש"</string>
     <string name="audio_record_proc_title" msgid="4271091199976457534">"ביטול רעש"</string>
     <string name="audio_record_proc_summary" msgid="8113628457499616498">"השתק קולות רקע בשעת דיבור או הקלטה."</string>
-    <string name="dock_settings" msgid="1820107306693002541">"עגינה"</string>
-    <string name="dock_settings_title" msgid="9161438664257429372">"הגדרות עגינה"</string>
-    <string name="dock_audio_settings_title" msgid="3324750259959570305">"אודיו"</string>
-    <string name="dock_audio_summary_desk" msgid="6487784412371139335">"הגדרות עבור עגינת שולחן העבודה המצורפת"</string>
-    <string name="dock_audio_summary_car" msgid="6740897586006248450">"הגדרות עבור עגינת רכב המצורפת"</string>
-    <string name="dock_audio_summary_none" msgid="289909253741048784">"הטלפון לא בעגינה"</string>
-    <string name="dock_audio_summary_unknown" msgid="4465059868974255693">"הגדרות עבור העגינה המצורפת"</string>
-    <string name="dock_not_found_title" msgid="3290961741828952424">"לא נמצאה עגינה"</string>
-    <string name="dock_not_found_text" msgid="3035260358985111855">"הטלפון חייב להיות בעגינה כדי להגדיר אודיו בעגינה."</string>
-    <string name="dock_sounds_enable_title" msgid="3659084028644948905">"צליל הכנסה לעגינה"</string>
-    <string name="dock_sounds_enable_summary_on" msgid="8491180514199743771">"הפעל צליל בעת הכנסת הטלפון לעגינה או הוצאתו מהעגינה"</string>
-    <string name="dock_sounds_enable_summary_off" msgid="3151046599205265919">"אל תפעיל צליל בעת הכנסת הטלפון לעגינה או הוצאתו מעגינה"</string>
     <string name="sync_settings" msgid="9186125469300013491">"חשבונות וסנכרון"</string>
     <string name="sync_settings_summary" msgid="2962179505214965667">"הוספה או הסרה של חשבונות ושינוי הגדרות חשבון"</string>
     <string name="search_settings" msgid="1910951467596035063">"חיפוש"</string>
@@ -878,10 +857,6 @@
     <string name="user_dict_settings_context_menu_edit_title" msgid="2210564879320004837">"ערוך"</string>
     <string name="user_dict_settings_context_menu_delete_title" msgid="9140703913776549054">"מחק"</string>
     <string name="user_dict_settings_empty_text" msgid="6209268025109242806">"אין לך מילים במילון המשתמש. תוכל להוסיף מילה באמצעות התפריט."</string>
-    <string name="testing" msgid="6584352735303604146">"בדיקה"</string>
-    <string name="testing_phone_info" msgid="8656693364332840056">"מידע על הטלפון"</string>
-    <string name="testing_battery_info" msgid="3497865525976497848">"פרטי סוללה"</string>
-    <string name="testing_battery_history">היסטורית סוללה</string>
     <string name="quick_launch_title" msgid="7904609846945905306">"הפעלה מהירה"</string>
     <string name="quick_launch_summary" msgid="3453825712466417452">"הגדר מקשי קיצור כדי להפעיל יישומים"</string>
     <string name="quick_launch_assign_application" msgid="4521368464929956350">"הקצה ליישום"</string>
@@ -946,11 +921,7 @@
   <string name="battery_history_screen_on_battery">אודות הסוללה:</string>
   <string name="battery_history_screen_on_plugged">מחובר לחשמל:</string>
    <string name="usage_stats_label" msgid="5890846333487083609">"נתוני שימוש"</string>
-    <string name="testing_usage_stats" msgid="7823048598893937339">"נתונים סטטיסטיים של שימוש"</string>
-    <string name="display_order_text" msgid="8592776965827565271">"מיין לפי:"</string>
     <string name="app_name_label" msgid="2000949925256858308">"יישום"</string>
-    <string name="launch_count_label" msgid="4019444833263957024">"ספירה"</string>
-    <string name="usage_time_label" msgid="295954901452833058">"זמן שימוש"</string>
     <string name="accessibility_settings" msgid="3975902491934816215">"נגישות"</string>
     <string name="accessibility_settings_title" msgid="2130492524656204459">"הגדרות נגישות"</string>
     <string name="accessibility_settings_summary" msgid="8185181964847149507">"נהל אפשרויות נגישות"</string>

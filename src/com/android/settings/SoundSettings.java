@@ -38,8 +38,6 @@ public class SoundSettings extends PreferenceActivity implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "SoundAndDisplaysSettings";
 
-    /** If there is no setting in the provider, use this. */
-    private static final int FALLBACK_SCREEN_TIMEOUT_VALUE = 30000;
     private static final int FALLBACK_EMERGENCY_TONE_VALUE = 0;
 
     private static final String KEY_SILENT = "silent";

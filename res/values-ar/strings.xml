@@ -336,14 +336,6 @@
     <string name="bluetooth_a2dp_profile_summary_use_for" msgid="4630849022250168427">"الاستخدام للإعدادات الصوتية للوسائط"</string>
     <string name="bluetooth_headset_profile_summary_use_for" msgid="8705753622443862627">"الاستخدام لإعدادات الهاتف الصوتية"</string>
     <string name="bluetooth_opp_profile_summary_use_for" msgid="1255674547144769756">"استخدامه لنقل الملفات"</string>
-    <string name="bluetooth_dock_settings" msgid="3218335822716052885">"إعدادات الإرساء"</string>
-    <string name="bluetooth_dock_settings_title" msgid="5543069893044375188">"استخدام الإرساء للإعدادات الصوتية"</string>
-    <string name="bluetooth_dock_settings_headset" msgid="1001821426078644650">"كهاتف بسماعة خارجية"</string>
-    <string name="bluetooth_dock_settings_a2dp" msgid="8791004998846630574">"للموسيقى والوسائط"</string>
-    <string name="bluetooth_dock_settings_remember" msgid="5551459057010609115">"تذكّر الإعدادات"</string>
-    <string name="nfc_quick_toggle_title" msgid="6769159366307299004">"NFC"</string>
-    <string name="nfc_quick_toggle_summary" msgid="1988408027741447231">"استخدام اتصال الحقل القريب لقراءة العلامات وتبادلها"</string>
-    <string name="nfc_toggle_error" msgid="2233172102497535522">"حدث خطأ."</string>
     <string name="wifi_quick_toggle_title" msgid="874495178395350104">"Wi-Fi"</string>
     <string name="wifi_quick_toggle_summary" msgid="1047950931623694366">"تشغيل Wi-Fi"</string>
     <string name="wifi_settings" msgid="4746946030627213196">"إعدادات Wi-Fi"</string>
@@ -442,7 +434,6 @@
     <string name="media_volume_title" msgid="3576565767317118106">"الوسائط"</string>
     <string name="media_volume_summary" msgid="5363248930648849974">"تعيين مستوى الصوت للموسيقى ومقاطع الفيديو"</string>
     <string name="alarm_volume_title" msgid="2285597478377758706">"المنبّه"</string>
-    <string name="dock_settings_summary" msgid="455802113668982481">"الإعدادات الصوتية للإرساء المرفق"</string>
     <string name="dtmf_tone_enable_title" msgid="1453831168789523185">"نغمات اللمس المسموعة"</string>
     <string name="dtmf_tone_enable_summary_on" msgid="3028201873989887327">"تشغيل النغمات أثناء استخدام لوحة الطلب"</string>
     <string name="dtmf_tone_enable_summary_off" msgid="7791065951268525678">"تشغيل النغمات أثناء استخدام لوحة الطلب"</string>
@@ -457,18 +448,6 @@
     <string name="haptic_feedback_enable_summary_off" msgid="7287885436963105314">"الاهتزاز عند الضغط على مفاتيح الاختيار وبعض تفاعلات واجهة المستخدم"</string>
     <string name="audio_record_proc_title" msgid="4271091199976457534">"إلغاء الضجيج"</string>
     <string name="audio_record_proc_summary" msgid="8113628457499616498">"كتم ضجيج الخلفية عند التحدث أو التسجيل."</string>
-    <string name="dock_settings" msgid="1820107306693002541">"إرساء"</string>
-    <string name="dock_settings_title" msgid="9161438664257429372">"إعدادات الإرساء"</string>
-    <string name="dock_audio_settings_title" msgid="3324750259959570305">"صوتي"</string>
-    <string name="dock_audio_summary_desk" msgid="6487784412371139335">"إعدادات إرساء سطح المكتب المرفق"</string>
-    <string name="dock_audio_summary_car" msgid="6740897586006248450">"إعدادات إرساء السيارة المرفق"</string>
-    <string name="dock_audio_summary_none" msgid="289909253741048784">"لم يتم إرساء الهاتف"</string>
-    <string name="dock_audio_summary_unknown" msgid="4465059868974255693">"إعدادات الإرساء المرفق"</string>
-    <string name="dock_not_found_title" msgid="3290961741828952424">"لم يتم العثور على الإرساء"</string>
-    <string name="dock_not_found_text" msgid="3035260358985111855">"يجب إرساء الهاتف لتهيئة إعدادات الإرساء الصوتية"</string>
-    <string name="dock_sounds_enable_title" msgid="3659084028644948905">"صوت إدراج الإرساء"</string>
-    <string name="dock_sounds_enable_summary_on" msgid="8491180514199743771">"تشغيل الصوت عند إدراج أو إزالة الهاتف من الإرساء"</string>
-    <string name="dock_sounds_enable_summary_off" msgid="3151046599205265919">"عدم تشغيل الصوت عند إدراج أو إزالة الهاتف من الإرساء"</string>
     <string name="sync_settings" msgid="9186125469300013491">"الحسابات والمزامنة"</string>
     <string name="sync_settings_summary" msgid="2962179505214965667">"إضافة حسابات أو إزالتها وتغيير إعدادات الحساب"</string>
     <string name="search_settings" msgid="1910951467596035063">"بحث"</string>
@@ -857,9 +836,6 @@
     <string name="user_dict_settings_context_menu_edit_title" msgid="2210564879320004837">"تعديل"</string>
     <string name="user_dict_settings_context_menu_delete_title" msgid="9140703913776549054">"حذف"</string>
     <string name="user_dict_settings_empty_text" msgid="6209268025109242806">"ليست لديك أي كلمات في قاموس المستخدم. يمكنك إضافة كلمة من خلال القائمة."</string>
-    <string name="testing" msgid="6584352735303604146">"الاختبار"</string>
-    <string name="testing_phone_info" msgid="8656693364332840056">"معلومات الهاتف"</string>
-    <string name="testing_battery_info" msgid="3497865525976497848">"معلومات البطارية"</string>
     <string name="quick_launch_title" msgid="7904609846945905306">"تشغيل سريع"</string>
     <string name="quick_launch_summary" msgid="3453825712466417452">"تعيين اختصارات لوحة المفاتيح لتشغيل التطبيقات"</string>
     <string name="quick_launch_assign_application" msgid="4521368464929956350">"تعيين تطبيق"</string>
@@ -894,11 +870,7 @@
     <string name="battery_history_minutes" msgid="1467775596084148610">"<xliff:g id="MINUTES">%1$d</xliff:g> دقيقة <xliff:g id="SECONDS">%2$d</xliff:g> ثانية"</string>
     <string name="battery_history_seconds" msgid="4283492130945761685">"<xliff:g id="SECONDS">%1$d</xliff:g> ث"</string>
     <string name="usage_stats_label" msgid="5890846333487083609">"إحصاءات الاستخدام"</string>
-    <string name="testing_usage_stats" msgid="7823048598893937339">"إحصاءات الاستخدام"</string>
-    <string name="display_order_text" msgid="8592776965827565271">"تصنيف بحسب:"</string>
     <string name="app_name_label" msgid="2000949925256858308">"التطبيق"</string>
-    <string name="launch_count_label" msgid="4019444833263957024">"عدد"</string>
-    <string name="usage_time_label" msgid="295954901452833058">"وقت الاستخدام"</string>
     <string name="accessibility_settings" msgid="3975902491934816215">"إمكانية الدخول"</string>
     <string name="accessibility_settings_title" msgid="2130492524656204459">"إعدادات إمكانية الدخول"</string>
     <string name="accessibility_settings_summary" msgid="8185181964847149507">"إدارة خيارات إمكانية الدخول"</string>

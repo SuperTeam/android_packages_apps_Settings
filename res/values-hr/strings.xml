@@ -336,14 +336,6 @@
     <string name="bluetooth_a2dp_profile_summary_use_for" msgid="4630849022250168427">"Koristi za medijski zvuk"</string>
     <string name="bluetooth_headset_profile_summary_use_for" msgid="8705753622443862627">"Koristi za telefonski zvuk"</string>
     <string name="bluetooth_opp_profile_summary_use_for" msgid="1255674547144769756">"Koristi za prijenos datoteke"</string>
-    <string name="bluetooth_dock_settings" msgid="3218335822716052885">"Postavke priključne stanice"</string>
-    <string name="bluetooth_dock_settings_title" msgid="5543069893044375188">"Koristi priključnu stanicu za zvuk"</string>
-    <string name="bluetooth_dock_settings_headset" msgid="1001821426078644650">"Kao telefonski zvučnik"</string>
-    <string name="bluetooth_dock_settings_a2dp" msgid="8791004998846630574">"Za glazbu i medije"</string>
-    <string name="bluetooth_dock_settings_remember" msgid="5551459057010609115">"Zapamti postavke"</string>
-    <string name="nfc_quick_toggle_title" msgid="6769159366307299004">"NFC"</string>
-    <string name="nfc_quick_toggle_summary" msgid="1988408027741447231">"Upotrijebi Near Field Communication za čitanje i razmjenu oznaka"</string>
-    <string name="nfc_toggle_error" msgid="2233172102497535522">"Došlo je do pogreške."</string>
     <string name="wifi_quick_toggle_title" msgid="874495178395350104">"Wi-Fi"</string>
     <string name="wifi_quick_toggle_summary" msgid="1047950931623694366">"Uključi Wi-Fi"</string>
     <string name="wifi_settings" msgid="4746946030627213196">"Wi-Fi postavke"</string>
@@ -442,7 +434,6 @@
     <string name="media_volume_title" msgid="3576565767317118106">"Mediji"</string>
     <string name="media_volume_summary" msgid="5363248930648849974">"Postavite glasnoću za glazbu i videozapise"</string>
     <string name="alarm_volume_title" msgid="2285597478377758706">"Alarm"</string>
-    <string name="dock_settings_summary" msgid="455802113668982481">"Postavke zvuka za dodanu priključnu stanicu"</string>
     <string name="dtmf_tone_enable_title" msgid="1453831168789523185">"Zvučni dodirni zvukovi"</string>
     <string name="dtmf_tone_enable_summary_on" msgid="3028201873989887327">"Reproduciraj tonove kod upotrebe značajke za biranje"</string>
     <string name="dtmf_tone_enable_summary_off" msgid="7791065951268525678">"Reproduciraj tonove kod upotrebe značajke za biranje"</string>
@@ -457,18 +448,6 @@
     <string name="haptic_feedback_enable_summary_off" msgid="7287885436963105314">"Vibrira ako se pritisnu funkcijske tipke i u određenim interakcijama s korisničkim sučeljem"</string>
     <string name="audio_record_proc_title" msgid="4271091199976457534">"Uklanjanje buke"</string>
     <string name="audio_record_proc_summary" msgid="8113628457499616498">"Ukloni pozadinsku buku kod govora i snimanja."</string>
-    <string name="dock_settings" msgid="1820107306693002541">"Priključna stanica"</string>
-    <string name="dock_settings_title" msgid="9161438664257429372">"Postavke priključne stanice"</string>
-    <string name="dock_audio_settings_title" msgid="3324750259959570305">"Audio"</string>
-    <string name="dock_audio_summary_desk" msgid="6487784412371139335">"Postavke za dodanu priključnu stanicu za računalo"</string>
-    <string name="dock_audio_summary_car" msgid="6740897586006248450">"Postavke za priključnu stanicu automobila"</string>
-    <string name="dock_audio_summary_none" msgid="289909253741048784">"Telefon nije priključen"</string>
-    <string name="dock_audio_summary_unknown" msgid="4465059868974255693">"Postavke za priključnu stanicu"</string>
-    <string name="dock_not_found_title" msgid="3290961741828952424">"Priključna stanica nije pronađena"</string>
-    <string name="dock_not_found_text" msgid="3035260358985111855">"Telefon treba priključiti za konfiguraciju zvuka priključne stanice"</string>
-    <string name="dock_sounds_enable_title" msgid="3659084028644948905">"Zvuk priključivanja"</string>
-    <string name="dock_sounds_enable_summary_on" msgid="8491180514199743771">"Reproduciraj zvuk kod umetanja ili uklanjanja telefona s priključne stanice"</string>
-    <string name="dock_sounds_enable_summary_off" msgid="3151046599205265919">"Ne reproduciraj zvuk kod umetanja ili uklanjanja telefona s priključne stanice"</string>
     <string name="sync_settings" msgid="9186125469300013491">"Računi i sinkronizacija"</string>
     <string name="sync_settings_summary" msgid="2962179505214965667">"Dodajte ili uklonite račune i promijenite postavke računa"</string>
     <string name="search_settings" msgid="1910951467596035063">"Pretraži"</string>
@@ -857,9 +836,6 @@
     <string name="user_dict_settings_context_menu_edit_title" msgid="2210564879320004837">"Uređivanje"</string>
     <string name="user_dict_settings_context_menu_delete_title" msgid="9140703913776549054">"Izbriši"</string>
     <string name="user_dict_settings_empty_text" msgid="6209268025109242806">"Nemate nijednu riječ u korisničkom rječniku. Riječ možete dodati putem izbornika."</string>
-    <string name="testing" msgid="6584352735303604146">"Testiranje"</string>
-    <string name="testing_phone_info" msgid="8656693364332840056">"Telefonske informacije"</string>
-    <string name="testing_battery_info" msgid="3497865525976497848">"Informacije o bateriji"</string>
     <string name="quick_launch_title" msgid="7904609846945905306">"Brzo pokretanje"</string>
     <string name="quick_launch_summary" msgid="3453825712466417452">"Postavite tipkovničke prečace za pokretanje aplikacija"</string>
     <string name="quick_launch_assign_application" msgid="4521368464929956350">"Dodijeli aplikaciju"</string>
@@ -894,11 +870,7 @@
     <string name="battery_history_minutes" msgid="1467775596084148610">"<xliff:g id="MINUTES">%1$d</xliff:g> min <xliff:g id="SECONDS">%2$d</xliff:g> s"</string>
     <string name="battery_history_seconds" msgid="4283492130945761685">"<xliff:g id="SECONDS">%1$d</xliff:g> s"</string>
     <string name="usage_stats_label" msgid="5890846333487083609">"Korisnička statistika"</string>
-    <string name="testing_usage_stats" msgid="7823048598893937339">"Korisnička statistika"</string>
-    <string name="display_order_text" msgid="8592776965827565271">"Poredati prema:"</string>
     <string name="app_name_label" msgid="2000949925256858308">"Aplikacija"</string>
-    <string name="launch_count_label" msgid="4019444833263957024">"Broj"</string>
-    <string name="usage_time_label" msgid="295954901452833058">"Vrijeme upotrebe"</string>
     <string name="accessibility_settings" msgid="3975902491934816215">"Dostupnost"</string>
     <string name="accessibility_settings_title" msgid="2130492524656204459">"Postavke dostupnosti"</string>
     <string name="accessibility_settings_summary" msgid="8185181964847149507">"Upravljaj opcijama dostupnosti"</string>

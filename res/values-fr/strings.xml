@@ -338,14 +338,6 @@
     <string name="bluetooth_a2dp_profile_summary_use_for" msgid="4630849022250168427">"Utiliser pour les paramètres audio du média"</string>
     <string name="bluetooth_headset_profile_summary_use_for" msgid="8705753622443862627">"Utiliser pour les paramètres audio du téléphone"</string>
     <string name="bluetooth_opp_profile_summary_use_for" msgid="1255674547144769756">"Utiliser pour le transfert de fichiers"</string>
-    <string name="bluetooth_dock_settings" msgid="3218335822716052885">"Paramètres de la station d\'accueil"</string>
-    <string name="bluetooth_dock_settings_title" msgid="5543069893044375188">"Utiliser station d\'accueil pour l\'audio"</string>
-    <string name="bluetooth_dock_settings_headset" msgid="1001821426078644650">"Comme téléphone à haut-parleur"</string>
-    <string name="bluetooth_dock_settings_a2dp" msgid="8791004998846630574">"Pour la musique et le multimédia"</string>
-    <string name="bluetooth_dock_settings_remember" msgid="5551459057010609115">"Mémoriser ces paramètres"</string>
-    <string name="nfc_quick_toggle_title" msgid="6769159366307299004">"NFC"</string>
-    <string name="nfc_quick_toggle_summary" msgid="1988408027741447231">"Utiliser la communication en champ proche pour lire et échanger des tags"</string>
-    <string name="nfc_toggle_error" msgid="2233172102497535522">"Une erreur s\'est produite."</string>
     <skip />
 
     <!-- Hostname Settings -->
@@ -459,7 +451,6 @@
     <string name="media_volume_title" msgid="3576565767317118106">"Multimédia"</string>
     <string name="media_volume_summary" msgid="5363248930648849974">"Régler le volume pour la musique et les vidéos"</string>
     <string name="alarm_volume_title" msgid="2285597478377758706">"Alarme"</string>
-    <string name="dock_settings_summary" msgid="455802113668982481">"Paramètres audio de la station d\'accueil associée"</string>
     <string name="dtmf_tone_enable_title" msgid="1453831168789523185">"Tonalité touches audible"</string>
     <string name="dtmf_tone_enable_summary_on" msgid="3028201873989887327">"Activer la tonalité des touches du clavier"</string>
     <string name="dtmf_tone_enable_summary_off" msgid="7791065951268525678">"Activer la tonalité des touches du clavier"</string>
@@ -476,18 +467,6 @@
     <string name="haptic_feedback_enable_summary_off" msgid="7287885436963105314">"Vibrer à l\'utilisation de touches programmables et d\'autres options"</string>
     <string name="audio_record_proc_title" msgid="4271091199976457534">"Suppression du bruit"</string>
     <string name="audio_record_proc_summary" msgid="8113628457499616498">"Supprimer les bruits de fond lors d\'une discussion ou d\'un enregistrement."</string>
-    <string name="dock_settings" msgid="1820107306693002541">"Station d\'accueil"</string>
-    <string name="dock_settings_title" msgid="9161438664257429372">"Paramètres station d\'accueil"</string>
-    <string name="dock_audio_settings_title" msgid="3324750259959570305">"Audio"</string>
-    <string name="dock_audio_summary_desk" msgid="6487784412371139335">"Paramètres station d\'accueil bureau associée"</string>
-    <string name="dock_audio_summary_car" msgid="6740897586006248450">"Paramètres support voiture associé"</string>
-    <string name="dock_audio_summary_none" msgid="289909253741048784">"Le téléphone n\'est pas inséré dans la station d\'accueil."</string>
-    <string name="dock_audio_summary_unknown" msgid="4465059868974255693">"Paramètres station d\'accueil associée"</string>
-    <string name="dock_not_found_title" msgid="3290961741828952424">"Station d\'accueil introuvable"</string>
-    <string name="dock_not_found_text" msgid="3035260358985111855">"Pour configurer les paramètres audio de la station d\'accueil, vous devez placer le téléphone sur cette dernière."</string>
-    <string name="dock_sounds_enable_title" msgid="3659084028644948905">"Insertion dans la station d\'accueil"</string>
-    <string name="dock_sounds_enable_summary_on" msgid="8491180514199743771">"Emettre un son lorsque le téléphone est inséré dans la station d\'accueil ou retiré de celle-ci"</string>
-    <string name="dock_sounds_enable_summary_off" msgid="3151046599205265919">"N\'émettre aucun son lorsque le téléphone est inséré dans la station d\'accueil ou retiré de celle-ci"</string>
     <string name="sync_settings" msgid="9186125469300013491">"Comptes et synchro"</string>
     <string name="sync_settings_summary" msgid="2962179505214965667">"Ajouter ou supprimer des comptes et modifier leurs paramètres"</string>
     <string name="search_settings" msgid="1910951467596035063">"Recherche"</string>
@@ -882,9 +861,6 @@
     <string name="user_dict_settings_context_menu_edit_title" msgid="2210564879320004837">"Modifier"</string>
     <string name="user_dict_settings_context_menu_delete_title" msgid="9140703913776549054">"Supprimer"</string>
     <string name="user_dict_settings_empty_text" msgid="6209268025109242806">"Votre dictionnaire personnel ne contient aucun mot. Vous pouvez ajouter un mot via le menu."</string>
-    <string name="testing" msgid="6584352735303604146">"Test"</string>
-    <string name="testing_phone_info" msgid="8656693364332840056">"Informations sur le téléphone"</string>
-    <string name="testing_battery_info" msgid="3497865525976497848">"Informations sur la batterie"</string>
     <string name="quick_launch_title" msgid="7904609846945905306">"Lancement rapide"</string>
     <string name="quick_launch_summary" msgid="3453825712466417452">"Configurer des raccourcis clavier pour lancer des applications"</string>
     <string name="quick_launch_assign_application" msgid="4521368464929956350">"Choisir une application"</string>
@@ -952,11 +928,7 @@
     <string name="battery_history_screen_on_battery" msgid="536058210445081888">"Sur la batterie :"</string>
     <string name="battery_history_screen_on_plugged" msgid="5019127390021871260">"Branchée :"</string>
     <string name="usage_stats_label" msgid="5890846333487083609">"Données statistiques"</string>
-    <string name="testing_usage_stats" msgid="7823048598893937339">"Données statistiques"</string>
-    <string name="display_order_text" msgid="8592776965827565271">"Trier par :"</string>
     <string name="app_name_label" msgid="2000949925256858308">"Application"</string>
-    <string name="launch_count_label" msgid="4019444833263957024">"Nombre"</string>
-    <string name="usage_time_label" msgid="295954901452833058">"Temps d\'utilisation"</string>
     <string name="accessibility_settings" msgid="3975902491934816215">"Accessibilité"</string>
     <string name="accessibility_settings_title" msgid="2130492524656204459">"Paramètres d\'accessibilité"</string>
     <string name="accessibility_settings_summary" msgid="8185181964847149507">"Gérer les options d\'accessibilité"</string>
@@ -1377,5 +1349,7 @@
     <string name="profile_connectionoverrides_title">Connexions</string>
     <!-- Summary for connection overrides via profiles -->
     <string name="profile_connectionoverrides_summary">Activer/désactiver</string>
+
+    <string name="pref_rotation_270_title">270 degrés</string>
 
 </resources>

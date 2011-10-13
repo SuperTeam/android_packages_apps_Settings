@@ -336,14 +336,6 @@
     <string name="bluetooth_a2dp_profile_summary_use_for" msgid="4630849022250168427">"Umožňuje pripojenie zvukového média"</string>
     <string name="bluetooth_headset_profile_summary_use_for" msgid="8705753622443862627">"Použiť pre zvuk telefónu"</string>
     <string name="bluetooth_opp_profile_summary_use_for" msgid="1255674547144769756">"Použiť na prenos súborov"</string>
-    <string name="bluetooth_dock_settings" msgid="3218335822716052885">"Nastavenia doku"</string>
-    <string name="bluetooth_dock_settings_title" msgid="5543069893044375188">"Použiť zvuk doku"</string>
-    <string name="bluetooth_dock_settings_headset" msgid="1001821426078644650">"Ako reproduktor telefónu"</string>
-    <string name="bluetooth_dock_settings_a2dp" msgid="8791004998846630574">"Pre hudbu a médiá"</string>
-    <string name="bluetooth_dock_settings_remember" msgid="5551459057010609115">"Zapamätať nastavenia"</string>
-    <string name="nfc_quick_toggle_title" msgid="6769159366307299004">"NFC"</string>
-    <string name="nfc_quick_toggle_summary" msgid="1988408027741447231">"Použiť technológiu NFC na čítanie a výmenu značiek"</string>
-    <string name="nfc_toggle_error" msgid="2233172102497535522">"Vyskytla sa chyba."</string>
     <string name="wifi_quick_toggle_title" msgid="874495178395350104">"Wi-Fi"</string>
     <string name="wifi_quick_toggle_summary" msgid="1047950931623694366">"Zapnúť Wi-Fi"</string>
     <string name="wifi_settings" msgid="4746946030627213196">"Nastavenia Wi-Fi"</string>
@@ -442,7 +434,6 @@
     <string name="media_volume_title" msgid="3576565767317118106">"Médiá"</string>
     <string name="media_volume_summary" msgid="5363248930648849974">"Umožňuje nastaviť hlasitosť hudby a videí"</string>
     <string name="alarm_volume_title" msgid="2285597478377758706">"Budík"</string>
-    <string name="dock_settings_summary" msgid="455802113668982481">"Nastavenia zvuku pre pripojený dok"</string>
     <string name="dtmf_tone_enable_title" msgid="1453831168789523185">"Dotyky sú sprevádzané zvukmi"</string>
     <string name="dtmf_tone_enable_summary_on" msgid="3028201873989887327">"Tlačidlá číselníka sú sprevádzané zvukmi"</string>
     <string name="dtmf_tone_enable_summary_off" msgid="7791065951268525678">"Tlačidlá číselníka sú sprevádzané zvukmi"</string>
@@ -457,18 +448,6 @@
     <string name="haptic_feedback_enable_summary_off" msgid="7287885436963105314">"Vibrovať pri stlačení softvérových klávesov a pri niektorých udalostiach používateľského rozhrania"</string>
     <string name="audio_record_proc_title" msgid="4271091199976457534">"Potlačenie šumu"</string>
     <string name="audio_record_proc_summary" msgid="8113628457499616498">"Pri hovore alebo nahrávaní potlačí okolitý šum."</string>
-    <string name="dock_settings" msgid="1820107306693002541">"Dok"</string>
-    <string name="dock_settings_title" msgid="9161438664257429372">"Nastavenie doku"</string>
-    <string name="dock_audio_settings_title" msgid="3324750259959570305">"Zvuk"</string>
-    <string name="dock_audio_summary_desk" msgid="6487784412371139335">"Nastavenia pripojeného stolného doku"</string>
-    <string name="dock_audio_summary_car" msgid="6740897586006248450">"Nastavenia pripojeného doku do auta"</string>
-    <string name="dock_audio_summary_none" msgid="289909253741048784">"Telefón nie je vložený do doku"</string>
-    <string name="dock_audio_summary_unknown" msgid="4465059868974255693">"Nastavenia pripojeného doku"</string>
-    <string name="dock_not_found_title" msgid="3290961741828952424">"Dok nebol nájdený"</string>
-    <string name="dock_not_found_text" msgid="3035260358985111855">"Ak chcete konfigurovať zvuk doku, musíte do neho vložiť telefón"</string>
-    <string name="dock_sounds_enable_title" msgid="3659084028644948905">"Zvuk pri vkladaní do doku"</string>
-    <string name="dock_sounds_enable_summary_on" msgid="8491180514199743771">"Prehrať zvuk pri vkladaní alebo odstraňovaní telefónu z doku"</string>
-    <string name="dock_sounds_enable_summary_off" msgid="3151046599205265919">"Neprehrávať zvuk pri vkladaní alebo odstraňovaní telefónu z doku"</string>
     <string name="sync_settings" msgid="9186125469300013491">"Účty a synchronizácia"</string>
     <string name="sync_settings_summary" msgid="2962179505214965667">"Umožňuje pridať alebo odstrániť účty a zmeniť ich nastavenia"</string>
     <string name="search_settings" msgid="1910951467596035063">"Hľadať"</string>
@@ -857,9 +836,6 @@
     <string name="user_dict_settings_context_menu_edit_title" msgid="2210564879320004837">"Upraviť"</string>
     <string name="user_dict_settings_context_menu_delete_title" msgid="9140703913776549054">"Odstrániť"</string>
     <string name="user_dict_settings_empty_text" msgid="6209268025109242806">"V používateľskom slovníku nie sú žiadne slová. Slovo môžete pridať pomocou ponuky."</string>
-    <string name="testing" msgid="6584352735303604146">"Testovanie"</string>
-    <string name="testing_phone_info" msgid="8656693364332840056">"Informácie o telefóne"</string>
-    <string name="testing_battery_info" msgid="3497865525976497848">"Informácie o batérii"</string>
     <string name="quick_launch_title" msgid="7904609846945905306">"Rýchle spustenie"</string>
     <string name="quick_launch_summary" msgid="3453825712466417452">"Umožňuje nastaviť klávesové skratky na spúšťanie aplikácií"</string>
     <string name="quick_launch_assign_application" msgid="4521368464929956350">"Priradiť aplikáciu"</string>
@@ -894,11 +870,7 @@
     <string name="battery_history_minutes" msgid="1467775596084148610">"<xliff:g id="MINUTES">%1$d</xliff:g> min <xliff:g id="SECONDS">%2$d</xliff:g> s"</string>
     <string name="battery_history_seconds" msgid="4283492130945761685">"<xliff:g id="SECONDS">%1$d</xliff:g> s"</string>
     <string name="usage_stats_label" msgid="5890846333487083609">"Štatistiky používania"</string>
-    <string name="testing_usage_stats" msgid="7823048598893937339">"Štatistiky používania"</string>
-    <string name="display_order_text" msgid="8592776965827565271">"Zoradiť podľa:"</string>
     <string name="app_name_label" msgid="2000949925256858308">"Aplikácia"</string>
-    <string name="launch_count_label" msgid="4019444833263957024">"Súčet"</string>
-    <string name="usage_time_label" msgid="295954901452833058">"Doba použitia"</string>
     <string name="accessibility_settings" msgid="3975902491934816215">"Uľahčenie prístupu"</string>
     <string name="accessibility_settings_title" msgid="2130492524656204459">"Nastavenia uľahčenia prístupu"</string>
     <string name="accessibility_settings_summary" msgid="8185181964847149507">"Možnosti správy uľahčenia prístupu"</string>
@@ -1173,4 +1145,6 @@
     <string name="wimax_settings_summary" msgid="3207355006084135453">"Nastaviť a spravovať sieť 4G a modem"</string>
     <string name="status_wimax_mac_address" msgid="8390791848661413416">"Adresa 4G MAC"</string>
     <string name="additional_system_update_settings_list_item_title" msgid="214987609894661992">"Ďalšie aktualizácie systému"</string>
+    <string name="pref_rotation_270_title">270 stupňov</string>
+
 </resources>

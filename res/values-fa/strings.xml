@@ -336,14 +336,6 @@
     <string name="bluetooth_a2dp_profile_summary_use_for" msgid="4630849022250168427">"استفاده برای رسانه صوتی"</string>
     <string name="bluetooth_headset_profile_summary_use_for" msgid="8705753622443862627">"استفاده برای تلفن صوتی"</string>
     <string name="bluetooth_opp_profile_summary_use_for" msgid="1255674547144769756">"استفاده برای انتقال فایل"</string>
-    <string name="bluetooth_dock_settings" msgid="3218335822716052885">"تنظیمات جایگاه"</string>
-    <string name="bluetooth_dock_settings_title" msgid="5543069893044375188">"استفاده از جایگاه برای صدا"</string>
-    <string name="bluetooth_dock_settings_headset" msgid="1001821426078644650">"به عنوان تلفن دارای بلندگو"</string>
-    <string name="bluetooth_dock_settings_a2dp" msgid="8791004998846630574">"برای موسیقی و رسانه"</string>
-    <string name="bluetooth_dock_settings_remember" msgid="5551459057010609115">"به خاطر سپردن تنظیمات"</string>
-    <string name="nfc_quick_toggle_title" msgid="6769159366307299004">"NFC"</string>
-    <string name="nfc_quick_toggle_summary" msgid="1988408027741447231">"استفاده از ارتباط راه نزدیک برای خواندن و مبادله برچسب ها"</string>
-    <string name="nfc_toggle_error" msgid="2233172102497535522">"خطایی روی داد."</string>
     <string name="wifi_quick_toggle_title" msgid="874495178395350104">"Wi-Fi"</string>
     <string name="wifi_quick_toggle_summary" msgid="1047950931623694366">"روشن کردن Wi-Fi"</string>
     <string name="wifi_settings" msgid="4746946030627213196">"تنظیمات WiFi"</string>
@@ -442,7 +434,6 @@
     <string name="media_volume_title" msgid="3576565767317118106">"رسانه"</string>
     <string name="media_volume_summary" msgid="5363248930648849974">"تنظیم میزان صدا برای موسیقی و ویدیو"</string>
     <string name="alarm_volume_title" msgid="2285597478377758706">"هشدار"</string>
-    <string name="dock_settings_summary" msgid="455802113668982481">"تنظیمات صوتی برای جایگاه پیوست شده"</string>
     <string name="dtmf_tone_enable_title" msgid="1453831168789523185">"آهنگ های شنیداری لمسی"</string>
     <string name="dtmf_tone_enable_summary_on" msgid="3028201873989887327">"هنگام استفاده از صفحه شماره گیری، صداهایی پخش شود"</string>
     <string name="dtmf_tone_enable_summary_off" msgid="7791065951268525678">"هنگام استفاده از صفحه شماره گیری، صداهایی پخش شود"</string>
@@ -457,18 +448,6 @@
     <string name="haptic_feedback_enable_summary_off" msgid="7287885436963105314">"لرزش هنگام فشردن کلیدهای موقت و در برخی ارتباطات ویژه UI"</string>
     <string name="audio_record_proc_title" msgid="4271091199976457534">"لغو پارازیت"</string>
     <string name="audio_record_proc_summary" msgid="8113628457499616498">"هنگام صحبت کردن یا ضبط کردن، صدای اضافی پس زمینه حذف می شود."</string>
-    <string name="dock_settings" msgid="1820107306693002541">"جایگاه"</string>
-    <string name="dock_settings_title" msgid="9161438664257429372">"تنظیمات جایگاه"</string>
-    <string name="dock_audio_settings_title" msgid="3324750259959570305">"صوتی"</string>
-    <string name="dock_audio_summary_desk" msgid="6487784412371139335">"تنظیمات برای جایگاه دسک تاپ وصل شده"</string>
-    <string name="dock_audio_summary_car" msgid="6740897586006248450">"تنظیمات برای جایگاه خودرو وصل شده"</string>
-    <string name="dock_audio_summary_none" msgid="289909253741048784">"تلفن در جایگاه نیست"</string>
-    <string name="dock_audio_summary_unknown" msgid="4465059868974255693">"تنظیمات برای جایگاه وصل شده"</string>
-    <string name="dock_not_found_title" msgid="3290961741828952424">"جایگاه یافت نشد"</string>
-    <string name="dock_not_found_text" msgid="3035260358985111855">"عکس باید به دستگاه متصل شود تا امکان پیکربندی صوتی دستگاه وجود داشته باشد."</string>
-    <string name="dock_sounds_enable_title" msgid="3659084028644948905">"صدای اتصال جایگاه"</string>
-    <string name="dock_sounds_enable_summary_on" msgid="8491180514199743771">"هنگام اتصال یا جدا کردن تلفن از جایگاه، صدا پخش شود"</string>
-    <string name="dock_sounds_enable_summary_off" msgid="3151046599205265919">"هنگام اتصال یا جدا کردن گوشی از دستگاه، صدا پخش نشود"</string>
     <string name="sync_settings" msgid="9186125469300013491">"حساب ها و همگام سازی"</string>
     <string name="sync_settings_summary" msgid="2962179505214965667">"افزودن یا حذف حساب ها و تغییر تنظیمات حساب"</string>
     <string name="search_settings" msgid="1910951467596035063">"جستجو"</string>
@@ -857,9 +836,6 @@
     <string name="user_dict_settings_context_menu_edit_title" msgid="2210564879320004837">"ویرایش"</string>
     <string name="user_dict_settings_context_menu_delete_title" msgid="9140703913776549054">"حذف"</string>
     <string name="user_dict_settings_empty_text" msgid="6209268025109242806">"هیچ کلمه ای را در فرهنگ لغت کاربر ندارید. از طریق منو می توانید یک کلمه را اضافه کنید."</string>
-    <string name="testing" msgid="6584352735303604146">"تست کردن"</string>
-    <string name="testing_phone_info" msgid="8656693364332840056">"اطلاعات تلفن"</string>
-    <string name="testing_battery_info" msgid="3497865525976497848">"اطلاعات باتری"</string>
     <string name="quick_launch_title" msgid="7904609846945905306">"راه اندازی سریع"</string>
     <string name="quick_launch_summary" msgid="3453825712466417452">"میانبرهای صفحه کلید را برای راه اندازی برنامه ها تنظیم کنید"</string>
     <string name="quick_launch_assign_application" msgid="4521368464929956350">"تخصیص برنامه کاربردی"</string>
@@ -894,11 +870,7 @@
     <string name="battery_history_minutes" msgid="1467775596084148610">"<xliff:g id="MINUTES">%1$d</xliff:g>دقیقه و <xliff:g id="SECONDS">%2$d</xliff:g> ثانیه"</string>
     <string name="battery_history_seconds" msgid="4283492130945761685">"<xliff:g id="SECONDS">%1$d</xliff:g> ثانیه"</string>
     <string name="usage_stats_label" msgid="5890846333487083609">"آمار کاربرد"</string>
-    <string name="testing_usage_stats" msgid="7823048598893937339">"آمار کاربرد"</string>
-    <string name="display_order_text" msgid="8592776965827565271">"ترتیب بر اساس:"</string>
     <string name="app_name_label" msgid="2000949925256858308">"برنامه کاربردی"</string>
-    <string name="launch_count_label" msgid="4019444833263957024">"تعداد"</string>
-    <string name="usage_time_label" msgid="295954901452833058">"زمان استفاده"</string>
     <string name="accessibility_settings" msgid="3975902491934816215">"قابلیت دسترسی"</string>
     <string name="accessibility_settings_title" msgid="2130492524656204459">"تنظیمات قابلیت دسترسی"</string>
     <string name="accessibility_settings_summary" msgid="8185181964847149507">"مدیریت گزینه های دسترسی"</string>

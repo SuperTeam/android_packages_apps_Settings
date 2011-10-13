@@ -352,15 +352,6 @@
     <!-- Bluetooth settings.  Connection options screen.  The summary for the HID checkbox preference that describes how checking it will set the HID profile as preferred. -->
     <string name="bluetooth_hid_profile_summary_use_for">Usa per dispositivo hid</string>
 
-    <string name="bluetooth_dock_settings" msgid="3218335822716052885">"Impostazioni dock"</string>
-    <string name="bluetooth_dock_settings_title" msgid="5543069893044375188">"Usa dock per audio"</string>
-    <string name="bluetooth_dock_settings_headset" msgid="1001821426078644650">"Come vivavoce"</string>
-    <string name="bluetooth_dock_settings_a2dp" msgid="8791004998846630574">"Per musica e audio media"</string>
-    <string name="bluetooth_dock_settings_remember" msgid="5551459057010609115">"Ricorda impostazioni"</string>
-    <string name="nfc_quick_toggle_title" msgid="6769159366307299004">"NFC"</string>
-    <string name="nfc_quick_toggle_summary" msgid="1988408027741447231">"Usa Near Field Communication per leggere e scambiare tag"</string>
-    <string name="nfc_toggle_error" msgid="2233172102497535522">"Si è verificato un errore."</string>
-
     <!-- Hostname Settings -->
     <!-- Button when saving a device hostname -->
     <string name="hostname_save">Salva</string>
@@ -484,7 +475,6 @@
     <string name="media_volume_title" msgid="3576565767317118106">"Applicazioni multimediali"</string>
     <string name="media_volume_summary" msgid="5363248930648849974">"Imposta il volume di musica e video"</string>
     <string name="alarm_volume_title" msgid="2285597478377758706">"Allarme"</string>
-    <string name="dock_settings_summary" msgid="455802113668982481">"Impostazioni audio per dock collegato"</string>
     <string name="dtmf_tone_enable_title" msgid="1453831168789523185">"Toni udibili al tocco"</string>
     <string name="dtmf_tone_enable_summary_on" msgid="3028201873989887327">"Riproduci toni durante la composizione"</string>
     <string name="dtmf_tone_enable_summary_off" msgid="7791065951268525678">"Riproduci toni durante la composizione"</string>
@@ -501,18 +491,6 @@
     <string name="haptic_feedback_enable_summary_off" msgid="7287885436963105314">"Vibrazione alla pressione di un tasto softkey e durante certe interazioni con l\'interfaccia utente"</string>
     <string name="audio_record_proc_title" msgid="4271091199976457534">"Eliminazione rumori"</string>
     <string name="audio_record_proc_summary" msgid="8113628457499616498">"Elimina il rumore di fondo quando parli o registri."</string>
-    <string name="dock_settings" msgid="1820107306693002541">"Dock"</string>
-    <string name="dock_settings_title" msgid="9161438664257429372">"Impostazioni dock"</string>
-    <string name="dock_audio_settings_title" msgid="3324750259959570305">"Audio"</string>
-    <string name="dock_audio_summary_desk" msgid="6487784412371139335">"Impostazioni per dock da tavolo collegato"</string>
-    <string name="dock_audio_summary_car" msgid="6740897586006248450">"Impostazioni per dock auto collegato"</string>
-    <string name="dock_audio_summary_none" msgid="289909253741048784">"Telefono non inserito nel dock"</string>
-    <string name="dock_audio_summary_unknown" msgid="4465059868974255693">"Impostazioni per dock collegato"</string>
-    <string name="dock_not_found_title" msgid="3290961741828952424">"Dock non trovato"</string>
-    <string name="dock_not_found_text" msgid="3035260358985111855">"Il telefono deve essere inserito nel dock per configurare l\'audio"</string>
-    <string name="dock_sounds_enable_title" msgid="3659084028644948905">"Suono inserimento dock"</string>
-    <string name="dock_sounds_enable_summary_on" msgid="8491180514199743771">"Riproduci suono all\'inserimento o alla rimozione del telefono dal dock"</string>
-    <string name="dock_sounds_enable_summary_off" msgid="3151046599205265919">"Non riprodurre suono all\'inserimento o alla rimozione del telefono dal dock"</string>
     <string name="sync_settings" msgid="9186125469300013491">"Account e sincronizzaz."</string>
     <string name="sync_settings_summary" msgid="2962179505214965667">"Aggiungi o rimuovi account e modifica impostazioni account"</string>
     <string name="search_settings" msgid="1910951467596035063">"Ricerca"</string>
@@ -909,10 +887,6 @@
     <string name="user_dict_settings_context_menu_edit_title" msgid="2210564879320004837">"Modifica"</string>
     <string name="user_dict_settings_context_menu_delete_title" msgid="9140703913776549054">"Elimina"</string>
     <string name="user_dict_settings_empty_text" msgid="6209268025109242806">"Non sono presenti parole nel dizionario utente. Puoi aggiungere una parola mediante il menu."</string>
-    <string name="testing" msgid="6584352735303604146">"Verifica in corso"</string>
-    <string name="testing_phone_info" msgid="8656693364332840056">"Informazioni telefono"</string>
-    <string name="testing_battery_info" msgid="3497865525976497848">"Informazioni batteria"</string>
-    <string name="testing_battery_history" msgid="3043329445810695647">"Cronologia batteria"</string>
     <string name="quick_launch_title" msgid="7904609846945905306">"Avvio rapido"</string>
     <string name="quick_launch_summary" msgid="3453825712466417452">"Imposta scorciatoie da tastiera per avviare le applicazioni"</string>
     <string name="quick_launch_assign_application" msgid="4521368464929956350">"Assegna applicazione"</string>
@@ -987,11 +961,7 @@
     <string name="battery_history_screen_on_battery" msgid="536058210445081888">"A batteria:"</string>
     <string name="battery_history_screen_on_plugged" msgid="5019127390021871260">"Collegato:"</string>
     <string name="usage_stats_label" msgid="5890846333487083609">"Statistiche di utilizzo"</string>
-    <string name="testing_usage_stats" msgid="7823048598893937339">"Statistiche di utilizzo"</string>
-    <string name="display_order_text" msgid="8592776965827565271">"Ordina per:"</string>
     <string name="app_name_label" msgid="2000949925256858308">"Applicazione"</string>
-    <string name="launch_count_label" msgid="4019444833263957024">"Conteggio"</string>
-    <string name="usage_time_label" msgid="295954901452833058">"Tempo di utilizzo"</string>
     <string name="accessibility_settings" msgid="3975902491934816215">"Accessibilità"</string>
     <string name="accessibility_settings_title" msgid="2130492524656204459">"Impostazioni di accessibilità"</string>
     <string name="accessibility_settings_summary" msgid="8185181964847149507">"Gestisci opzioni di accessibilità"</string>
@@ -1461,6 +1431,7 @@
     <string name="pref_rotation_90_title">90 gradi</string>
 
     <string name="pref_rotation_180_title">180 gradi</string>
+
 
     <string name="pref_rotation_270_title">270 gradi</string>
 

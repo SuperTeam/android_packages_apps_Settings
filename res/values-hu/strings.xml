@@ -336,14 +336,6 @@
     <string name="bluetooth_a2dp_profile_summary_use_for" msgid="4630849022250168427">"Felhasználás az eszköz hangjához"</string>
     <string name="bluetooth_headset_profile_summary_use_for" msgid="8705753622443862627">"Felhasználás a telefon hangjához"</string>
     <string name="bluetooth_opp_profile_summary_use_for" msgid="1255674547144769756">"Felhasználás fájlátvitelre"</string>
-    <string name="bluetooth_dock_settings" msgid="3218335822716052885">"Dokkolási beállítások"</string>
-    <string name="bluetooth_dock_settings_title" msgid="5543069893044375188">"Dokkoló használata a hanghoz"</string>
-    <string name="bluetooth_dock_settings_headset" msgid="1001821426078644650">"Telefonhangszóróként"</string>
-    <string name="bluetooth_dock_settings_a2dp" msgid="8791004998846630574">"Zenéhez és médiához"</string>
-    <string name="bluetooth_dock_settings_remember" msgid="5551459057010609115">"Beállítások megjegyzése"</string>
-    <string name="nfc_quick_toggle_title" msgid="6769159366307299004">"NFC"</string>
-    <string name="nfc_quick_toggle_summary" msgid="1988408027741447231">"NFC technológia használata a címkék olvasásához és cseréjéhez"</string>
-    <string name="nfc_toggle_error" msgid="2233172102497535522">"Hiba történt."</string>
     <string name="wifi_quick_toggle_title" msgid="874495178395350104">"Wi-Fi"</string>
     <string name="wifi_quick_toggle_summary" msgid="1047950931623694366">"Wi-Fi bekapcsolása"</string>
     <string name="wifi_settings" msgid="4746946030627213196">"Wi-Fi beállítások"</string>
@@ -442,7 +434,6 @@
     <string name="media_volume_title" msgid="3576565767317118106">"Média"</string>
     <string name="media_volume_summary" msgid="5363248930648849974">"Zenék és videók hangerejének beállítása"</string>
     <string name="alarm_volume_title" msgid="2285597478377758706">"Ébresztő"</string>
-    <string name="dock_settings_summary" msgid="455802113668982481">"A csatlakoztatott dokkoló hangbeállításai"</string>
     <string name="dtmf_tone_enable_title" msgid="1453831168789523185">"Hallható érintési hangjelzések"</string>
     <string name="dtmf_tone_enable_summary_on" msgid="3028201873989887327">"Hangjelzések lejátszása a tárcsázó használata során"</string>
     <string name="dtmf_tone_enable_summary_off" msgid="7791065951268525678">"Hangjelzések lejátszása a tárcsázó használata során"</string>
@@ -457,18 +448,6 @@
     <string name="haptic_feedback_enable_summary_off" msgid="7287885436963105314">"Rezgés a funkciógombok megnyomásakor és bizonyos kezelőfelületi műveleteknél"</string>
     <string name="audio_record_proc_title" msgid="4271091199976457534">"Zajszűrés"</string>
     <string name="audio_record_proc_summary" msgid="8113628457499616498">"Háttérzaj elnyomása beszélgetés vagy felvétel közben."</string>
-    <string name="dock_settings" msgid="1820107306693002541">"Dokkolás"</string>
-    <string name="dock_settings_title" msgid="9161438664257429372">"Dokkolási beállítások"</string>
-    <string name="dock_audio_settings_title" msgid="3324750259959570305">"Hang"</string>
-    <string name="dock_audio_summary_desk" msgid="6487784412371139335">"A csatlakoztatott asztali dokkoló beállításai"</string>
-    <string name="dock_audio_summary_car" msgid="6740897586006248450">"A csatlakoztatott autós dokkoló beállításai"</string>
-    <string name="dock_audio_summary_none" msgid="289909253741048784">"A telefon nincs dokkolva"</string>
-    <string name="dock_audio_summary_unknown" msgid="4465059868974255693">"A csatlakoztatott dokkoló beállításai"</string>
-    <string name="dock_not_found_title" msgid="3290961741828952424">"A dokkoló nem található"</string>
-    <string name="dock_not_found_text" msgid="3035260358985111855">"A dokkolóegység hangjának beállításához dokkolni kell a telefont"</string>
-    <string name="dock_sounds_enable_title" msgid="3659084028644948905">"Dokkolási hang"</string>
-    <string name="dock_sounds_enable_summary_on" msgid="8491180514199743771">"Hang lejátszása a telefon dokkolóba helyezésekor és kivételekor"</string>
-    <string name="dock_sounds_enable_summary_off" msgid="3151046599205265919">"Ne játsszon le hangot a telefon dokkolóba helyezésekor és kivételekor"</string>
     <string name="sync_settings" msgid="9186125469300013491">"Fiókok és szinkronizálás"</string>
     <string name="sync_settings_summary" msgid="2962179505214965667">"Fiókok hozzáadása és eltávolítása, valamint a fiókbeállítások módosítása"</string>
     <string name="search_settings" msgid="1910951467596035063">"Keresés"</string>
@@ -857,9 +836,6 @@
     <string name="user_dict_settings_context_menu_edit_title" msgid="2210564879320004837">"Szerkesztés"</string>
     <string name="user_dict_settings_context_menu_delete_title" msgid="9140703913776549054">"Törlés"</string>
     <string name="user_dict_settings_empty_text" msgid="6209268025109242806">"Nincsenek szavak a felhasználói szótárban. Új szavakat a menüből adhat hozzá."</string>
-    <string name="testing" msgid="6584352735303604146">"Tesztelés"</string>
-    <string name="testing_phone_info" msgid="8656693364332840056">"Telefon adatai"</string>
-    <string name="testing_battery_info" msgid="3497865525976497848">"Akkumulátoradatok"</string>
     <string name="quick_launch_title" msgid="7904609846945905306">"Gyorsindítás"</string>
     <string name="quick_launch_summary" msgid="3453825712466417452">"Billentyűparancsok beállítása alkalmazások elindításához"</string>
     <string name="quick_launch_assign_application" msgid="4521368464929956350">"Alkalmazás hozzárendelése"</string>
@@ -894,11 +870,7 @@
     <string name="battery_history_minutes" msgid="1467775596084148610">"<xliff:g id="MINUTES">%1$d</xliff:g> p <xliff:g id="SECONDS">%2$d</xliff:g> mp"</string>
     <string name="battery_history_seconds" msgid="4283492130945761685">"<xliff:g id="SECONDS">%1$d</xliff:g> mp"</string>
     <string name="usage_stats_label" msgid="5890846333487083609">"Használati statisztikák"</string>
-    <string name="testing_usage_stats" msgid="7823048598893937339">"Használati statisztika"</string>
-    <string name="display_order_text" msgid="8592776965827565271">"Rendezési szempont:"</string>
     <string name="app_name_label" msgid="2000949925256858308">"Alkalmazás"</string>
-    <string name="launch_count_label" msgid="4019444833263957024">"Számláló"</string>
-    <string name="usage_time_label" msgid="295954901452833058">"Használat ideje"</string>
     <string name="accessibility_settings" msgid="3975902491934816215">"Kisegítő lehetőségek"</string>
     <string name="accessibility_settings_title" msgid="2130492524656204459">"Kisegítő lehetőségek beállításai"</string>
     <string name="accessibility_settings_summary" msgid="8185181964847149507">"Kisegítő lehetőségek beállításainak kezelése"</string>
@@ -1190,7 +1162,6 @@
     <string name="mod_version_default">Ismeretlen</string>
     <string name="service_client_name">%1$s: érintse meg a kezeléshez</string>
     <string name="service_process_name">Folyamat: %1$s</string>
-    <string name="testing_battery_history">Akkumulátor-előzmények</string>
     <string name="adb_notify">USB hibakeresési értesítés</string>
     <string name="adb_notify_summary">Értesítések megjelenítése USB hibakeresési módban</string>
     <string name="kill_app_longpress_back">Alkalmazás leállítása nyomva tartással</string>

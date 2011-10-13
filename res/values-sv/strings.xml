@@ -342,14 +342,6 @@
     <string name="bluetooth_opp_profile_summary_use_for" msgid="1255674547144769756">"Använd för filöverföring"</string>
     <string name="bluetooth_hid_profile_summary_connected">Ansluten till HID-enhet</string>
     <string name="bluetooth_hid_profile_summary_use_for">Använd till HID-enhet</string>
-    <string name="bluetooth_dock_settings" msgid="3218335822716052885">"Dockningsinställningar"</string>
-    <string name="bluetooth_dock_settings_title" msgid="5543069893044375188">"Använd dockningsstation för ljud"</string>
-    <string name="bluetooth_dock_settings_headset" msgid="1001821426078644650">"Som högtalartelefon"</string>
-    <string name="bluetooth_dock_settings_a2dp" msgid="8791004998846630574">"För musik och media"</string>
-    <string name="bluetooth_dock_settings_remember" msgid="5551459057010609115">"Kom ihåg inställningarna"</string>
-    <string name="nfc_quick_toggle_title" msgid="6769159366307299004">"NFC"</string>
-    <string name="nfc_quick_toggle_summary" msgid="1988408027741447231">"Använd närfältskommunikation för att läsa och utbyta taggar"</string>
-    <string name="nfc_toggle_error" msgid="2233172102497535522">"Ett fel inträffade."</string>
     <string name="hostname_save">Spara</string>
     <string name="hostname_cancel">Avbryt</string>
     <string name="wifi_quick_toggle_title" msgid="874495178395350104">"Wi-Fi"</string>
@@ -459,7 +451,6 @@
     <string name="media_volume_title" msgid="3576565767317118106">"Media"</string>
     <string name="media_volume_summary" msgid="5363248930648849974">"Ställ in volym för musik och video"</string>
     <string name="alarm_volume_title" msgid="2285597478377758706">"Alarm"</string>
-    <string name="dock_settings_summary" msgid="455802113668982481">"Ljudinställningar för den anslutna dockan"</string>
     <string name="dtmf_tone_enable_title" msgid="1453831168789523185">"Knappljud"</string>
     <string name="dtmf_tone_enable_summary_on" msgid="3028201873989887327">"Spela upp signaler när knappsatsen används"</string>
     <string name="dtmf_tone_enable_summary_off" msgid="7791065951268525678">"Spela signaler när knappsatsen används"</string>
@@ -476,18 +467,6 @@
     <string name="haptic_feedback_enable_summary_off" msgid="7287885436963105314">"Vibrera när funktionsknappar trycks ned och vid vissa gränssnittshändelser"</string>
     <string name="audio_record_proc_title" msgid="4271091199976457534">"Ta bort bakgrundsljud"</string>
     <string name="audio_record_proc_summary" msgid="8113628457499616498">"Ta bort bakgrundsljud vid samtal eller inspelning."</string>
-    <string name="dock_settings" msgid="1820107306693002541">"Dockning"</string>
-    <string name="dock_settings_title" msgid="9161438664257429372">"Dockningsinställningar"</string>
-    <string name="dock_audio_settings_title" msgid="3324750259959570305">"Ljud"</string>
-    <string name="dock_audio_summary_desk" msgid="6487784412371139335">"Inställningar för ansluten skrivbordsdocka"</string>
-    <string name="dock_audio_summary_car" msgid="6740897586006248450">"Inställningar för dockningsstation för bil"</string>
-    <string name="dock_audio_summary_none" msgid="289909253741048784">"Telefonen är inte dockad"</string>
-    <string name="dock_audio_summary_unknown" msgid="4465059868974255693">"Inställningar för ansluten dockningsenhet"</string>
-    <string name="dock_not_found_title" msgid="3290961741828952424">"Ingen dockningsenhet hittades"</string>
-    <string name="dock_not_found_text" msgid="3035260358985111855">"Telefonen måste vara dockad när du konfigurerar ljudet för dockning"</string>
-    <string name="dock_sounds_enable_title" msgid="3659084028644948905">"Ljud för placering i dockningsstation"</string>
-    <string name="dock_sounds_enable_summary_on" msgid="8491180514199743771">"Spela upp ljud när telefonen placeras i eller tas bort från dockningsstation"</string>
-    <string name="dock_sounds_enable_summary_off" msgid="3151046599205265919">"Spela inte upp ljud när telefonen placeras i eller tas bort från dockningsstation"</string>
     <string name="sync_settings" msgid="9186125469300013491">"Konton och synkronisering"</string>
     <string name="sync_settings_summary" msgid="2962179505214965667">"Lägg till eller ta bort konton och ändra kontoinställningar"</string>
     <string name="search_settings" msgid="1910951467596035063">"Sök"</string>
@@ -882,10 +861,6 @@
     <string name="user_dict_settings_context_menu_edit_title" msgid="2210564879320004837">"Redigera"</string>
     <string name="user_dict_settings_context_menu_delete_title" msgid="9140703913776549054">"Radera"</string>
     <string name="user_dict_settings_empty_text" msgid="6209268025109242806">"Det finns inga ord i användarordlistan. Du lägger till ord från menyn."</string>
-    <string name="testing" msgid="6584352735303604146">"Testa"</string>
-    <string name="testing_phone_info" msgid="8656693364332840056">"Telefoninformation"</string>
-    <string name="testing_battery_info" msgid="3497865525976497848">"Batteriinformation"</string>
-    <string name="testing_battery_history">Batterihistorik</string>
     <string name="quick_launch_title" msgid="7904609846945905306">"Snabbstart"</string>
     <string name="quick_launch_summary" msgid="3453825712466417452">"Ställ in kortkommandon för att starta appar"</string>
     <string name="quick_launch_assign_application" msgid="4521368464929956350">"Tilldela app"</string>
@@ -956,11 +931,7 @@
     <string name="battery_history_screen_on_battery">På batteri:</string>
     <string name="battery_history_screen_on_plugged">Inkopplad:</string>
     <string name="usage_stats_label" msgid="5890846333487083609">"Användningsstatistik"</string>
-    <string name="testing_usage_stats" msgid="7823048598893937339">"Användningsstatistik"</string>
-    <string name="display_order_text" msgid="8592776965827565271">"Sortera efter"</string>
     <string name="app_name_label" msgid="2000949925256858308">"App"</string>
-    <string name="launch_count_label" msgid="4019444833263957024">"Räkneverk"</string>
-    <string name="usage_time_label" msgid="295954901452833058">"Användningstid"</string>
     <string name="accessibility_settings" msgid="3975902491934816215">"Tillgänglighet"</string>
     <string name="accessibility_settings_title" msgid="2130492524656204459">"Tillgänglighetsinställningar"</string>
     <string name="accessibility_settings_summary" msgid="8185181964847149507">"Hantera tillgänglighetsalternativ"</string>
@@ -1373,6 +1344,7 @@
     <string name="pref_rotation_90_title">90 grader</string>
 
     <string name="pref_rotation_180_title">180 grader</string>
+
 
     <string name="pref_rotation_270_title">270 grader</string>
 

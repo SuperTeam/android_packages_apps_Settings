@@ -336,14 +336,6 @@
     <string name="bluetooth_a2dp_profile_summary_use_for" msgid="4630849022250168427">"Χρήση για ήχο πολυμέσων"</string>
     <string name="bluetooth_headset_profile_summary_use_for" msgid="8705753622443862627">"Χρήση για ήχο τηλεφώνου"</string>
     <string name="bluetooth_opp_profile_summary_use_for" msgid="1255674547144769756">"Χρήση για τη μεταφορά αρχείων"</string>
-    <string name="bluetooth_dock_settings" msgid="3218335822716052885">"Ρυθμίσεις βάσης σύνδεσης αυτοκινήτου"</string>
-    <string name="bluetooth_dock_settings_title" msgid="5543069893044375188">"Χρησιμοποιήστε τη βάση σύνδεσης αυτοκινήτου για αναπαραγωγή ήχου"</string>
-    <string name="bluetooth_dock_settings_headset" msgid="1001821426078644650">"Ως τηλέφωνο ανοιχτής συνομιλίας"</string>
-    <string name="bluetooth_dock_settings_a2dp" msgid="8791004998846630574">"Για μουσική και πολυμέσα"</string>
-    <string name="bluetooth_dock_settings_remember" msgid="5551459057010609115">"Διατήρηση ρυθμίσεων"</string>
-    <string name="nfc_quick_toggle_title" msgid="6769159366307299004">"NFC"</string>
-    <string name="nfc_quick_toggle_summary" msgid="1988408027741447231">"Κάντε χρήση της Επικοινωνίας κοντινού πεδίου για την ανάγνωση και ανταλλαγή ετικετών"</string>
-    <string name="nfc_toggle_error" msgid="2233172102497535522">"Παρουσιάστηκε σφάλμα."</string>
     <string name="wifi_quick_toggle_title" msgid="874495178395350104">"Wi-Fi"</string>
     <string name="wifi_quick_toggle_summary" msgid="1047950931623694366">"Ενεργοποίηση Wi-Fi"</string>
     <string name="wifi_settings" msgid="4746946030627213196">"Ρυθμίσεις Wi-Fi"</string>
@@ -442,7 +434,6 @@
     <string name="media_volume_title" msgid="3576565767317118106">"Μέσα"</string>
     <string name="media_volume_summary" msgid="5363248930648849974">"Ορισμός έντασης ήχου για μουσική και βίντεο"</string>
     <string name="alarm_volume_title" msgid="2285597478377758706">"Ξυπνητήρι"</string>
-    <string name="dock_settings_summary" msgid="455802113668982481">"Ρυθμίσεις ήχου για τη συνδεδεμένη βάση σύνδεσης αυτοκινήτου"</string>
     <string name="dtmf_tone_enable_title" msgid="1453831168789523185">"Ήχοι αγγίγματος οθόνης"</string>
     <string name="dtmf_tone_enable_summary_on" msgid="3028201873989887327">"Αναπαραγωγή ήχων κατά τη χρήση του πληκτρολογίου κλήσης"</string>
     <string name="dtmf_tone_enable_summary_off" msgid="7791065951268525678">"Αναπαραγωγή ήχων κατά τη χρήση του πληκτρολογίου κλήσης"</string>
@@ -457,18 +448,6 @@
     <string name="haptic_feedback_enable_summary_off" msgid="7287885436963105314">"Δόνηση κατά το πάτημα μαλακών πλήκτρων και σε συγκεκριμένες αλληλεπιδράσεις της επιφάνειας UI"</string>
     <string name="audio_record_proc_title" msgid="4271091199976457534">"Εξουδετέρωση θορύβου"</string>
     <string name="audio_record_proc_summary" msgid="8113628457499616498">"Εξάλειψη θορύβου παρασκηνίου κατά τη διάρκεια ομιλίας ή εγγραφής."</string>
-    <string name="dock_settings" msgid="1820107306693002541">"Βάση σύνδεσης"</string>
-    <string name="dock_settings_title" msgid="9161438664257429372">"Ρυθμίσεις βάσης σύνδεσης"</string>
-    <string name="dock_audio_settings_title" msgid="3324750259959570305">"Ήχος"</string>
-    <string name="dock_audio_summary_desk" msgid="6487784412371139335">"Ρυθμίσεις για τη συνδεδεμένη βάση σύνδεσης υπολογιστή"</string>
-    <string name="dock_audio_summary_car" msgid="6740897586006248450">"Ρυθμίσεις για τη συνδεδεμένη βάση σύνδεσης αυτοκινήτου"</string>
-    <string name="dock_audio_summary_none" msgid="289909253741048784">"Το τηλέφωνο δεν βρίσκεται στη βάση σύνδεσής του"</string>
-    <string name="dock_audio_summary_unknown" msgid="4465059868974255693">"Ρυθμίσεις για τη συνδεδεμένη βάσης σύνδεσης"</string>
-    <string name="dock_not_found_title" msgid="3290961741828952424">"Η βάση σύνδεσης δεν βρέθηκε"</string>
-    <string name="dock_not_found_text" msgid="3035260358985111855">"Το τηλέφωνο πρέπει να βρίσκεται στη βάση σύνδεσής του για τη διαμόρφωση του ήχου βάσης σύνδεσης"</string>
-    <string name="dock_sounds_enable_title" msgid="3659084028644948905">"Ήχος εισαγωγής στη βάση σύνδεσης"</string>
-    <string name="dock_sounds_enable_summary_on" msgid="8491180514199743771">"Να αναπαράγεται ήχος κατά την εισαγωγή ή εξαγωγή του τηλεφώνου από τη βάση σύνδεσης"</string>
-    <string name="dock_sounds_enable_summary_off" msgid="3151046599205265919">"Να μην αναπαράγεται ήχος κατά την εισαγωγή ή εξαγωγή του τηλεφώνου από τη βάση σύνδεσης"</string>
     <string name="sync_settings" msgid="9186125469300013491">"Λογαριασμοί &amp; συγχρονισμός"</string>
     <string name="sync_settings_summary" msgid="2962179505214965667">"Προσθήκη ή κατάργηση λογαριασμών και αλλαγή ρυθμίσεων λογαριασμού"</string>
     <string name="search_settings" msgid="1910951467596035063">"Αναζήτηση"</string>
@@ -857,9 +836,6 @@
     <string name="user_dict_settings_context_menu_edit_title" msgid="2210564879320004837">"Επεξεργασία"</string>
     <string name="user_dict_settings_context_menu_delete_title" msgid="9140703913776549054">"Διαγραφή"</string>
     <string name="user_dict_settings_empty_text" msgid="6209268025109242806">"Δεν υπάρχουν λέξεις καταχωρημένες στο λεξικό χρήστη. Μπορείτε να προσθέσετε μια λέξη μέσω του μενού."</string>
-    <string name="testing" msgid="6584352735303604146">"Δοκιμή"</string>
-    <string name="testing_phone_info" msgid="8656693364332840056">"Πληροφορίες τηλεφώνου"</string>
-    <string name="testing_battery_info" msgid="3497865525976497848">"Πληροφορίες μπαταρίας"</string>
     <string name="quick_launch_title" msgid="7904609846945905306">"Γρήγορη εκκίνηση"</string>
     <string name="quick_launch_summary" msgid="3453825712466417452">"Ορισμός συντομεύσεων πληκτρολογίου για την εκκίνηση εφαρμογών"</string>
     <string name="quick_launch_assign_application" msgid="4521368464929956350">"Ορισμός εφαρμογής"</string>
@@ -894,11 +870,7 @@
     <string name="battery_history_minutes" msgid="1467775596084148610">"<xliff:g id="MINUTES">%1$d</xliff:g>λ <xliff:g id="SECONDS">%2$d</xliff:g>δ"</string>
     <string name="battery_history_seconds" msgid="4283492130945761685">"<xliff:g id="SECONDS">%1$d</xliff:g>δ"</string>
     <string name="usage_stats_label" msgid="5890846333487083609">"Στατιστικά χρήσης"</string>
-    <string name="testing_usage_stats" msgid="7823048598893937339">"Στατιστικά χρήσης"</string>
-    <string name="display_order_text" msgid="8592776965827565271">"Ταξινόμηση με βάση:"</string>
     <string name="app_name_label" msgid="2000949925256858308">"Εφαρμογή"</string>
-    <string name="launch_count_label" msgid="4019444833263957024">"Μέτρηση"</string>
-    <string name="usage_time_label" msgid="295954901452833058">"Χρόνος χρήσης"</string>
     <string name="accessibility_settings" msgid="3975902491934816215">"Προσβασιμότητα"</string>
     <string name="accessibility_settings_title" msgid="2130492524656204459">"Ρυθμίσεις προσβασιμότητας"</string>
     <string name="accessibility_settings_summary" msgid="8185181964847149507">"Διαχείριση επιλογών προσβασιμότητας"</string>
@@ -1173,4 +1145,6 @@
     <string name="wimax_settings_summary" msgid="3207355006084135453">"Εγκατάσταση και διαχείριση δικτύου και μόντεμ 4G"</string>
     <string name="status_wimax_mac_address" msgid="8390791848661413416">"Διεύθυνση 4G MAC"</string>
     <string name="additional_system_update_settings_list_item_title" msgid="214987609894661992">"Πρόσθετες ενημερώσεις συστήματος"</string>
+    <string name="pref_rotation_270_title">270 μοίρες</string>
+
 </resources>

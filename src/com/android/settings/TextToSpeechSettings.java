@@ -61,8 +61,6 @@ public class TextToSpeechSettings extends PreferenceActivity implements
     private static final String KEY_TTS_USE_DEFAULT = "toggle_use_default_tts_settings";
     private static final String KEY_TTS_DEFAULT_RATE = "tts_default_rate";
     private static final String KEY_TTS_DEFAULT_LANG = "tts_default_lang";
-    private static final String KEY_TTS_DEFAULT_COUNTRY = "tts_default_country";
-    private static final String KEY_TTS_DEFAULT_VARIANT = "tts_default_variant";
     private static final String KEY_TTS_DEFAULT_SYNTH = "tts_default_synth";
 
     private static final String KEY_PLUGIN_ENABLED_PREFIX = "ENABLED_";
@@ -90,8 +88,6 @@ public class TextToSpeechSettings extends PreferenceActivity implements
     private String             mDefaultEng = "";
     private int                mDefaultRate = TextToSpeech.Engine.DEFAULT_RATE;
 
-    // Array of strings used to demonstrate TTS in the different languages.
-    private String[] mDemoStrings;
     // Index of the current string to use for the demo.
     private int      mDemoStringIndex = 0;
 
@@ -116,7 +112,7 @@ public class TextToSpeechSettings extends PreferenceActivity implements
 
         addEngineSpecificSettings();
 
-        mDemoStrings = getResources().getStringArray(R.array.tts_demo_strings);
+        getResources().getStringArray(R.array.tts_demo_strings);
 
         setVolumeControlStream(TextToSpeech.Engine.DEFAULT_STREAM);
 

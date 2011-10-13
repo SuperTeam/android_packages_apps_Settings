@@ -336,14 +336,6 @@
     <string name="bluetooth_a2dp_profile_summary_use_for" msgid="4630849022250168427">"Bruk for medielyd"</string>
     <string name="bluetooth_headset_profile_summary_use_for" msgid="8705753622443862627">"Bruk for telefonlyd"</string>
     <string name="bluetooth_opp_profile_summary_use_for" msgid="1255674547144769756">"Bruk til filoverføring"</string>
-    <string name="bluetooth_dock_settings" msgid="3218335822716052885">"Innstillinger for forankringsstasjon"</string>
-    <string name="bluetooth_dock_settings_title" msgid="5543069893044375188">"Bruk forankring til lyd"</string>
-    <string name="bluetooth_dock_settings_headset" msgid="1001821426078644650">"Som høyttalertelefon"</string>
-    <string name="bluetooth_dock_settings_a2dp" msgid="8791004998846630574">"For musikk og medier"</string>
-    <string name="bluetooth_dock_settings_remember" msgid="5551459057010609115">"Husk innstillinger"</string>
-    <string name="nfc_quick_toggle_title" msgid="6769159366307299004">"NFC"</string>
-    <string name="nfc_quick_toggle_summary" msgid="1988408027741447231">"Bruk NFC-teknologi for å lese og utveksle koder"</string>
-    <string name="nfc_toggle_error" msgid="2233172102497535522">"Det oppstod en feil."</string>
     <string name="wifi_quick_toggle_title" msgid="874495178395350104">"Trådløst nett"</string>
     <string name="wifi_quick_toggle_summary" msgid="1047950931623694366">"Slå på trådløst nett"</string>
     <string name="wifi_settings" msgid="4746946030627213196">"Trådløsinnstillinger"</string>
@@ -443,7 +435,6 @@
     <string name="media_volume_title" msgid="3576565767317118106">"Medier"</string>
     <string name="media_volume_summary" msgid="5363248930648849974">"Volum for musikk og video"</string>
     <string name="alarm_volume_title" msgid="2285597478377758706">"Alarm"</string>
-    <string name="dock_settings_summary" msgid="455802113668982481">"Lydinnstillinger for festet forankring"</string>
     <string name="dtmf_tone_enable_title" msgid="1453831168789523185">"Hørbare tastetoner"</string>
     <string name="dtmf_tone_enable_summary_on" msgid="3028201873989887327">"Spill toner når talltastaturet benyttes"</string>
     <string name="dtmf_tone_enable_summary_off" msgid="7791065951268525678">"Spill toner når talltastaturet benyttes"</string>
@@ -458,18 +449,6 @@
     <string name="haptic_feedback_enable_summary_off" msgid="7287885436963105314">"Vibrer ved bruk av skjermtaster og enkelte UI-interaksjoner"</string>
     <string name="audio_record_proc_title" msgid="4271091199976457534">"Støyreduksjon"</string>
     <string name="audio_record_proc_summary" msgid="8113628457499616498">"Demp bakgrunnsstøy når du snakker eller tar opp."</string>
-    <string name="dock_settings" msgid="1820107306693002541">"Forankringstasjon"</string>
-    <string name="dock_settings_title" msgid="9161438664257429372">"Innstillinger for forankringsstasjon"</string>
-    <string name="dock_audio_settings_title" msgid="3324750259959570305">"Lyd"</string>
-    <string name="dock_audio_summary_desk" msgid="6487784412371139335">"Innstillinger for festet skrivebordsforankring"</string>
-    <string name="dock_audio_summary_car" msgid="6740897586006248450">"Innstillinger for festet bilforankring"</string>
-    <string name="dock_audio_summary_none" msgid="289909253741048784">"Telefonen er ikke plassert i forankringsstasjonen"</string>
-    <string name="dock_audio_summary_unknown" msgid="4465059868974255693">"Innstillinger for festet forankring"</string>
-    <string name="dock_not_found_title" msgid="3290961741828952424">"Finner ikke forankringsstasjon"</string>
-    <string name="dock_not_found_text" msgid="3035260358985111855">"Telefonen må være plassert i forankringsstasjonen for å konfigurere forankringslyden"</string>
-    <string name="dock_sounds_enable_title" msgid="3659084028644948905">"Lyd ved innsetting"</string>
-    <string name="dock_sounds_enable_summary_on" msgid="8491180514199743771">"Spill av lyd når telefonen settes inn eller tas ut av forankringsstasjonen"</string>
-    <string name="dock_sounds_enable_summary_off" msgid="3151046599205265919">"Ikke spill av lyd når telefonen settes inn eller tas ut av forankringsstasjonen"</string>
     <string name="sync_settings" msgid="9186125469300013491">"Kontoer/synkronisering"</string>
     <string name="sync_settings_summary" msgid="2962179505214965667">"Legge til eller fjerne kontoer og endre kontoinnstillinger"</string>
     <string name="search_settings" msgid="1910951467596035063">"Søk"</string>
@@ -858,9 +837,6 @@
     <string name="user_dict_settings_context_menu_edit_title" msgid="2210564879320004837">"Rediger"</string>
     <string name="user_dict_settings_context_menu_delete_title" msgid="9140703913776549054">"Slett"</string>
     <string name="user_dict_settings_empty_text" msgid="6209268025109242806">"Ordlisten er tom. Du kan legge til ord i menyen."</string>
-    <string name="testing" msgid="6584352735303604146">"Testing"</string>
-    <string name="testing_phone_info" msgid="8656693364332840056">"Telefoninformasjon"</string>
-    <string name="testing_battery_info" msgid="3497865525976497848">"Batteriinformasjon"</string>
     <string name="quick_launch_title" msgid="7904609846945905306">"Hurtigtaster"</string>
     <string name="quick_launch_summary" msgid="3453825712466417452">"Tastatursnarveier for å starte applikasjoner"</string>
     <string name="quick_launch_assign_application" msgid="4521368464929956350">"Tilordne applikasjon"</string>
@@ -895,11 +871,7 @@
     <string name="battery_history_minutes" msgid="1467775596084148610">"<xliff:g id="MINUTES">%1$d</xliff:g>m <xliff:g id="SECONDS">%2$d</xliff:g>s"</string>
     <string name="battery_history_seconds" msgid="4283492130945761685">"<xliff:g id="SECONDS">%1$d</xliff:g>s"</string>
     <string name="usage_stats_label" msgid="5890846333487083609">"Bruksstatistikk"</string>
-    <string name="testing_usage_stats" msgid="7823048598893937339">"Bruksstatistikk"</string>
-    <string name="display_order_text" msgid="8592776965827565271">"Sorter etter:"</string>
     <string name="app_name_label" msgid="2000949925256858308">"Applikasjon"</string>
-    <string name="launch_count_label" msgid="4019444833263957024">"Antall"</string>
-    <string name="usage_time_label" msgid="295954901452833058">"Brukstid"</string>
     <string name="accessibility_settings" msgid="3975902491934816215">"Tilgjengelighet"</string>
     <string name="accessibility_settings_title" msgid="2130492524656204459">"Tilgjengelighetsinnstillinger"</string>
     <string name="accessibility_settings_summary" msgid="8185181964847149507">"Tilgjengelighetsvalg"</string>

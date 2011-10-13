@@ -340,14 +340,6 @@
     <string name="bluetooth_opp_profile_summary_use_for" msgid="1255674547144769756">"Gebruiken voor bestandsoverdracht"</string>
 	<string name="bluetooth_hid_profile_summary_connected">Verbonden met HID-Apparaat</string>
     <string name="bluetooth_hid_profile_summary_use_for">Gebruik voor HID-Apparaat</string>
-    <string name="bluetooth_dock_settings" msgid="3218335822716052885">"Instellingen voor dockstation"</string>
-    <string name="bluetooth_dock_settings_title" msgid="5543069893044375188">"Dockstation gebruiken voor audio"</string>
-    <string name="bluetooth_dock_settings_headset" msgid="1001821426078644650">"Als luidsprekertelefoon"</string>
-    <string name="bluetooth_dock_settings_a2dp" msgid="8791004998846630574">"Voor muziek en media"</string>
-    <string name="bluetooth_dock_settings_remember" msgid="5551459057010609115">"Instellingen onthouden"</string>
-    <string name="nfc_quick_toggle_title" msgid="6769159366307299004">"NFC"</string>
-    <string name="nfc_quick_toggle_summary" msgid="1988408027741447231">"Near Field Communication gebruiken om tags te lezen en uit te wisselen"</string>
-    <string name="nfc_toggle_error" msgid="2233172102497535522">"Er is een fout opgetreden."</string>
 	<skip />
 	
     <!-- Hostname Settings -->
@@ -463,7 +455,6 @@
     <string name="media_volume_title" msgid="3576565767317118106">"Media"</string>
     <string name="media_volume_summary" msgid="5363248930648849974">"Volume voor muziek en video\'s instellen"</string>
     <string name="alarm_volume_title" msgid="2285597478377758706">"Alarm"</string>
-    <string name="dock_settings_summary" msgid="455802113668982481">"Audio-instellingen voor het gekoppelde dockstation"</string>
     <string name="dtmf_tone_enable_title" msgid="1453831168789523185">"Aanraaktonen"</string>
     <string name="dtmf_tone_enable_summary_on" msgid="3028201873989887327">"Tonen afspelen bij gebruik van toetsenblok"</string>
     <string name="dtmf_tone_enable_summary_off" msgid="7791065951268525678">"Tonen afspelen bij gebruik van toetsenblok"</string>
@@ -478,18 +469,6 @@
     <string name="haptic_feedback_enable_summary_off" msgid="7287885436963105314">"Trillen bij indrukken van functietoetsen en bij bepaalde UI-interactie"</string>
     <string name="audio_record_proc_title" msgid="4271091199976457534">"Geluidsdemping"</string>
     <string name="audio_record_proc_summary" msgid="8113628457499616498">"Demp achtergrondgeluid tijdens spraakinvoer of opname."</string>
-    <string name="dock_settings" msgid="1820107306693002541">"Docken"</string>
-    <string name="dock_settings_title" msgid="9161438664257429372">"Instellingen voor dockstation"</string>
-    <string name="dock_audio_settings_title" msgid="3324750259959570305">"Audio"</string>
-    <string name="dock_audio_summary_desk" msgid="6487784412371139335">"Instellingen voor het gekoppelde bureaudockstation"</string>
-    <string name="dock_audio_summary_car" msgid="6740897586006248450">"Instellingen voor het gekoppelde autodockstation"</string>
-    <string name="dock_audio_summary_none" msgid="289909253741048784">"Telefoon niet gedockt"</string>
-    <string name="dock_audio_summary_unknown" msgid="4465059868974255693">"Instellingen voor het gekoppelde dockstation"</string>
-    <string name="dock_not_found_title" msgid="3290961741828952424">"Dockstation niet gevonden"</string>
-    <string name="dock_not_found_text" msgid="3035260358985111855">"De telefoon moet zijn gedockt om audio-instellingen voor het dockstation in te stellen"</string>
-    <string name="dock_sounds_enable_title" msgid="3659084028644948905">"Geluid bij docken"</string>
-    <string name="dock_sounds_enable_summary_on" msgid="8491180514199743771">"Geluid afspelen wanneer de telefoon in het dock wordt geplaatst of uit het dock wordt verwijderd"</string>
-    <string name="dock_sounds_enable_summary_off" msgid="3151046599205265919">"Geen geluid afspelen wanneer de telefoon in het dock wordt geplaatst of uit het dock wordt verwijderd"</string>
     <string name="sync_settings" msgid="9186125469300013491">"Accounts &amp; synchronisatie"</string>
     <string name="sync_settings_summary" msgid="2962179505214965667">"Accounts toevoegen of verwijderen en accountinstellingen wijzigen"</string>
     <string name="search_settings" msgid="1910951467596035063">"Zoeken"</string>
@@ -883,9 +862,6 @@
     <string name="user_dict_settings_context_menu_edit_title" msgid="2210564879320004837">"Bewerken"</string>
     <string name="user_dict_settings_context_menu_delete_title" msgid="9140703913776549054">"Verwijderen"</string>
     <string name="user_dict_settings_empty_text" msgid="6209268025109242806">"U heeft geen woorden in het gebruikerswoordenboek. U kunt een woord toevoegen via het menu."</string>
-    <string name="testing" msgid="6584352735303604146">"Testen"</string>
-    <string name="testing_phone_info" msgid="8656693364332840056">"Telefooninformatie"</string>
-    <string name="testing_battery_info" msgid="3497865525976497848">"Accu-informatie"</string>
     <string name="quick_launch_title" msgid="7904609846945905306">"Snelstarten"</string>
     <string name="quick_launch_summary" msgid="3453825712466417452">"Sneltoetsen instellen voor starten apps"</string>
     <string name="quick_launch_assign_application" msgid="4521368464929956350">"App toewijzen"</string>
@@ -924,11 +900,7 @@
     <string name="battery_history_minutes" msgid="1467775596084148610">"<xliff:g id="MINUTES">%1$d</xliff:g>m <xliff:g id="SECONDS">%2$d</xliff:g>s"</string>
     <string name="battery_history_seconds" msgid="4283492130945761685">"<xliff:g id="SECONDS">%1$d</xliff:g>s"</string>
     <string name="usage_stats_label" msgid="5890846333487083609">"Gebruiksstatistieken"</string>
-    <string name="testing_usage_stats" msgid="7823048598893937339">"Gebruiksstatistieken"</string>
-    <string name="display_order_text" msgid="8592776965827565271">"Sorteren op:"</string>
     <string name="app_name_label" msgid="2000949925256858308">"App"</string>
-    <string name="launch_count_label" msgid="4019444833263957024">"Aantal"</string>
-    <string name="usage_time_label" msgid="295954901452833058">"Gebruikstijd"</string>
     <string name="accessibility_settings" msgid="3975902491934816215">"Toegankelijkheid"</string>
     <string name="accessibility_settings_title" msgid="2130492524656204459">"Instellingen voor toegankelijkheid"</string>
     <string name="accessibility_settings_summary" msgid="8185181964847149507">"Toegankelijkheidsopties beheren"</string>

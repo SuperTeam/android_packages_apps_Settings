@@ -336,14 +336,6 @@
     <string name="bluetooth_a2dp_profile_summary_use_for" msgid="4630849022250168427">"メディアの音声に使用"</string>
     <string name="bluetooth_headset_profile_summary_use_for" msgid="8705753622443862627">"携帯電話の音声に使用"</string>
     <string name="bluetooth_opp_profile_summary_use_for" msgid="1255674547144769756">"ファイル転送に使用"</string>
-    <string name="bluetooth_dock_settings" msgid="3218335822716052885">"ホルダーの設定"</string>
-    <string name="bluetooth_dock_settings_title" msgid="5543069893044375188">"音声をホルダーに出力"</string>
-    <string name="bluetooth_dock_settings_headset" msgid="1001821426078644650">"スピーカーフォン"</string>
-    <string name="bluetooth_dock_settings_a2dp" msgid="8791004998846630574">"音楽とメディア"</string>
-    <string name="bluetooth_dock_settings_remember" msgid="5551459057010609115">"設定を保存"</string>
-    <string name="nfc_quick_toggle_title" msgid="6769159366307299004">"NFC"</string>
-    <string name="nfc_quick_toggle_summary" msgid="1988408027741447231">"タグの読み取りと交換にNFCを使用する"</string>
-    <string name="nfc_toggle_error" msgid="2233172102497535522">"エラーが発生しました。"</string>
     <string name="wifi_quick_toggle_title" msgid="874495178395350104">"Wi-Fi"</string>
     <string name="wifi_quick_toggle_summary" msgid="1047950931623694366">"Wi-FiをONにする"</string>
     <string name="wifi_settings" msgid="4746946030627213196">"Wi-Fi設定"</string>
@@ -442,7 +434,6 @@
     <string name="media_volume_title" msgid="3576565767317118106">"メディア"</string>
     <string name="media_volume_summary" msgid="5363248930648849974">"音楽や動画の再生音量"</string>
     <string name="alarm_volume_title" msgid="2285597478377758706">"アラーム"</string>
-    <string name="dock_settings_summary" msgid="455802113668982481">"装着したホルダーの音声を設定する"</string>
     <string name="dtmf_tone_enable_title" msgid="1453831168789523185">"タッチ操作音"</string>
     <string name="dtmf_tone_enable_summary_on" msgid="3028201873989887327">"ダイヤルパッドの操作音をONにする"</string>
     <string name="dtmf_tone_enable_summary_off" msgid="7791065951268525678">"ダイヤルパッドの操作音をONにする"</string>
@@ -457,18 +448,6 @@
     <string name="haptic_feedback_enable_summary_off" msgid="7287885436963105314">"ソフトキー操作や特定のUI操作でのバイブレーションをONにする"</string>
     <string name="audio_record_proc_title" msgid="4271091199976457534">"ノイズキャンセル"</string>
     <string name="audio_record_proc_summary" msgid="8113628457499616498">"通話中や録音中に周囲のノイズを抑えます。"</string>
-    <string name="dock_settings" msgid="1820107306693002541">"ホルダー"</string>
-    <string name="dock_settings_title" msgid="9161438664257429372">"ホルダーの設定"</string>
-    <string name="dock_audio_settings_title" msgid="3324750259959570305">"音声"</string>
-    <string name="dock_audio_summary_desk" msgid="6487784412371139335">"装着した卓上ホルダーを設定する"</string>
-    <string name="dock_audio_summary_car" msgid="6740897586006248450">"装着したカーホルダーを設定する"</string>
-    <string name="dock_audio_summary_none" msgid="289909253741048784">"端末が装着されていません"</string>
-    <string name="dock_audio_summary_unknown" msgid="4465059868974255693">"装着したホルダーを設定する"</string>
-    <string name="dock_not_found_title" msgid="3290961741828952424">"ホルダーが見つかりません"</string>
-    <string name="dock_not_found_text" msgid="3035260358985111855">"ホルダーの音声を設定するには携帯端末をホルダーに装着する必要があります"</string>
-    <string name="dock_sounds_enable_title" msgid="3659084028644948905">"ホルダー脱着時の音"</string>
-    <string name="dock_sounds_enable_summary_on" msgid="8491180514199743771">"携帯のホルダー脱着時に音を鳴らす"</string>
-    <string name="dock_sounds_enable_summary_off" msgid="3151046599205265919">"携帯のホルダー脱着時に音を鳴らさない"</string>
     <string name="sync_settings" msgid="9186125469300013491">"アカウントと同期"</string>
     <string name="sync_settings_summary" msgid="2962179505214965667">"アカウントの追加や削除、アカウント設定の変更を行います"</string>
     <string name="search_settings" msgid="1910951467596035063">"検索"</string>
@@ -858,9 +837,6 @@
     <string name="user_dict_settings_context_menu_edit_title" msgid="2210564879320004837">"編集"</string>
     <string name="user_dict_settings_context_menu_delete_title" msgid="9140703913776549054">"削除"</string>
     <string name="user_dict_settings_empty_text" msgid="6209268025109242806">"単語リストに登録がありません。MENUから単語を登録してください。"</string>
-    <string name="testing" msgid="6584352735303604146">"テスト中"</string>
-    <string name="testing_phone_info" msgid="8656693364332840056">"携帯電話情報"</string>
-    <string name="testing_battery_info" msgid="3497865525976497848">"電池情報"</string>
     <string name="quick_launch_title" msgid="7904609846945905306">"クイック起動"</string>
     <string name="quick_launch_summary" msgid="3453825712466417452">"アプリケーションの起動にショートカットキーを割り当てる"</string>
     <string name="quick_launch_assign_application" msgid="4521368464929956350">"アプリを選択"</string>
@@ -895,11 +871,7 @@
     <string name="battery_history_minutes" msgid="1467775596084148610">"<xliff:g id="MINUTES">%1$d</xliff:g>分<xliff:g id="SECONDS">%2$d</xliff:g>秒"</string>
     <string name="battery_history_seconds" msgid="4283492130945761685">"<xliff:g id="SECONDS">%1$d</xliff:g>秒"</string>
     <string name="usage_stats_label" msgid="5890846333487083609">"使用統計情報"</string>
-    <string name="testing_usage_stats" msgid="7823048598893937339">"使用統計情報"</string>
-    <string name="display_order_text" msgid="8592776965827565271">"並べ替え:"</string>
     <string name="app_name_label" msgid="2000949925256858308">"アプリケーション"</string>
-    <string name="launch_count_label" msgid="4019444833263957024">"回数"</string>
-    <string name="usage_time_label" msgid="295954901452833058">"使用時間"</string>
     <string name="accessibility_settings" msgid="3975902491934816215">"ユーザー補助"</string>
     <string name="accessibility_settings_title" msgid="2130492524656204459">"ユーザー補助の設定"</string>
     <string name="accessibility_settings_summary" msgid="8185181964847149507">"ユーザー補助オプションの管理"</string>
@@ -1368,6 +1340,7 @@
     <string name="pref_rotation_90_title">90度</string>
 
     <string name="pref_rotation_180_title">180度</string>
+
 
     <string name="pref_rotation_270_title">270度</string>
 
