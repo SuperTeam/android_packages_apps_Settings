@@ -1,187 +1,215 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resources>
-    <string name="yes">是</string>
-    <string name="no">无</string>
-    <string name="device_info_default">未知</string>
-    <string name="turn_on_radio">打开无线通信</string>
-    <string name="turn_off_radio">关闭无线通信</string>
-    <string name="radioInfo_menu_viewADN">查看 SIM 卡地址簿</string>
-    <string name="radioInfo_menu_viewFDN">查看固定拨号</string>
-    <string name="radioInfo_menu_viewSDN">查看服务拨号</string>
-    <string name="radioInfo_menu_getPDP">获取 PDP 列表</string>
-    <string name="radioInfo_service_in">正在使用中</string>
-    <string name="radioInfo_service_out">不在服务区</string>
-    <string name="radioInfo_service_emergency">仅限于急救或报警电话</string>
-    <string name="radioInfo_service_off">关闭无线通信</string>
-    <string name="radioInfo_roaming_in">漫游</string>
-    <string name="radioInfo_roaming_not">非漫游</string>
-    <string name="radioInfo_phone_idle">空闲</string>
-    <string name="radioInfo_phone_ringing">响铃</string>
-    <string name="radioInfo_phone_offhook">正在通话</string>
-    <string name="radioInfo_data_disconnected">已断开连接</string>
-    <string name="radioInfo_data_connecting">正在连接</string>
-    <string name="radioInfo_data_connected">已连接</string>
-    <string name="radioInfo_data_suspended">已暂停</string>
-    <string name="radioInfo_unknown">未知</string>
-    <string name="radioInfo_display_packets">pkts</string>
-    <string name="radioInfo_display_bytes">字节</string>
-    <string name="radioInfo_display_dbm">dBm</string>
-    <string name="radioInfo_display_asu">asu</string>
-    <string name="radioInfo_lac">LAC</string>
-    <string name="radioInfo_cid">CID</string>
-    <string name="sdcard_unmount">卸载 SD 卡</string>
-    <string name="sdcard_format">格式化 SD 卡</string>
-    <string name="small_font">小</string>
-    <string name="medium_font">中</string>
-    <string name="large_font">大</string>
-    <string name="font_size_save">确定</string>
-    <string name="sdcard_setting">SD 卡</string>
-    <string name="battery_info_status_label">电池状态：</string>
-    <string name="battery_info_power_label">是否已插电：</string>
-    <string name="battery_info_scale_label">电池电量：</string>
-    <string name="battery_info_level_label">电池电量：</string>
-    <string name="battery_info_health_label">电池运行状况：</string>
-    <string name="battery_info_technology_label">电池技术：</string>
-    <string name="battery_info_voltage_label">电池电压：</string>
-    <string name="battery_info_voltage_units">mV</string>
-    <string name="battery_info_temperature_label">电池温度：</string>
-    <string name="battery_info_temperature_units">° C</string>
-    <string name="battery_info_uptime">启动后的时间：</string>
-    <string name="battery_info_awake_battery">电池的唤醒时间：</string>
-    <string name="battery_info_awake_plugged">充电时的唤醒时间：</string>
-    <string name="battery_info_screen_on">屏幕开启时间：</string>
-    <string name="battery_info_status_unknown">未知</string>
-    <string name="battery_info_status_charging">正在充电</string>
-    <string name="battery_info_status_charging_ac">（交流电）</string>
-    <string name="battery_info_status_charging_usb">(USB 绑定选项)</string>
-    <string name="battery_info_status_discharging">正在放电</string>
-    <string name="battery_info_status_not_charging">未在充电</string>
-    <string name="battery_info_status_full">已满</string>
-    <string name="battery_info_power_unplugged">未插电</string>
-    <string name="battery_info_power_ac">交流电</string>
-    <string name="battery_info_power_usb">USB</string>
-    <string name="battery_info_power_ac_usb">交流电 + USB</string>
-    <string name="battery_info_power_unknown">未知</string>
-    <string name="battery_info_health_unknown">未知</string>
-    <string name="battery_info_health_good">正常</string>
-    <string name="battery_info_health_overheat">过热</string>
-    <string name="battery_info_health_dead">没电</string>
-    <string name="battery_info_health_over_voltage">过电压</string>
-    <string name="battery_info_health_unspecified_failure">未知错误</string>
-    <string name="bluetooth">蓝牙</string>
-    <string name="bluetooth_visibility">可检测性</string>
-    <string name="bluetooth_is_discoverable">%1$s 秒内可检测到...</string>
-    <string name="bluetooth_is_discoverable_always">可检测到</string>
-    <string name="bluetooth_not_discoverable">可以检测到设备</string>
-    <string name="bluetooth_visibility_timeout">可检测到设备的时间超时</string>
-    <string name="bluetooth_visibility_timeout_summary">设置可检测到设备的时间</string>
-    <string name="bluetooth_lock_voice_dialing">锁定语音拨号</string>
-    <string name="bluetooth_lock_voice_dialing_summary">屏幕锁定时停止使用蓝牙拨号器</string>
-    <string name="bluetooth_devices">蓝牙设备</string>
-    <string name="bluetooth_device_name">设备名称</string>
-    <string name="bluetooth_name_not_set">未设置名称，使用帐户名</string>
-    <string name="bluetooth_scan_for_devices">扫描查找设备</string>
-    <string name="bluetooth_disconnect_blank">%1$s将断开连接。</string>
-    <string name="bluetooth_connected">已连接</string>
-    <string name="bluetooth_disconnected">已断开连接</string>
-    <string name="bluetooth_disconnecting">正在断开连接...</string>
-    <string name="bluetooth_connecting">正在连接...</string>
-    <string name="bluetooth_unknown" />
-    <string name="bluetooth_not_connected">与此设备配对</string>
-    <string name="bluetooth_pairing">正在配对...</string>
-    <string name="bluetooth_paired">已配对但未连接</string>
-    <string name="bluetooth_device">免提/耳机</string>
-    <string name="progress_scanning">正在扫描</string>
-    <string name="bluetooth_notif_ticker">蓝牙配对请求</string>
-    <string name="bluetooth_notif_title">配对请求</string>
-    <string name="bluetooth_notif_message">选择要配对的对象\u0020</string>
-    <string name="device_picker">蓝牙设备选择器</string>
-    <string name="bluetooth_permission_request">蓝牙权限请求</string>
-    <string name="bluetooth_ask_enablement">您手机上的某一应用程序正在请求相应权限以便打开蓝牙。是否要授予这种权限？</string>
-    <string name="bluetooth_ask_discovery">您手机上的某一应用程序正在请求相应权限以便打开蓝牙，从而使其他设备可在 %1$d 秒内检测到您的手机。是否要授予这种权限？</string>
-    <string name="bluetooth_ask_lasting_discovery">手机上的某一应用程序正在请求相应权限，以便让其他蓝牙设备“一直可检测到”您的手机。要授予该权限吗？</string>
-    <string name="bluetooth_ask_enablement_and_discovery">您手机上的某一应用程序正在请求相应权限以便打开蓝牙，从而使其他设备可在 %1$d 秒内检测到您的手机。是否要授予这种权限？</string>
-    <string name="bluetooth_ask_enablement_and_lasting_discovery">手机上的某一应用程序正在请求相应权限以便打开蓝牙，从而让其他设备可检测到您的手机。要授予该权限吗？</string>
-    <string name="bluetooth_turning_on">正在打开蓝牙…</string>
-    <string name="date_and_time">日期和时间设置</string>
-    <string name="date_time_12_hour_sample">下午 1:00</string>
-    <string name="date_time_24_hour_sample">13:00</string>
-    <string name="date_time_changeTime_text">更改时间</string>
-    <string name="date_time_changeDate_text">日期</string>
-    <string name="choose_timezone">选择时区</string>
-    <string name="normal_date_format">普通 (%s)</string>
-    <string name="display_preview_label">预览:</string>
-    <string name="display_font_size_label">字号：</string>
-    <string name="intent_sender_data_label">数据：</string>
-    <string name="intent_sender_sendbroadcast_text">发送broadcast</string>
-    <string name="intent_sender_action_label">Action:</string>
-    <string name="intent_sender_startactivity_text">启动activity</string>
-    <string name="intent_sender_resource_label">Resource:</string>
-    <string name="intent_sender_account_label">帐户:</string>
-    <string name="proxy_clear_text">清除</string>
-    <string name="proxy_port_label">端口</string>
-    <string name="proxy_defaultView_text">恢复默认设置</string>
-    <string name="proxy_action_text">保存</string>
-    <string name="proxy_hostname_label">主机名</string>
-    <string name="proxy_error">注意</string>
-    <string name="proxy_error_dismiss">确定</string>
-    <string name="proxy_error_invalid_host">您输入的主机名无效。</string>
-    <string name="proxy_error_empty_port">您必须填写端口字段。</string>
-    <string name="proxy_error_empty_host_set_port">如果主机字段为空，则端口字段必须为空。</string>
-    <string name="proxy_error_invalid_port">您输入的端口无效。</string>
-    <string name="radio_info_signal_location_label">地点：</string>
-    <string name="radio_info_neighboring_location_label">相邻的 CID：</string>
-    <string name="radio_info_data_attempts_label">数据尝试次数：</string>
-    <string name="radio_info_gprs_service_label">GPRS 服务：</string>
-    <string name="radio_info_roaming_label">漫游：</string>
-    <string name="radio_info_imei_label">移动通信国际识别码：</string>
-    <string name="radio_info_call_redirect_label">呼叫重定向：</string>
-    <string name="radio_info_ppp_resets_label">启动后重置 PPP 的次数：</string>
-    <string name="radio_info_gsm_disconnects_label">GSM 断开连接：</string>
-    <string name="radio_info_current_network_label">当前网络：</string>
-    <string name="radio_info_data_successes_label">数据成功：</string>
-    <string name="radio_info_ppp_received_label">已收到 PPP：</string>
-    <string name="radio_info_gsm_service_label">GSM 服务：</string>
-    <string name="radio_info_signal_strength_label">信号强度:</string>
-    <string name="radio_info_call_status_label">呼叫状态：</string>
-    <string name="radio_info_ppp_sent_label">已发送 PPP：</string>
-    <string name="radio_info_radio_resets_label">无线通信重置：</string>
-    <string name="radio_info_message_waiting_label">消息等待：</string>
-    <string name="radio_info_phone_number_label">手机号码：</string>
-    <string name="radio_info_band_mode_label">选择无线通信频道</string>
-    <string name="radio_info_network_type_label">网络类型：</string>
-    <string name="radio_info_set_perferred_label">设置首选网络类型：</string>
-    <string name="radio_info_ping_ipaddr">Ping IP 地址：</string>
-    <string name="radio_info_ping_hostname">Ping 主机名 (www.google.com)：</string>
-    <string name="radio_info_http_client_test">HTTP 客户端测试：</string>
-    <string name="ping_test_label">运行 ping 测试</string>
-    <string name="radio_info_smsc_label">SMSC：</string>
-    <string name="radio_info_smsc_update_label">更新</string>
-    <string name="radio_info_smsc_refresh_label">刷新</string>
-    <string name="radio_info_toggle_dns_check_label">切换 DNS 检查</string>
-    <string name="oem_radio_info_label">特定 OEM 的信息/设置</string>
-    <string name="band_mode_title">设置 GSM/UMTS 波段</string>
-    <string name="band_mode_loading">正在载入波段列表...</string>
-    <string name="band_mode_set">设置</string>
-    <string name="band_mode_failed">失败</string>
-    <string name="band_mode_succeeded">成功</string>
-    <string name="sdcard_changes_instructions">重新连接 USB 线后更改生效</string>
-    <string name="sdcard_settings_screen_mass_storage_text">启用 USB 大容量存储设备</string>
-    <string name="sdcard_settings_total_bytes_label">总字节数：</string>
-    <string name="sdcard_settings_not_present_status">无 SD 卡</string>
-    <string name="sdcard_settings_available_bytes_label">可用的字节数：</string>
-    <string name="sdcard_settings_mass_storage_status">SD 卡已被视为大容量存储设备</string>
-    <string name="sdcard_settings_unmounted_status">现在可以安全移除 SD 卡</string>
-    <string name="sdcard_settings_bad_removal_status">SD 卡仍在使用中便被移除！</string>
-    <string name="sdcard_settings_used_bytes_label">已使用的字节数：</string>
-    <string name="sdcard_settings_scanning_status">正从 SD 卡扫描媒体...</string>
-    <string name="sdcard_settings_read_only_status">安装的 SD 卡为只读状态</string>
-    <string name="next_label">下一步</string>
-    <string name="language_picker_title">语言区域</string>
-    <string name="select_your_language">选择您使用的语言</string>
-    <string name="activity_picker_label">选择活动</string>
-    <string name="device_info_label">设备信息</string>
-    <string name="battery_info_label">电池信息</string>
+<!--  Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="yes" msgid="4676390750360727396">"是"</string>
+    <string name="no" msgid="6731231425810196216">"无"</string>
+    <string name="device_info_default" msgid="7847265875578739287">"未知"</string>
+    <string name="turn_on_radio" msgid="8706561489788373676">"打开无线通信"</string>
+    <string name="turn_off_radio" msgid="1820294552893884115">"关闭无线通信"</string>
+    <string name="radioInfo_menu_viewADN" msgid="8743377494429930831">"查看 SIM 卡地址簿"</string>
+    <string name="radioInfo_menu_viewFDN" msgid="7934301566925610318">"查看固定拨号"</string>
+    <string name="radioInfo_menu_viewSDN" msgid="7130280686244955669">"查看服务拨号"</string>
+    <string name="radioInfo_menu_getPDP" msgid="560610293888406317">"获取 PDP 列表"</string>
+    <string name="radioInfo_service_in" msgid="1915416319177520020">"正在使用中"</string>
+    <string name="radioInfo_service_out" msgid="5238736759641916278">"不在服务区"</string>
+    <string name="radioInfo_service_emergency" msgid="2485604591272668370">"仅限于急救或报警电话"</string>
+    <string name="radioInfo_service_off" msgid="1434084741785525415">"关闭无线通信"</string>
+    <string name="radioInfo_roaming_in" msgid="9045363884600341051">"漫游"</string>
+    <string name="radioInfo_roaming_not" msgid="2851853244069662307">"非漫游"</string>
+    <string name="radioInfo_phone_idle" msgid="7489244938838742820">"空闲"</string>
+    <string name="radioInfo_phone_ringing" msgid="4883724645684297895">"响铃"</string>
+    <string name="radioInfo_phone_offhook" msgid="4174402846862780998">"正在通话"</string>
+    <string name="radioInfo_data_disconnected" msgid="1959735267890719418">"已断开连接"</string>
+    <string name="radioInfo_data_connecting" msgid="8404571440697917823">"正在连接"</string>
+    <string name="radioInfo_data_connected" msgid="7074301157399238697">"已连接"</string>
+    <string name="radioInfo_data_suspended" msgid="5315325487890334196">"已暂停"</string>
+    <string name="radioInfo_unknown" msgid="737385314432468266">"未知"</string>
+    <string name="radioInfo_display_packets" msgid="8654359809877290639">"pkts"</string>
+    <string name="radioInfo_display_bytes" msgid="4018206969492931883">"字节"</string>
+    <string name="radioInfo_display_dbm" msgid="3621221793699882781">"dBm"</string>
+    <string name="radioInfo_display_asu" msgid="1422248392727818082">"asu"</string>
+    <string name="radioInfo_lac" msgid="8415219164758307156">"LAC"</string>
+    <string name="radioInfo_cid" msgid="4362599198392643138">"CID"</string>
+    <string name="sdcard_unmount" product="nosdcard" msgid="6325292633327972272">"卸载 USB 存储设备"</string>
+    <string name="sdcard_unmount" product="default" msgid="3364184561355611897">"卸载 SD 卡"</string>
+    <string name="sdcard_format" product="nosdcard" msgid="6285310523155166716">"格式化 USB 存储设备"</string>
+    <string name="sdcard_format" product="default" msgid="6713185532039187532">"格式化 SD 卡"</string>
+    <string name="small_font" msgid="2295331917424072635">"小"</string>
+    <string name="medium_font" msgid="2068475425515133701">"中"</string>
+    <string name="large_font" msgid="599055175160971446">"大"</string>
+    <string name="font_size_save" msgid="3450855718056759095">"确定"</string>
+    <string name="sdcard_setting" product="nosdcard" msgid="8281011784066476192">"USB 存储设备"</string>
+    <string name="sdcard_setting" product="default" msgid="5922637503871474866">"SD 卡"</string>
+    <string name="battery_info_status_label" msgid="8109155295509700309">"电池状态："</string>
+    <string name="battery_info_power_label" msgid="7465140230991349382">"是否已插电："</string>
+    <string name="battery_info_scale_label" msgid="3649763192389778437">"电池电量："</string>
+    <string name="battery_info_level_label" msgid="8706526709307788737">"电池电量："</string>
+    <string name="battery_info_health_label" msgid="6416051542741886958">"电池运行状况："</string>
+    <string name="battery_info_technology_label" msgid="788304533220748681">"电池技术："</string>
+    <string name="battery_info_voltage_label" msgid="8971764146757637863">"电池电压："</string>
+    <string name="battery_info_voltage_units" msgid="8658490792208288107">"mV"</string>
+    <string name="battery_info_temperature_label" msgid="1968383098818648037">"电池温度："</string>
+    <string name="battery_info_temperature_units" msgid="9098950587249987550">"° C"</string>
+    <string name="battery_info_uptime" msgid="5548545143573527992">"启动后的时间："</string>
+    <string name="battery_info_awake_battery" msgid="2557725975486185849">"电池的唤醒时间："</string>
+    <string name="battery_info_awake_plugged" msgid="176716874713478188">"充电时的唤醒时间："</string>
+    <string name="battery_info_screen_on" msgid="376277447175613889">"屏幕开启时间："</string>
+    <string name="battery_info_status_unknown" msgid="196130600938058547">"未知"</string>
+    <string name="battery_info_status_charging" msgid="1705179948350365604">"正在充电"</string>
+    <string name="battery_info_status_charging_ac" msgid="5874340256342956252">"（交流电）"</string>
+    <string name="battery_info_status_charging_usb" msgid="4059070156126770959">"(USB 绑定选项)"</string>
+    <string name="battery_info_status_discharging" msgid="6222697503392774475">"正在放电"</string>
+    <string name="battery_info_status_not_charging" msgid="2820070506621483576">"未在充电"</string>
+    <string name="battery_info_status_full" msgid="2824614753861462808">"已满"</string>
+    <string name="battery_info_power_unplugged" msgid="5987246575519551081">"未插电"</string>
+    <string name="battery_info_power_ac" msgid="6808516193001604634">"交流电"</string>
+    <string name="battery_info_power_usb" msgid="8012931702516331797">"USB"</string>
+    <string name="battery_info_power_ac_usb" msgid="6777734146838328688">"交流电 + USB"</string>
+    <string name="battery_info_power_unknown" msgid="7344115502868899881">"未知"</string>
+    <string name="battery_info_health_unknown" msgid="5664295556921944255">"未知"</string>
+    <string name="battery_info_health_good" msgid="8070356565806711806">"正常"</string>
+    <string name="battery_info_health_overheat" msgid="8442959549291368806">"过热"</string>
+    <string name="battery_info_health_dead" msgid="1725917445762829059">"没电"</string>
+    <string name="battery_info_health_over_voltage" msgid="2420269351664490121">"过电压"</string>
+    <string name="battery_info_health_unspecified_failure" msgid="6347021103185471590">"未知错误"</string>
+    <string name="bluetooth" msgid="5549625000628014477">"蓝牙"</string>
+    <string name="bluetooth_visibility" msgid="2930835434091839916">"可检测性"</string>
+    <string name="bluetooth_is_discoverable" msgid="1205694503775884903">"<xliff:g id="DISCOVERABLE_TIME_PERIOD">%1$s</xliff:g> 秒内可检测到..."</string>
+    <string name="bluetooth_is_discoverable_always" msgid="8573385118329733931">"可检测到"</string>
+    <string name="bluetooth_not_discoverable" msgid="128269993123955177">"可以检测到设备"</string>
+    <string name="bluetooth_visibility_timeout" msgid="6634508002347847278">"可检测到设备的时间超时"</string>
+    <string name="bluetooth_visibility_timeout_summary" msgid="6483353842671501585">"设置可检测到设备的时间"</string>
+    <string name="bluetooth_lock_voice_dialing" msgid="3139322992062086225">"锁定语音拨号"</string>
+    <string name="bluetooth_lock_voice_dialing_summary" msgid="4741338867496787042">"屏幕锁定时停止使用蓝牙拨号器"</string>
+    <string name="bluetooth_devices" msgid="1886018064039454227">"蓝牙设备"</string>
+    <string name="bluetooth_device_name" msgid="8415828355207423800">"设备名称"</string>
+    <string name="bluetooth_name_not_set" msgid="2653752006416027426">"未设置名称，使用帐户名"</string>
+    <string name="bluetooth_scan_for_devices" msgid="9214184305566815727">"扫描查找设备"</string>
+    <string name="bluetooth_disconnect_blank" msgid="8102076504922229274">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g>将断开连接。"</string>
+    <string name="bluetooth_connected" msgid="6038755206916626419">"已连接"</string>
+    <string name="bluetooth_disconnected" msgid="6557104142667339895">"已断开连接"</string>
+    <string name="bluetooth_disconnecting" msgid="8913264760027764974">"正在断开连接..."</string>
+    <string name="bluetooth_connecting" msgid="8555009514614320497">"正在连接..."</string>
+    <string name="bluetooth_unknown" msgid="644716244548801421"></string>
+    <string name="bluetooth_not_connected" msgid="3389882907500605937">"与此设备配对"</string>
+    <string name="bluetooth_pairing" msgid="1426882272690346242">"正在配对..."</string>
+    <string name="bluetooth_paired" msgid="1247541089000057726">"已配对但未连接"</string>
+    <string name="bluetooth_device" msgid="6873461446424952003">"免提/耳机"</string>
+    <string name="progress_scanning" msgid="3760897655335759141">"正在扫描"</string>
+    <string name="bluetooth_notif_ticker" msgid="4726721390078512173">"蓝牙配对请求"</string>
+    <string name="bluetooth_notif_title" msgid="2485175521845371514">"配对请求"</string>
+    <string name="bluetooth_notif_message" msgid="5381418499788668724">"选择要配对的对象 "</string>
+    <string name="device_picker" msgid="8721012448931226323">"蓝牙设备选择器"</string>
+    <string name="bluetooth_permission_request" msgid="1523129741266262748">"蓝牙权限请求"</string>
+    <string name="bluetooth_ask_enablement" msgid="2342558978033892004">"您手机上的某一应用程序正在请求相应权限以便打开蓝牙。是否要授予这种权限？"</string>
+    <string name="bluetooth_ask_discovery" msgid="669870705606180872">"您手机上的某一应用程序正在请求相应权限以便打开蓝牙，从而使其他设备可在 <xliff:g id="TIMEOUT">%1$d</xliff:g> 秒内检测到您的手机。是否要授予这种权限？"</string>
+    <string name="bluetooth_ask_lasting_discovery" msgid="3413855805411554871">"手机上的某一应用程序正在请求相应权限，以便让其他蓝牙设备“一直可检测到”您的手机。要授予该权限吗？"</string>
+    <string name="bluetooth_ask_enablement_and_discovery" msgid="7220210326619399542">"您手机上的某一应用程序正在请求相应权限以便打开蓝牙，从而使其他设备可在 <xliff:g id="TIMEOUT">%1$d</xliff:g> 秒内检测到您的手机。是否要授予这种权限？"</string>
+    <string name="bluetooth_ask_enablement_and_lasting_discovery" msgid="7471195931669103553">"手机上的某一应用程序正在请求相应权限以便打开蓝牙，从而让其他设备可检测到您的手机。要授予该权限吗？"</string>
+    <string name="bluetooth_turning_on" msgid="3107102168379705771">"正在打开蓝牙…"</string>
+    <string name="bluetooth_connection_permission_request" msgid="4747918249032890077">"蓝牙连接请求"</string>
+    <string name="bluetooth_connection_notif_message" msgid="1833221950512058309">"触摸以连接到“<xliff:g id="DEVICE_NAME">%1$s</xliff:g>”"</string>
+    <string name="bluetooth_connection_dialog_text" msgid="8455427559949998023">"要连接到“<xliff:g id="DEVICE_NAME">%1$s</xliff:g>”吗？"</string>
+    <string name="date_and_time" msgid="4114084177056654663">"日期和时间设置"</string>
+    <string name="date_time_12_hour_sample" msgid="3259617262618020574">"下午 1:00"</string>
+    <string name="date_time_24_hour_sample" msgid="8916857570746212357">"13:00"</string>
+    <string name="date_time_changeTime_text" msgid="7037437020000867740">"更改时间"</string>
+    <string name="date_time_changeDate_text" msgid="5259762626498028057">"日期"</string>
+    <string name="choose_timezone" msgid="7762866468013985022">"选择时区"</string>
+    <string name="normal_date_format" msgid="1982904221918374153">"普通 (<xliff:g id="DATE">%s</xliff:g>)"</string>
+    <string name="display_preview_label" msgid="1127597250917274792">"预览:"</string>
+    <string name="display_font_size_label" msgid="8941851418397475389">"字号："</string>
+    <string name="intent_sender_data_label"><xliff:g id="data">数据：</xliff:g></string>
+    <string name="intent_sender_sendbroadcast_text" msgid="1415735148895872715">"发送<xliff:g id="BROADCAST">broadcast</xliff:g>"</string>
+    <string name="intent_sender_action_label" msgid="616458370005452389">"<xliff:g id="ACTION">Action</xliff:g>:"</string>
+    <string name="intent_sender_startactivity_text" msgid="5080516029580421895">"启动<xliff:g id="ACTIVITY">activity</xliff:g>"</string>
+    <string name="intent_sender_resource_label" msgid="6963659726895482829">"<xliff:g id="RESOURCE">Resource</xliff:g>:"</string>
+    <string name="intent_sender_account_label" msgid="465210404475603404">"帐户:"</string>
+    <string name="proxy_clear_text" msgid="5555400754952012657">"清除"</string>
+    <string name="proxy_port_label" msgid="2623639656638472491">"端口"</string>
+    <string name="proxy_defaultView_text" msgid="6387985519141433291">"恢复默认设置"</string>
+    <string name="proxy_action_text" msgid="477348175123635416">"保存"</string>
+    <string name="proxy_hostname_label" msgid="7531298584350977540">"主机名"</string>
+    <string name="proxy_error" msgid="8926675299638611451">"注意"</string>
+    <string name="proxy_error_dismiss" msgid="4993171795485460060">"确定"</string>
+    <string name="proxy_error_invalid_host" msgid="9120776460063182119">"您输入的主机名无效。"</string>
+    <string name="proxy_error_empty_port" msgid="3525734169948795417">"您必须填写端口字段。"</string>
+    <string name="proxy_error_empty_host_set_port" msgid="2451694104858226781">"如果主机字段为空，则端口字段必须为空。"</string>
+    <string name="proxy_error_invalid_port" msgid="1816315605424943626">"您输入的端口无效。"</string>
+    <string name="radio_info_signal_location_label" msgid="16475158265551708">"地点："</string>
+    <string name="radio_info_neighboring_location_label" msgid="2385625674055934880">"相邻的 CID："</string>
+    <string name="radio_info_data_attempts_label" msgid="1731106244577323381">"数据尝试次数："</string>
+    <string name="radio_info_gprs_service_label" msgid="2331818110375395364">"GPRS 服务："</string>
+    <string name="radio_info_roaming_label" msgid="6141505430275138647">"漫游："</string>
+    <string name="radio_info_imei_label" msgid="1220524224732944192">"移动通信国际识别码："</string>
+    <string name="radio_info_call_redirect_label" msgid="1654674226961476872">"呼叫重定向："</string>
+    <string name="radio_info_ppp_resets_label" msgid="3241667824729310546">"启动后重置 PPP 的次数："</string>
+    <string name="radio_info_gsm_disconnects_label" msgid="1683069665736339820">"GSM 断开连接："</string>
+    <string name="radio_info_current_network_label" msgid="3256402602440102610">"当前网络："</string>
+    <string name="radio_info_data_successes_label" msgid="4417894113689054945">"数据成功："</string>
+    <string name="radio_info_ppp_received_label" msgid="3345184342444878849">"已收到 PPP："</string>
+    <string name="radio_info_gsm_service_label" msgid="2082332114596916985">"GSM 服务："</string>
+    <string name="radio_info_signal_strength_label" msgid="1931937920896925766">"信号强度:"</string>
+    <string name="radio_info_call_status_label" msgid="4896238900685510883">"呼叫状态："</string>
+    <string name="radio_info_ppp_sent_label" msgid="5009102250704375687">"已发送 PPP："</string>
+    <string name="radio_info_radio_resets_label" msgid="9211343458143291617">"无线通信重置："</string>
+    <string name="radio_info_message_waiting_label" msgid="6981842420058672207">"消息等待："</string>
+    <string name="radio_info_phone_number_label" msgid="7192944627907412169">"手机号码："</string>
+    <string name="radio_info_band_mode_label" msgid="441469694142042022">"选择无线通信频道"</string>
+    <string name="radio_info_network_type_label" msgid="3706382548257257987">"网络类型："</string>
+    <string name="radio_info_set_perferred_label" msgid="9039200405863503267">"设置首选网络类型："</string>
+    <string name="radio_info_ping_ipaddr" msgid="498747917793263530">"Ping IP 地址："</string>
+    <string name="radio_info_ping_hostname" msgid="3054888474808217853">"Ping 主机名 (www.google.com)："</string>
+    <string name="radio_info_http_client_test" msgid="5733604021077701555">"HTTP 客户端测试："</string>
+    <string name="ping_test_label" msgid="7255376471490860631">"运行 ping 测试"</string>
+    <string name="radio_info_smsc_label" msgid="6399460520126501354">"SMSC："</string>
+    <string name="radio_info_smsc_update_label" msgid="7258686760358791539">"更新"</string>
+    <string name="radio_info_smsc_refresh_label" msgid="6902302130315125102">"刷新"</string>
+    <string name="radio_info_toggle_dns_check_label" msgid="8292252930563286858">"切换 DNS 检查"</string>
+    <string name="oem_radio_info_label" msgid="6163141792477958941">"特定 OEM 的信息/设置"</string>
+    <string name="band_mode_title" msgid="954174198903776205">"设置 GSM/UMTS 波段"</string>
+    <string name="band_mode_loading" msgid="548764766363847336">"正在载入波段列表..."</string>
+    <string name="band_mode_set" msgid="5730560180249458484">"设置"</string>
+    <string name="band_mode_failed" msgid="1495968863884716379">"失败"</string>
+    <string name="band_mode_succeeded" msgid="2701016190055887575">"成功"</string>
+    <string name="sdcard_changes_instructions" msgid="1364712901180556244">"重新连接 USB 线后更改生效"</string>
+    <string name="sdcard_settings_screen_mass_storage_text" msgid="3741220147296482474">"启用 USB 大容量存储设备"</string>
+    <string name="sdcard_settings_total_bytes_label" msgid="9184160745785062144">"总字节数："</string>
+    <string name="sdcard_settings_not_present_status" product="nosdcard" msgid="2902787003418172125">"未装载 USB 存储设备"</string>
+    <string name="sdcard_settings_not_present_status" product="default" msgid="6666688653496819947">"无 SD 卡"</string>
+    <string name="sdcard_settings_available_bytes_label" msgid="763232429899373001">"可用的字节数："</string>
+    <string name="sdcard_settings_mass_storage_status" product="nosdcard" msgid="2736378870889777857">"USB 存储设备已被用作大容量存储设备"</string>
+    <string name="sdcard_settings_mass_storage_status" product="default" msgid="4786433969313661655">"SD 卡已被视为大容量存储设备"</string>
+    <string name="sdcard_settings_unmounted_status" product="nosdcard" msgid="7503300818792750913">"现在可以安全移除 USB 存储设备了"</string>
+    <string name="sdcard_settings_unmounted_status" product="default" msgid="3812022095683863087">"现在可以安全移除 SD 卡"</string>
+    <string name="sdcard_settings_bad_removal_status" product="nosdcard" msgid="7761390725880773697">"USB 存储设备仍在使用中便被移除！"</string>
+    <string name="sdcard_settings_bad_removal_status" product="default" msgid="5145797653495907970">"SD 卡仍在使用中便被移除！"</string>
+    <string name="sdcard_settings_used_bytes_label" msgid="8820289486001170836">"已使用的字节数："</string>
+    <string name="sdcard_settings_scanning_status" product="nosdcard" msgid="7503429447676219564">"正在扫描 USB 存储设备中的媒体..."</string>
+    <string name="sdcard_settings_scanning_status" product="default" msgid="2763464949274455656">"正从 SD 卡扫描媒体..."</string>
+    <string name="sdcard_settings_read_only_status" product="nosdcard" msgid="3771783090621312312">"已将 USB 存储设备装载为只读设备"</string>
+    <string name="sdcard_settings_read_only_status" product="default" msgid="5706115860484118911">"安装的 SD 卡为只读状态"</string>
+    <string name="next_label" msgid="4693520878012668114">"下一步"</string>
+    <string name="language_picker_title" msgid="4034157617842965844">"语言区域"</string>
+    <string name="select_your_language" msgid="1146235168951906084">"选择您使用的语言"</string>
+    <string name="activity_picker_label" msgid="4910700713930693329">"选择活动"</string>
+    <string name="device_info_label" msgid="6551553813651711205">"设备信息"</string>
+    <string name="battery_info_label" msgid="4132685016148679403">"电池信息"</string>
     <string name="battery_history_label">电池使用状况</string>
     <string name="display_label">显示</string>
     <string name="phone_info_label">手机信息</string>

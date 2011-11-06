@@ -88,10 +88,6 @@
     <string name="battery_info_health_over_voltage" msgid="2420269351664490121">"Sovratensione"</string>
     <string name="battery_info_health_unspecified_failure" msgid="6347021103185471590">"Errore sconosciuto"</string>
     <string name="bluetooth" msgid="5549625000628014477">"Bluetooth"</string>
-    <!-- Bluetooth settings screen, list label how long the device remains in discoverable mode -->
-    <string name="bluetooth_discoverable_duration_title">Durata rilevabilità</string>
-    <!-- Bluetooth settings screen, Discoverable duration list summary -->
-    <string name="bluetooth_discoverable_duration_summary">Per quanto a lungo rendere rilevabile il dispositivo</string>
     <string name="bluetooth_visibility" msgid="2930835434091839916">"Rilevabile"</string>
     <string name="bluetooth_is_discoverable" msgid="1205694503775884903">"Rilevabile per <xliff:g id="DISCOVERABLE_TIME_PERIOD">%1$s</xliff:g> secondi..."</string>
     <string name="bluetooth_is_discoverable_always" msgid="8573385118329733931">"Rilevabile"</string>
@@ -1338,6 +1334,14 @@
     <string name="profile_appgroups_manage">Gestisci gruppi applicazioni</string>
     <!-- Menu item for managing app list -->
     <string name="profile_applist_manage">Gestisci lista applicazioni</string>
+    <!-- Menu item for reset -->
+    <string name="profile_reset_title">Ripristina</string>
+    <!-- Menu item for reset all -->
+    <string name="profile_reset_all_title">Ripristina tutto</string>
+    <!-- Menu item for reset all - summary -->
+    <string name="profile_reset_all_summary">Elimina e ripristina tutti i profili e i gruppi di applicazioni a quelli di default</string>
+    <!-- Dialog confirming reset all - message -->
+    <string name="profile_reset_all_message">Sei sicuro di voler eliminare e ripristinare tutti i profili e i gruppi di applicazioni a quelli di default?</string>
 
     <string name="privacy_settings" msgid="9206631214140954954">"Backup e ripristino"</string>
     <string name="privacy_settings_title" msgid="1987089301293213705">"Impostazioni privacy"</string>

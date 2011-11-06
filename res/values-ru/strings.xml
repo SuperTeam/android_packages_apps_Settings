@@ -88,10 +88,6 @@
     <string name="battery_info_health_over_voltage" msgid="2420269351664490121">"Слишком высокое напряжение"</string>
     <string name="battery_info_health_unspecified_failure" msgid="6347021103185471590">"Неизвестная ошибка"</string>
     <string name="bluetooth" msgid="5549625000628014477">"Bluetooth"</string>
-    <!-- Bluetooth settings screen, list label how long the device remains in discoverable mode -->
-    <string name="bluetooth_discoverable_duration_title">Продолжительность видимости</string>
-    <!-- Bluetooth settings screen, Discoverable duration list summary -->
-    <string name="bluetooth_discoverable_duration_summary">Как долго устройство остаётся видимым</string>
     <string name="bluetooth_visibility" msgid="2930835434091839916">"Видимость"</string>
     <string name="bluetooth_is_discoverable" msgid="1205694503775884903">"Видимый в течение <xliff:g id="DISCOVERABLE_TIME_PERIOD">%1$s</xliff:g> секунд..."</string>
     <string name="bluetooth_is_discoverable_always" msgid="8573385118329733931">"Видимый"</string>
@@ -1353,6 +1349,15 @@
     <string name="profile_appgroups_manage">Управление группами приложений</string>
     <!-- Menu item for managing app list -->
     <string name="profile_applist_manage">Управление списком приложений</string>
+
+    <!-- Menu item for reset -->
+    <string name="profile_reset_title">Сбросить</string>
+    <!-- Menu item for reset all -->
+    <string name="profile_reset_all_title">Сбросить всё</string>
+    <!-- Menu item for reset all - summary -->
+    <string name="profile_reset_all_summary">Удалить и восстановить все профили и группы приложений по умолчанию</string>
+    <!-- Dialog confirming reset all - message -->
+    <string name="profile_reset_all_message">Вы желаете удалить все профили и группы приложений, а также восстановить их по умолчанию?</string>
 	
     <string name="wimax_settings" msgid="1574837328738396794">"Настройки 4G"</string>
     <string name="wimax_settings_summary" msgid="3207355006084135453">"Подключение и настройка сети и модема 4G"</string>
