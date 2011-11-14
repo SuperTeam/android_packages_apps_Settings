@@ -1348,21 +1348,24 @@
     <string name="autoEnable3GWithWifiDescription">3G cuando Wi-Fi está desactivada</string>
     <string name="useRoundCornersDescription">Usar iconos del widget redondeados</string>
     <string name="useTransparentDescription">Sin fondo en el widget</string>
-    <string name="useVerticalDescription">Muestra con horientación vertical</string>
-    <string name="autoEnableSyncWithWifiDescription">Activa Sync cuando el WIFI esta activado</string>
-    <string name="autoDisableSyncWithWifiDescription">Desactiva Sync cuando el WIFI esta desactivado</string>
-    <string name="ringModeVibrateAsOnDescription">Sonido solo cuando este en modo vibración</string>
-    <string name="monitorDataRoamingDescription">Barra roja de datos en roaming</string>
-    <string name="autoEnableBluetoothWithPowerDescription">Bluetooth activ. cuando esté conectado</string>
-    <string name="autoDisableBluetoothWithPowerDescription">Bluetooth desac. cuando esté desconectado</string>
-    <string name="autoEnableWifiWithPowerDescription">Wi-Fi activ. cuando esté conectado</string>
-    <string name="autoDisableWifiWithPowerDescription">Wi-Fi desac. cuando esté desconectado</string>
+    <string name="useVerticalDescription">Ver con orientación vertical</string>
+    <string name="autoEnableSyncWithWifiDescription">Activa sincr. cuando Wi-Fi está activada</string>
+    <string name="autoDisableSyncWithWifiDescription">Desctiva sincr. cuando Wi-Fi está desactivada</string>
+    <string name="ringModeVibrateAsOnDescription">Mostrar sonido aunque esté sólo en vibración</string>
+    <string name="monitorDataRoamingDescription">Datos de estado en rojo si la itinerancia de datos está habilitada</string>
+    <string name="autoEnableBluetoothWithPowerDescription">Bluetooth activado cuando se conecte el cargador</string>
+    <string name="autoDisableBluetoothWithPowerDescription">Bluetooth desactivado cuando se desconecte el cargador</string>
+    <string name="autoEnableWifiWithPowerDescription">Wi-Fi activado cuando se conecte el cargador</string>
+    <string name="autoDisableWifiWithPowerDescription">Wi-Fi desactivado cuando se desconecte el cargador</string>
+    <string name="networkModeSpinner">Elija modos de red</string>
+    <string name="brightnessSpinner">Elija niveles de brillo</string>
+    <string name="ringModeSpinner">Elija modos de timbre</string>
+    <string name="screenTimeoutSpinner">Elija tiempo apagado pantalla</string>
+    <string name="backgroundImageSpinner">Elija fondo de pantalla</string>
+    <string name="notConfigured">Sin configurar. Por favor, vuelve a agregar</string>
+    <string name="ok">Ok</string>
+    <string name="widget_count">(%d widgets)</string>
 
-    <string name="networkModeSpinner">Escoge modo de red</string>
-    <string name="brightnessSpinner">Escoge niveles de brillo</string>
-    <string name="ringModeSpinner">Escoge modo de sonidos</string>
-    <string name="screenTimeoutSpinner">Escoge tiempo de pantalla en espera</string>
-    <string name="backgroundImageSpinner">Escoge fondo</string>
     <string name="device_settings_title">Ajustes especiales</string>
     <string name="wimax_settings" msgid="1574837328738396794">"4G"</string>
     <string name="wimax_settings_summary" msgid="3207355006084135453">"Configurar y gestionar módem y red 4G"</string>
