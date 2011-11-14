@@ -1336,8 +1336,6 @@
     <string name="ok">确定</string>
     <string name="widget_count">(%d 个小工具)</string>
     <string name="cm_settings_title">CM 设置</string>
-    <string name="wimax_settings">4G 设置</string>
-    <string name="wimax_settings_summary">设置和管理 4G 网络与调制解调器</string>
     <string name="status_wimax_mac_address">4G MAC 地址</string>
     <string name="additional_system_update_settings_list_item_title">其他系统更新</string>
     <string name="rotation_category_title">自动旋转角度</string>
@@ -1353,6 +1351,4 @@
     <string name="device_settings_title">设备设置</string>
     <string name="wimax_settings" msgid="1574837328738396794">"4G 设置"</string>
     <string name="wimax_settings_summary" msgid="3207355006084135453">"设置和管理 4G 网络与调制解调器"</string>
-    <string name="status_wimax_mac_address" msgid="8390791848661413416">"4G MAC 地址"</string>
-    <string name="additional_system_update_settings_list_item_title" msgid="214987609894661992">"其他系统更新"</string>
 </resources>
