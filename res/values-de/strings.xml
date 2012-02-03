@@ -94,6 +94,9 @@
     <string name="bluetooth_not_discoverable" msgid="128269993123955177">"Gerät sichtbar machen"</string>
     <string name="bluetooth_visibility_timeout" msgid="6634508002347847278">"Timeout für Sichtbarkeit"</string>
     <string name="bluetooth_visibility_timeout_summary" msgid="6483353842671501585">"Stellen Sie ein, wie lang das Gerät sichtbar sein soll."</string>
+    <string name="bluetooth_fast_connect">Schnelle Verbindung</string>
+    <string name="bluetooth_fast_connect_on">Audio- und Telefonverbindung gleichzeitig aufbauen (kann Kompatibilitätsprobleme verursachen)</string>
+    <string name="bluetooth_fast_connect_off">Audioverbindung später als Telefonverbindung aufbauen</string>
     <string name="bluetooth_lock_voice_dialing" msgid="3139322992062086225">"Sprachwahl sperren"</string>
     <string name="bluetooth_lock_voice_dialing_summary" msgid="4741338867496787042">"Verwendung des Bluetooth-Dialers bei gesperrtem Bildschirm verhindern"</string>
     <string name="bluetooth_devices" msgid="1886018064039454227">"Bluetooth-Geräte"</string>
@@ -913,10 +916,13 @@
     <string name="builtin_keyboard_settings_summary" msgid="7990296351888096836">"Einstellungen für eingebaute, physische Tastatur"</string>
     <string name="development_settings_title" msgid="6719732334835420989">"Entwicklung"</string>
     <string name="development_settings_summary" msgid="2151320488701538355">"Optionen zur Anwendungsentwicklung festlegen"</string>
-    <string name="enable_adb" msgid="7982306934419797485">"USB-Debugging"</string>
-    <string name="enable_adb_summary" msgid="4881186971746056635">"Debugmodus bei Anschluss über USB"</string>
-    <string name="adb_notify">USB-Debugging Benachrichtigung</string>
-    <string name="adb_notify_summary">Zeige Benachrichtigung, wenn USB-Debugging verbunden ist</string>
+    <string name="enable_adb" msgid="7982306934419797485">Debug-Modus</string>
+    <string name="enable_adb_summary" msgid="4881186971746056635">Debugging über ADB aktivieren</string>
+    <string name="adb_over_network">Netzwerk-Debugging</string>
+    <string name="adb_over_network_summary">ADB über Netzwerk (z.B. WLAN) an Stelle von USB benutzen (Einstellung wird bei Neustart zurückgesetzt)</string>
+    <string name="adb_over_network_warning">WARNUNG: Wenn Netzwerk-Debugging aktiviert ist, ist die Debug-Verbindung über alle verbundenen Netzwerke erreichbar, insbesondere auch über das Mobilfunk-Netzwerk!\n\nDiese Funktion sollte nur bei Verbindung mit vertrauenswürdigen Netzwerken verwendet werden.\n\nSind Sie sicher, dass Sie diese Funktion aktivieren möchten?</string>
+    <string name="adb_notify">Debugging-Benachrichtigung</string>
+    <string name="adb_notify_summary">Zeige Benachrichtigung, wenn Debugging verbunden ist</string>
     <string name="keep_screen_on" msgid="1146389631208760344">"Aktiv lassen"</string>
     <string name="keep_screen_on_summary" msgid="2173114350754293009">"Display wird beim Laden nie in den Ruhezustand versetzt"</string>
     <string name="allow_mock_location" msgid="2787962564578664888">"Falsche Standorte"</string>
@@ -1134,7 +1140,7 @@
     <string name="vpn_openvpn_redirect_gateway_title">Redirect-Gateway</string>
     <string name="vpn_openvpn_redirect_gateway_summary">Gesamten Verkehr durch den VPN-Tunnel routen</string>
     <string name="vpn_openvpn_set_addr">Remote setzt Adressen</string>
-    <string name="vpn_openvpn_set_addr_summary">Abwählen um Tunnel-Adressen manuell einzustellen</string>
+    <string name="vpn_openvpn_set_addr_summary">Abwählen, um Tunnel-Adressen manuell einzustellen</string>
     <string name="vpn_openvpn_set_local_addr">Lokale IP-Adresse</string>
     <string name="vpn_openvpn_set_remote_addr">Remote IP-Adresse</string>
     <string name="vpn_openvpn_set_cipher">Chiffrier-Algorithmus</string>
@@ -1143,8 +1149,13 @@
     <string name="vpn_openvpn_set_keysize">Größe des Chiffrier-Schlüssels</string>
     <string name="vpn_openvpn_set_keysize_message">Leer lassen für Standard</string>
     <string name="vpn_openvpn_set_keysize_default">Standard</string>
-    <string name="vpn_openvpn_set_extra">Extra Argumente</string>
-    <string name="vpn_openvpn_set_extra_message">Extra Kommandozeilenargumente eingeben</string>
+    <string name="vpn_openvpn_set_extra">Zusätzliche Argumente</string>
+    <string name="vpn_openvpn_set_extra_message">Zusätzliche Kommandozeilenargumente eingeben</string>
+    <string name="vpn_openvpn_set_use_tls_auth">TLS-Authentifizierung</string>
+    <string name="vpn_openvpn_set_use_tls_auth_summary">TLS-Authentifizierungsschlüssel verwenden</string>
+    <string name="vpn_openvpn_set_tls_auth_key">TLS-Schlüsseldatei</string>
+    <string name="vpn_openvpn_set_tls_auth_key_summary">Speicherort der zur TLS-Authentifizierung verwendeten Schlüsseldatei</string>
+    <string name="vpn_openvpn_set_tls_auth_key_direction">TLS-Schlüsselrichtung</string>
 
     <string name="vpn_ipsec_presharedkey_title" msgid="2184060087690539175">"Vorinstallierten IPSec-Schlüssel festlegen"</string>
     <string name="vpn_ipsec_presharedkey" msgid="5434316521616673741">"Vorinstallierter IPSec-Schlüssel"</string>
